@@ -1,0 +1,54 @@
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:971] - Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1103] - postgresql-connection-pool - configuration:
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - allowPoolSuspension................................false
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - autoCommit................................true
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - catalog................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - connectionInitSql................................"select current_date"
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - connectionTestQuery................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - connectionTimeout................................5000
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - dataSource................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - dataSourceClassName................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - dataSourceJNDI................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - dataSourceProperties................................{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, prepStmtCacheSize=250}
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - driverClassName................................"org.postgresql.Driver"
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - exceptionOverrideClassName................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - healthCheckProperties................................{}
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - healthCheckRegistry................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - idleTimeout................................600000
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - initializationFailTimeout................................1
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - isolateInternalQueries................................false
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - jdbcUrl................................jdbc:postgresql://localhost:5432/practice
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - keepaliveTime................................0
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - leakDetectionThreshold................................0
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - maxLifetime................................1800000
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - maximumPoolSize................................20
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - metricRegistry................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - metricsTrackerFactory................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - minimumIdle................................20
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - password................................<masked>
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - poolName................................"postgresql-connection-pool"
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - readOnly................................false
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - registerMbeans................................false
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - scheduledExecutor................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - schema................................none
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - threadFactory................................internal
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - transactionIsolation................................default
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - username................................"postgres"
+[2025-03-28 22:55:20] [DEBUG] [HikariConfig:1135] - validationTimeout................................5000
+[2025-03-28 22:55:20] [INFO ] [HikariDataSource:80] - postgresql-connection-pool - Starting...
+[2025-03-28 22:55:21] [DEBUG] [HikariPool:565] - postgresql-connection-pool - Added connection org.postgresql.jdbc.PgConnection@1f6c9cd8
+[2025-03-28 22:55:21] [INFO ] [HikariDataSource:82] - postgresql-connection-pool - Start completed.
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7839, ename=KING, deptno=10, job=PRESIDENT, sal=5000, comm=null, mgr=null, hiredate=1981-11-17, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7698, ename=BLAKE, deptno=30, job=MANAGER, sal=2850, comm=null, mgr=7839, hiredate=1981-05-01, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7782, ename=CLARK, deptno=10, job=MANAGER, sal=2450, comm=null, mgr=7839, hiredate=1981-06-09, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7566, ename=JONES, deptno=20, job=MANAGER, sal=2975, comm=null, mgr=7839, hiredate=1981-04-02, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7654, ename=MARTIN, deptno=30, job=SALESMAN, sal=1250, comm=1400, mgr=7698, hiredate=1981-09-28, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7499, ename=ALLEN, deptno=30, job=SALESMAN, sal=1600, comm=300, mgr=7698, hiredate=1981-02-20, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7844, ename=TURNER, deptno=30, job=SALESMAN, sal=1500, comm=0, mgr=7698, hiredate=1981-09-08, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7900, ename=JAMES, deptno=30, job=CLERK, sal=950, comm=null, mgr=7698, hiredate=1981-12-03, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7521, ename=WARD, deptno=30, job=SALESMAN, sal=1250, comm=500, mgr=7698, hiredate=1981-02-22, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7902, ename=FORD, deptno=20, job=ANALYST, sal=3000, comm=null, mgr=7566, hiredate=1981-12-03, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7369, ename=SMITH, deptno=20, job=CLERK, sal=800, comm=null, mgr=7902, hiredate=1980-12-17, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7788, ename=SCOTT, deptno=20, job=ANALYST, sal=3000, comm=null, mgr=7566, hiredate=1982-12-09, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7876, ename=ADAMS, deptno=20, job=CLERK, sal=1100, comm=null, mgr=7788, hiredate=1983-01-12, active=null
+[2025-03-28 22:55:21] [INFO ] [PostgreSQLHikariCPTest:56] - empno=7934, ename=MILLER, deptno=10, job=CLERK, sal=1300, comm=null, mgr=7782, hiredate=1982-01-23, active=null
