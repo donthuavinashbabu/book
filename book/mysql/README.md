@@ -2,6 +2,7 @@
 ------
 # Theory
 * [Notes](notes.md)
+* [Employee Database Practice](https://drive.google.com/file/d/1fGsDONUNjLI2kYzStMOCm3L2gdIAU6-R/view?usp=drive_link)
 ------
 # Query files
 * [Run MySQL with Docker](run-with-docker.md)
