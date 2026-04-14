@@ -17,3 +17,30 @@
 # What is an agent?
 * Software system that use LLM as reasing engint to decide what actions to take and execute those actions
 * In chain - sequence of steps are hard coded. In agents - Dynamically determine which tools or steps need to be taken to solve specific task. LLM in agent decides what to do next
+
+---
+# RAG Embeddings Vector Databases and Retrieval
+* RAG - Retrieval Augmentation Generation
+* Prompt + Augment relevant context data - then LLM is able to answer
+
+## If we have large documents 
+### Solution 1
+* Send entire document text to LLM as prompt then following problems happen
+* Hard Token Limit
+* Needle in the Heystack
+* Cost
+* Latency
+
+### Solution 2
+* Split original document into smaller chunks (This chunking process is naive and complex)
+* Instead of sending entire book, send only specific paragraph or some more
+* Drawback
+	* Preproecssing to chunk large document. How do we chunk?
+	* How to identify relevant chunk for data?
+	
+## Introduction to Vector Databases
+* Embeddings
+* Vector stores (Pinecone)
+* RetrievalQA Chain
+* LangChain document loaders
+* LangChain text splitters
