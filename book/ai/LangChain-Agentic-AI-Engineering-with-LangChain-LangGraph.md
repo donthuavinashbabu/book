@@ -68,3 +68,8 @@ This cleaned pipeline shows the **core RAG workflow**:
 - **Retrieval + Generation** ensures the LLM produces grounded, context-aware answers.  
 
 Would you like me to also create a **step-by-step annotated flowchart** (with arrows and labels) so you can use it directly in documentation or presentations?
+
+## pinecone
+* https://www.pinecone.io/ 
+* Create index. Give this index name in langchain using key `INDEX_NAME`
+* Key to use langchain to integrate with pinecone - `PINECONE_API_KEY`
