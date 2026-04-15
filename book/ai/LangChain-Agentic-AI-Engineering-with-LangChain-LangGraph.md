@@ -44,3 +44,27 @@
 * RetrievalQA Chain
 * LangChain document loaders
 * LangChain text splitters
+
+## Basic RAG Pipeline
+![picture](imgs/basic-rag-pipeline.png)
+
+### 🔹 Data Indexing
+1. **Documents** → raw input files (PDFs, text, etc.)  
+2. **Data Loading** → bring documents into the system  
+3. **Data Splitting** → break into smaller **text chunks**  
+4. **Data Embedding** → convert chunks into **vector embeddings**  
+5. **Data Storing** → save embeddings in a **Vector Database (Vector DB)**  
+
+### 🔹 Data Retrieval & Generation
+1. **User Query** → input question  
+2. **Vector Embedding** → convert query into embedding  
+3. **Vector DB** → search for similar embeddings  
+4. **Top-K Chunks** → retrieve most relevant text chunks  
+5. **LLM (Large Language Model)** → combine retrieved chunks with query  
+6. **Response** → generate final answer  
+
+This cleaned pipeline shows the **core RAG workflow**:  
+- **Indexing** prepares knowledge for retrieval.  
+- **Retrieval + Generation** ensures the LLM produces grounded, context-aware answers.  
+
+Would you like me to also create a **step-by-step annotated flowchart** (with arrows and labels) so you can use it directly in documentation or presentations?
