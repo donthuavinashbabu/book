@@ -66,4 +66,5 @@
 * [SQL](sql#readme)
 * [SQL Server](sql-server#readme)
 * [System Design](system-design#readme)
+* [uv Python package and project manager](uv/README.md)
 * [Windows](windows#readme)
