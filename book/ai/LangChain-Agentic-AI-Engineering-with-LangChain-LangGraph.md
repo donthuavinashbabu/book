@@ -1,4 +1,9 @@
 # Udemy - LangChain- Agentic AI Engineering with LangChain & LangGraph
+* Develop LLM powered agents with langchain & LangGraph
+
+## LLM Applications types
+* Agents
+* Retrieval Augmentation Generation (RAG)
 
 # What is LangChain?
 * Open source framework that simplifies the process of building LLM powered applications. Like  to Spring in Java

@@ -161,7 +161,7 @@
 # Human intervention
 * Human intution and common sense help identify agent failures, edge cases, improvements and fix them
 * Human intervention acts as very good feedback 
-* For example - Custom service agent escalates issue to human if it does not know the answer
+* For example - Customer service agent escalates issue to human if it does not know the answer
 
 ---
 # How to evaluate agents
@@ -196,7 +196,7 @@
 # Infrastructure for AI Agents
 * APIs - Connect out AI Agent to External LLMs like (OpenAI, Anthropic, Google) using APIs. Send prompts and receive response
 * Cloud services - Deploy AI agents/solutions in cloud services like AWS, Azure, Google Cloud. They are offering robust solutions tailored explicitely for AI workloads. They provide powerful GPUs, extensive storage, Integrated APIs, AI Agent tools to stream development and deployment of AI Agents
-* Data adn knowledge integration - AI Agents perform best when they are given access to data like `Databases, Enterprise systems, Knowledge bases, Internet` etc
+* Data and knowledge integration - AI Agents perform best when they are given access to data like `Databases, Enterprise systems, Knowledge bases, Internet` etc
 
 ---
 ## Development frameworks
@@ -238,7 +238,7 @@
 
 ## Google ADK (Agents Development Kit)
 * Package google's complex, collaborative agent systems
-* allows direct integration to `Vertx ai`, `Gemini` models
+* allows direct integration to `VertexAI`, `Gemini` models
 * More enterprise connectors like `Big Query`, `SAP`
 
 ## Flowise
@@ -257,11 +257,3 @@
 	* Bedrock
 	* SageMaker
 	* Lex
-
----
-# LangChain- Agentic AI Engineering with LangChain & LangGraph
-* Develop LLM powered agents with langchain & LangGraph
-
-## LLM Applications types
-* Agents
-* Retrieval Augmentation Generation (RAG)
