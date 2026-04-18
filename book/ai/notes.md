@@ -96,19 +96,26 @@
 ---
 ## LLM - Large Language Model
 * Model is an Algorithm with pre-trained dataset
-* Generative AI - Software which interacts using native language with LLMs which is pre-trained with existing datasets and can generate artifacts out of existing trained datasets based on it's neural network
+* Generative AI (or) GenAI - Software which interacts using native language with LLMs which is pre-trained with existing datasets and can generate artifacts out of existing trained datasets based on it's neural network
 * LLM has Foundational Model (which we train using datasets). It has modules for `text`, `image`, `video processing` for individual use cases
 * GPT - Generative Pre-training Transformer
 ---
-Common LLMs:
+## Common LLMs:
 * Open AI - GPT
+* Anthropic - Claude
 * Google - Gemini(Ultra, Pro, Nano), PaLM 2
 * Meta - Llama 2
 * Cohere - Coral
 * xAI - Grok
 
 ---
-Prompt Engineering: How to talk to AI efficiently?
+## Common GenAI:
+* Github Copilot
+* Microsoft Copilot
+* OpenAI - ChatGPT
+* Anthropic - Claude Code
+---
+## Prompt Engineering: How to talk to AI efficiently?
 * fine tune models using prompts
 * zero-shot, one-shot, few-shot learning
 * Tokens - check chatGPT tokenizer
@@ -125,7 +132,7 @@ Prompt Engineering: How to talk to AI efficiently?
 
 ---
 ## SLM - Small Language Model
-* Compact and effecient GenAI model designed for understanding and processing human language with fewer parameters than larger models
+* Compact GenAI model designed for understanding and processing human language with fewer parameters than larger models
 
 ### Some SLMs
 * Ollama - ollama.com
@@ -158,9 +165,3 @@ Refer - https://huggingface.co/
 * Theano
 * Keras
 * Natural Language Analysis with NLTK (Natural Language Tool Kit)
-
----
-# Notes
-* [Udemy - The Complete Artificial Intelligence and ChatGPT Course](The-Complete-Artificial-Intelligence-and-ChatGPT-Course.md)
-* [Udemy - Intro to AI Agents and Agentic AI](Intro-to-AI-Agents-and-Agentic-AI.md)
-* [Udemy - LangChain- Agentic AI Engineering with LangChain & LangGraph](LangChain-Agentic-AI-Engineering-with-LangChain-LangGraph.md)

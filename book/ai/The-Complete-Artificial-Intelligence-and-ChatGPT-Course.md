@@ -24,20 +24,20 @@
 * Involved using labeled data. Meaning each piece of data comes with desired outcome or answer
 
 ## Unsupervised Machine
-* Aims to discover underlying patterns or groups in unlabeled data, which is applicable in tasks like customer segmentation and anamoly detection
+* Involved using unlabeled data. Aims to discover underlying patterns or groups. Applicable in tasks like customer segmentation and anamoly detection
 
----------------------------------------
-# Open source machine learning libraries:
+---
+# Open source machine learning libraries
 * PyTorch
 * ScikitLearn
 * TensarFlow
 
----------------------------------------
+---
 # NER - Named Entity Recognition
 * Sub task of information extraction in NLP that seeks to locate and classify named entities in text into pre-defined categories
 
----------------------------------------
-# TensarFlow:
+---
+# TensarFlow
 * Open source AI/ML library platform created by Google
 
 ---
@@ -53,10 +53,10 @@
 
 ---
 # AI Challenges and Limitations
-* Data quality and quantity
-* Privacy and security
-* Bias and Fairness
-* Explainability and Transperency
+* Data quality & quantity
+* Privacy & security
+* Bias & Fairness
+* Explainability & Transperency
 * generalization & adaptbility
 * computational resources
 * regulation & governance
@@ -65,10 +65,10 @@
 
 ---
 # Job positions in data world:
+* Database Admin (DBA)
 * Data Engineer
 * Data Analyst
 * Data Scientist
-* Database Admin
 * BI Analyst
 * ML Engineer
 * Data Architect
@@ -88,22 +88,23 @@
 * Ask for step by step reasoning
 
 ---
-# Prompt engineering:
+# Prompt engineering
 * Directional (or) Instructional Prompting
 * Role based (or) System prompting
 * Output formatting
 * Zero shot prompting
+* One shot prompting
 * Few shot prompting
 * Chain of Thought prompting
 
-## Directional (or) Instructional Prompting:
+## Directional (or) Instructional Prompting
 * Give clear and consise instructions to LLMs like ChatGPT
+
+## Role based (or) System prompting
+* Ask the model to assume a specific role or persona to generate responses that align with that perspective.
 
 ## Output formatting
 * Guide the model to produce output in specific format, such as JSON, tables, or bullet points, Excel, coding
-
-## Role based (or) System prompting:
-* Ask the model to assume a specific role or persona to generate responses that align with that perspective.
 
 ## Zero shot prompting
 * Provide a prompt without any examples or specific instructions, relying on the model's pre-trained knowledge to generate a response
