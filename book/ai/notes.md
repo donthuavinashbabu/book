@@ -90,8 +90,8 @@
 ---
 ## AI vs Machine Learning vs Deep Learning
 * AI ML hierarchy from low to high
-* GenAI -> Deep Learning -> Machine Learning (Supervied/NonSupervised/ReInforced) -> Artifical Intelligence\
-![picture](imgs/ai-vs-ml-vs-dl.jpg)
+* GenAI -> Deep Learning (Neural Networks) -> Machine Learning (Supervied/NonSupervised/ReInforced) -> Artifical Intelligence\
+![picture](imgs/ai-vs-ml-vs-dl-2.jpg)
 
 ---
 ## LLM - Large Language Model
