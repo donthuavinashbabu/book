@@ -20,7 +20,7 @@
 
 ---
 # What is an agent?
-* Software system that use LLM as reasing engint to decide what actions to take and execute those actions
+* Software system that use LLM as reasing engine to decide what actions to take and execute those actions
 * In chain - sequence of steps are hard coded. In agents - Dynamically determine which tools or steps need to be taken to solve specific task. LLM in agent decides what to do next
 
 ---
@@ -45,7 +45,9 @@
 	
 ## Introduction to Vector Databases
 * Embeddings
-* Vector stores (Pinecone)
+* Vector stores
+	* Licensed: Pinecone, Qdrant
+	* Open source: ChromaDB, Milvus, Weaviate, Pgvector
 * RetrievalQA Chain
 * LangChain document loaders
 * LangChain text splitters
@@ -71,8 +73,6 @@
 This cleaned pipeline shows the **core RAG workflow**:  
 - **Indexing** prepares knowledge for retrieval.  
 - **Retrieval + Generation** ensures the LLM produces grounded, context-aware answers.  
-
-Would you like me to also create a **step-by-step annotated flowchart** (with arrows and labels) so you can use it directly in documentation or presentations?
 
 ## pinecone
 * https://www.pinecone.io/ 
