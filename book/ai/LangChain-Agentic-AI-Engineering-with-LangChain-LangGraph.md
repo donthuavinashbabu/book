@@ -78,3 +78,55 @@ This cleaned pipeline shows the **core RAG workflow**:
 * https://www.pinecone.io/ 
 * Create index. Give this index name in langchain using key `INDEX_NAME`
 * Key to use langchain to integrate with pinecone - `PINECONE_API_KEY`
+
+---
+# Prompt engineering theory
+* Language Model (LM) in simple words
+	* What should be the next words == Words with highest probability
+* Large Language Model (LLM)
+	* Language Model that is trained on huge amount of data. Then it becomes very good in calculating probability (Discussed above in LM)
+
+## What is prompt
+* Specific input or task given to LLM to generate desired output
+* Different components of prompt - `Instructions`, `Context`, `Input Data`, `Output Indicator`
+
+### Instructions
+* What task it need to perform. Like text summary, translation, classification
+* Instructions set the stage for AI response
+
+### Context
+* Additional information to fine tune Instruction
+* For some tasks context may not be necessary. But for some task context may be very important
+
+### Input Data
+* Information AI model process to complete the task
+
+## Zero shot prompting
+* No examples are given
+* Depend on model pre-training data to generate output
+
+## One shot prompt
+* Model is given 1 example
+* With n example where n == 1
+
+## Few shot prompt
+* Model is given few examples (More than one)
+* This is helpful where LLM has limited data available for given task
+* With n examples where n > 1
+---
+# Chain of Thought COT
+* Google introduced this
+* Aims to improve reasining ability of LLM
+* Helps models to divide multi-step problems to intermediate steps. This makes models to solve complext problems
+
+---
+# ReAct prompting
+* Integrates models with `Reasoning` and `Acting` capabilities
+* This allows `dynamic reasoning`, `external systems interaction` to solve complex task
+* ReAct = COT + Actions
+
+---
+# Prompt engineering quick tips
+* Give clear `context`
+* Clear and non-ambiguous task
+* Iterations
