@@ -130,3 +130,14 @@ This cleaned pipeline shows the **core RAG workflow**:
 * Give clear `context`
 * Clear and non-ambiguous task
 * Iterations
+
+---
+# Agents in production environment
+
+## LLM application development
+* GenAI Applications - Simple LLM applications. Very simple
+* VectorStores (RAG)
+* Agents
+* Agents + VectorStores
+
+## Privacy and data retention
