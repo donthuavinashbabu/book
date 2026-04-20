@@ -217,7 +217,8 @@ AI agents represent a shift from passive AI systems to proactive digital teammat
 
 # Simple design of LangGraph Agent is for loop
 * First introduced ReAct paper
-![picture]() -> Refer pic in phone and draw image and put here
+* Simple design is `for loop` (ReAct)
+![picture](imags/simple-design-for-loop.jpg)
 
 ---
 # Graph and State Machine
