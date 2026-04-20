@@ -140,4 +140,117 @@ This cleaned pipeline shows the **core RAG workflow**:
 * Agents
 * Agents + VectorStores
 
-## Privacy and data retention
+---
+# What is an Agent
+* An AI agent is an autonomous software system that uses Artificial Intelligence—often Large Language Models (LLMs)—to perceive its environment, reason, plan, and take actions to achieve specific goals with minimal human oversight. Unlike chatbots, which simply generate text, agents use tools (APIs, web browsers, software, databases) to complete multi-step tasks. 
+
+## Key Characteristics of AI Agents
+* Autonomy: Agents act on their own, making decisions to achieve a goal rather than waiting for constant, step-by-step human instructions.
+* Goal-Oriented: They are given an objective and determine the best actions to achieve it.
+* Tool Use: They utilize external tools, such as web searches, databases, or APIs, to perform actions, such as sending emails or booking flights.
+* Reasoning and Planning: Agents can break down complex tasks into manageable subtasks, analyze data, and learn from outcomes.
+* Memory: They retain information from past interactions to inform future actions. 
+
+## How AI Agents Work
+* AI agents often use LLMs as their `brain` to understand input and determine actions. They operate in a loop: 
+* Perceive: They read the environment or user input.
+* Think: They reason and create a plan.
+* Act: They execute steps using tools.
+* Adapt: They analyze the outcome and refine their approach. 
+
+## Examples of AI Agents
+* Virtual Assistants: Siri, Alexa, or Google Assistant, which can interact with other apps to set reminders or manage smart home devices.
+* Customer Service Agents: Bots that resolve queries, update records, and process transactions in real time.
+* Data Analysis Agents: Agents that monitor marketing performance, automatically adjusting budgets across platforms.
+* Development Agents: Systems that can automatically write, debug, and publish code. 
+
+## Conclusion
+AI agents represent a shift from passive AI systems to proactive digital teammates that improve efficiency and productivity
+
+---
+# GenAI applications UI UX
+* Called Generatinve UI (or) GenUI
+
+## Tools to build GenUI
+* CopilotKit
+
+## CopilotKIt
+* Open source
+* Build beautiful and natural UI UX
+
+---
+# Confidence in AI Results
+* Real metric to use AI products - `CAIR` - `Confidenct In AI Results`. Measures with `CAIR Ratio` between zero(0) to one(1)
+* CAIR formula = (value of success) / (risk of error * effor to correct)
+* value - benefit to user when AI succeed
+* risk - consequences when AI make an error like is it ok, dangerous like self driving cars
+* correction - effort required to fix AI mistake
+* High CAIR == High usage
+* Low CAIR == failed product
+
+---
+# FOMO
+* Fear Of Missing Out
+
+---
+# Tips for LLM application development
+* Prompt management
+* Monitoring - What is the latency. What is the cost of each request. How much we are paying to LLM vendors? 
+* Debugging
+* Evaluation
+
+## LLM Ops - LLM operations
+* LangSmith
+* Pezzo - Helps in prompt management, tracing, monitoring LLM operations
+
+## Resources for updated information in AI world
+* Follow LangChain blogs
+* Twitter - reading about GenAI, researches, new applications, new use cases, new ways to optimize things
+
+---
+# LangGraph
+* Using langchain we can build RAG applications, Agents etc
+* But we have limitations when we build agents within langchain
+* Langchain does not support cycles. Means we cannot reexecute the chain if something is not correct
+* LangGraph gives freedom to add new chains and complexity to agents
+* We can implement `cycles` in LangGraph. Useful when building very complex agents. This concept is called `Flow Engineering`. Developer develops the flow and integrate LLM, then LLM decides which flow to go next or go to start over again. Cycles gives lot of freedome
+
+# Simple design of LangGraph Agent is for loop
+* First introduced ReAct paper
+![picture]() -> Refer pic in phone and draw image and put here
+
+---
+# Graph and State Machine
+
+## Graph
+* Mathematical object with relationships
+* Consists nodes/verices and edges
+
+## State Machine
+* Model of computation where it consists of states and transition between those states
+* Define different states and rules for tranision between them. Then states can manage complex conditions in software systems
+* State machines are represented as graphs where states as nodes, transition as edges
+
+## LangGrpah
+* Powerful library built on top of LangChain
+* Using langgraph we design our flows using nodes and edges. Build powerful agentic applications
+
+---
+# LangGraph core components
+* Nodes
+* Edges
+* Conditional Edges
+
+## Nodes
+* Python functions
+
+## Edges and conditional edges
+* Connects the nodes within graph execution
+* Conditional edges help to make decisions. wherther to go to node A, node B, this is dynamic and very flexible
+* Built-in langgraph nodes - `__start__`, `__end__`
+* `__start__` entry point for graph execution. `__end__` last node that is going to be executed
+
+## Components of LangGraph
+* Cyclic Graph
+* Human In The Loop
+* Persistence - State management. Help us persist state of the graph
