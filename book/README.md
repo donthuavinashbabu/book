@@ -53,7 +53,7 @@
 * [MongoDB](mongo-db/README.md)
 * [MySQL](mysql/README.md)
 * [Ollama](ollama/README.md)
-* [Oracle](oracle#readme)
+* [Oracle](oracle/README.md)
 * [Postgresql](postgre-sql#readme)
 * [Postman](postman#readme)
 * [Redis](redis#readme)

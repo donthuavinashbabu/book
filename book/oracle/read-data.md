@@ -67,7 +67,7 @@ select count(*), to_char(create_date,  'DD-MON-YY') from MY_TABLE group by to_ch
 ```
 select count(*), to_date(create_date,  'DD-MON-YY') from MY_TABLE group by to_date(create_date,  'DD-MON-YY') order by to_date(create_date,  'DD-MON-YY') desc;
 ```
-------
+
 # Date between
 * Oracle SQL provides several ways to query dates within a specific range. Here are the most common approaches:
 1. BETWEEN operator:
@@ -105,5 +105,3 @@ AND your_date_column < TO_DATE('2024-02-15', 'YYYY-MM-DD');
 * Adjust the date formats in the TO_DATE function according to your actual data format.
 * Consider using bind variables instead of hardcoding dates in your queries for better security and performance.
 * If you're dealing with timestamps (including time components), you might need to adjust the queries accordingly.
-
-------
