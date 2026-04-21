@@ -11,3 +11,4 @@
 * LangChain - LLM - Webscraping- with Tavily
 * Langchain - VectorStore
 * LangChain - RAG example
+* Build email agent - Build Agent to read information from user. Draft professional email. Check name, designation, email address from google sheet. Send email to that email address
