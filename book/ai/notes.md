@@ -3,13 +3,12 @@
 * Word Artificial Intelligence first coined by John McCarthy in 1956
 
 ## Domains of AI
-
 * Machine learning
 * Deep learning / Neural networks
 * Natural Language Processing (NLP)
-* knowledge base
-* Expert systems
+* Knowledge base
 * Robotics
+* Expert systems
 * Fuzzy Logic
 * Application in Computer Vision and Image processing
 
@@ -22,10 +21,12 @@
 * Artificial Super Intelligence
 
 **Artificial Narrow Intelligence**
-* Performs certain tasks. Examples like Alexa, Siri, Self driving cars etc
+* Performs certain tasks
+* Examples - Alexa, Siri, Self driving cars etc
 
 **Artificial General Intelligence**
 * Strong AI. Machines posses the ability to think and take decisions just like human beings
+* Example: IBM Deep Blue Chess Game
 
 **Artificial Super Intelligence**
 * when capability of computers surpass human beings
@@ -97,7 +98,7 @@
 ## LLM - Large Language Model
 * Model is an Algorithm with pre-trained dataset
 * Generative AI (or) GenAI - Software which interacts using native language with LLMs which is pre-trained with existing datasets and can generate artifacts out of existing trained datasets based on it's neural network
-* LLM has Foundational Model (which we train using datasets). It has modules for `text`, `image`, `video processing` for individual use cases
+* LLM has Foundational Model (which we train using datasets). It has modules for `text`, `image`, `audio`, `video processing` for individual use cases
 * GPT - Generative Pre-training Transformer
 ---
 ## Common LLMs:
@@ -132,7 +133,8 @@
 
 ---
 ## SLM - Small Language Model
-* Compact GenAI model designed for understanding and processing human language with fewer parameters than larger models
+* Compact LLM with fewer parameters than larger models
+* GenAI model designed for understanding and processing human language
 
 ### Some SLMs
 * Ollama - ollama.com
@@ -151,11 +153,8 @@
 * `ollama run [model-name]` - run specific model
 
 ---
+# Huggingface
 Refer - https://huggingface.co/
-
----
-## Artificial General Intelligence - AGI - Strong AI
-* IBM Deep Blue Chess Game
 
 ---
 # Tools to work with AI

@@ -4,9 +4,9 @@
 * Artificial Super Intelligence - ASI
 
 ## Artificial Narrow Intelligence - ANI - Weak AI
-* Simple tasks like voice cloning, self driving cars, recommendation engines
+* Simple tasks 
 * limitations - can't learn beyond specific task, can't adapt to new task
-* Ex: Siri, Alexa
+* Ex: Alexa, Siri, self driving cars, voice cloning, recommendation engines
 
 ## AI Ethics Organization:
 * MIRI
@@ -18,36 +18,41 @@
 * TPU - Tensor Processing Unit (Invented by Google)
 
 ---------------------------------------
-# Supervised and Unsupervised Machine Learning and Reinforcement Learning
+# Machine Learning
+* Supervised
+* Unsupervised
+* Reinforcement Learning
 
 ## Supervised Learning
-* Involved using labeled data. Meaning each piece of data comes with desired outcome or answer
+* Involved using `labeled data`
+* Means each piece of data comes with desired outcome or answer
 
-## Unsupervised Machine
-* Involved using unlabeled data. Aims to discover underlying patterns or groups. Applicable in tasks like customer segmentation and anamoly detection
+## Unsupervised Learning
+* Involved using `unlabeled data`
+* Aims to discover underlying patterns or groups. Applicable in tasks like customer segmentation and anamoly detection
 
 ---
 # Open source machine learning libraries
-* PyTorch
+* TensarFlow - Open source AI/ML library platform created by Google
 * ScikitLearn
-* TensarFlow
+* PyTorch
 
 ---
-# NER - Named Entity Recognition
-* Sub task of information extraction in NLP that seeks to locate and classify named entities in text into pre-defined categories
-
----
-# TensarFlow
-* Open source AI/ML library platform created by Google
+# NER
+* Named Entity Recognition
+* Sub task of information extraction in NLP
+* Locate and classify named entities in text into pre-defined categories
 
 ---
 # AutoML and Transfer Learning
+
 ## AutoML
 * Process that finds and tests multiple algorithms based on our data. It tries to leverage other AI algorithms to automatically select what actually works best based on criteria we set. This is called automatic model selection.
 
 ## Hyper parameters 
-* Controls learning process and behavior of our machine learning algorithms. 
-* AutoML optimizes these parameters. This process is called `hyper parameter optimization`. AutoML can search for optimal condition automatically for given machine learning model improves performance and reducing time and effor required for manual training. 
+* Controls learning process and behavior of our machine learning algorithms
+* AutoML optimizes these parameters. This process is called `hyper parameter optimization`
+* AutoML can search for optimal condition automatically for given machine learning model. Improves performance, reduces time and effort required for manual training 
 
 ## Transfer Learning
 
@@ -57,14 +62,14 @@
 * Privacy & security
 * Bias & Fairness
 * Explainability & Transperency
-* generalization & adaptbility
+* generalization & adaptability
 * computational resources
 * regulation & governance
 * human-ai collaboration
 * long-term consequences
 
 ---
-# Job positions in data world:
+# Job positions in data world
 * Database Admin (DBA)
 * Data Engineer
 * Data Analyst
@@ -101,7 +106,7 @@
 * Give clear and consise instructions to LLMs like ChatGPT
 
 ## Role based (or) System prompting
-* Ask the model to assume a specific role or persona to generate responses that align with that perspective.
+* Ask the model to assume a specific role or persona to generate responses that align with that persona
 
 ## Output formatting
 * Guide the model to produce output in specific format, such as JSON, tables, or bullet points, Excel, coding
@@ -111,7 +116,10 @@
 * This approach can be effective for tasks that the model has been trained on and can understand without additional guidance
 
 ## Few shot prompting
-* Provide a few examples of desired output along with the prompt to help the model understand the expected format and style of the response. This is particularly useful for tasks that require specific formatting or when the model needs to learn from examples to generate accurate responses.
+* Provide prompt with few examples with desired output
+* Help the model understand the expected format and style of the response
+* This is particularly useful for tasks that require specific formatting or when the model needs to learn from examples to generate accurate responses
 
 ## Chain of Thought prompting:
-* Encourage the model to generate a series of intermediate reasoning steps that lead to the final answer. This can help improve the model's performance on complex tasks that require multi-step reasoning.
+* Encourage the model to generate a series of intermediate reasoning steps that lead to the final answer
+* This can help improve the model's performance on complex tasks that require multi-step reasoning
