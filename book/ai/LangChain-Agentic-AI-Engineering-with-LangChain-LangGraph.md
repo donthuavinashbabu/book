@@ -20,8 +20,8 @@
 
 ---
 # What is an agent?
-* Software system that use LLM as reasing engine to decide what actions to take and execute those actions
-* In chain - sequence of steps are hard coded. In agents - Dynamically determine which tools or steps need to be taken to solve specific task. LLM in agent decides what to do next
+* Software system that use LLM as reasoning engine to decide what actions to take and execute those actions
+* In chain - sequence of steps are hard coded. In agents - Determine dynamically which tools or steps need to be taken to solve specific task. LLM in agent decides what to do next
 
 ---
 # RAG Embeddings Vector Databases and Retrieval
@@ -40,7 +40,7 @@
 * Split original document into smaller chunks (This chunking process is naive and complex)
 * Instead of sending entire book, send only specific paragraph or some more
 * Drawback
-	* Preproecssing to chunk large document. How do we chunk?
+	* Pre-processing large document to chunks. How do we chunk?
 	* How to identify relevant chunk for data?
 	
 ## Introduction to Vector Databases
@@ -116,8 +116,8 @@ This cleaned pipeline shows the **core RAG workflow**:
 ---
 # Chain of Thought COT
 * Google introduced this
-* Aims to improve reasining ability of LLM
-* Helps models to divide multi-step problems to intermediate steps. This makes models to solve complext problems
+* Aims to improve reasoning ability of LLM
+* Helps models to divide multi-step problems to intermediate steps. This makes models to solve complex problems
 
 ---
 # ReAct prompting
@@ -180,7 +180,8 @@ AI agents represent a shift from passive AI systems to proactive digital teammat
 
 ---
 # Confidence in AI Results
-* Real metric to use AI products - `CAIR` - `Confidenct In AI Results`. Measures with `CAIR Ratio` between zero(0) to one(1)
+* Real metric to use AI products - `CAIR` - `Confidence In AI Results`
+* Measures with `CAIR Ratio` between zero(0) to one(1)
 * CAIR formula = (value of success) / (risk of error * effor to correct)
 * value - benefit to user when AI succeed
 * risk - consequences when AI make an error like is it ok, dangerous like self driving cars
@@ -218,7 +219,7 @@ AI agents represent a shift from passive AI systems to proactive digital teammat
 # Simple design of LangGraph Agent is for loop
 * First introduced ReAct paper
 * Simple design is `for loop` (ReAct)
-![picture](imags/simple-design-for-loop.jpg)
+![picture](imgs/simple-design-for-loop.jpg)
 
 ---
 # Graph and State Machine

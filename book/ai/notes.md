@@ -51,14 +51,183 @@
 * Sub types - Supervised, Unsupervised, Reinforcement
 
 ---
-
 **Deep learning / Neural networks**
 
 * Process of implementing neural networks on high dimensional data to gain insights and form solutions
 * Logic behind **-** face recognition algorithms (in facebook), Self driving cars, Virtual assistance like Alexa, Siri etc
 
 ---
+# Machine Learning Types: Supervised, Unsupervised & Reinforcement Learning
 
+## 1. Supervised Machine Learning
+
+### Definition
+Supervised Learning is a type of machine learning where the model is trained using **labeled data**.  
+Each input data point has a corresponding **correct output (label)**.
+
+> The model learns by comparing its predictions with known answers.
+
+### How It Works
+1. Provide input data with labels
+2. Model makes predictions
+3. Error is calculated
+4. Model updates itself to reduce error
+
+### Types
+- **Classification** – Predicts a category
+- **Regression** – Predicts a continuous value
+
+### Examples
+- Email spam detection (Spam / Not Spam)
+- House price prediction
+- Disease diagnosis
+
+### Common Algorithms
+- Linear Regression  
+- Logistic Regression  
+- Decision Trees  
+- Random Forest  
+- Support Vector Machines (SVM)  
+- Neural Networks  
+
+### Key Characteristics
+- ✅ Requires labeled data
+- ✅ High accuracy
+- ❌ Labeling data is expensive
+
+## 2. Unsupervised Machine Learning
+
+### Definition
+Unsupervised Learning works with **unlabeled data**.  
+The system identifies **hidden patterns or structures** without any predefined output.
+
+> The model learns by discovering relationships in the data.
+
+### How It Works
+1. Input data without labels
+2. Analyze similarities and distributions
+3. Identify patterns or groupings
+
+### Main Tasks
+- **Clustering**
+- **Association rule mining**
+- **Dimensionality reduction**
+
+### Examples
+- Customer segmentation
+- Market basket analysis
+- Image compression
+
+### Common Algorithms
+- K-Means Clustering  
+- Hierarchical Clustering  
+- DBSCAN  
+- Apriori Algorithm  
+- Principal Component Analysis (PCA)  
+
+### Key Characteristics
+- ✅ No labels required
+- ✅ Useful for data exploration
+- ❌ Results may be harder to interpret
+
+## 3. Reinforcement Learning
+
+### Definition
+Reinforcement Learning (RL) is a learning method where an **agent** learns by interacting with an **environment**, receiving **rewards or penalties**.
+
+> Learning occurs through trial and error.
+
+### Key Components
+- **Agent** – Learner
+- **Environment** – World where agent operates
+- **Action** – What the agent does
+- **Reward** – Feedback
+- **Policy** – Strategy to choose actions
+
+### How It Works
+1. Agent takes an action
+2. Environment responds
+3. Agent receives reward or penalty
+4. Agent updates its policy
+
+### Examples
+- Game playing (Chess, Go)
+- Robotics
+- Traffic signal optimization
+- Recommendation systems
+
+### Common Algorithms
+- Q-Learning  
+- SARSA  
+- Deep Q Networks (DQN)  
+- Policy Gradient Methods  
+- PPO (Proximal Policy Optimization)
+
+### Key Characteristics
+- ✅ Learns optimal decision-making
+- ✅ No labeled data needed
+- ❌ Computationally expensive
+
+## 4. Comparison of Learning Types
+
+| Feature              | Supervised Learning | Unsupervised Learning | Reinforcement Learning |
+|---------------------|-------------------|----------------------|-----------------------|
+| Data Type            | Labeled            | Unlabeled             | Reward-based          |
+| Learning Style       | Learn from examples| Discover patterns     | Trial & Error         |
+| Output               | Known predictions  | Hidden structures     | Optimal actions       |
+| Human Supervision    | High               | Low                   | Indirect              |
+| Typical Use Cases    | Prediction         | Exploration           | Strategy/Control      |
+
+## 5. Comparison with Deep Learning
+
+### What is Deep Learning?
+Deep Learning is a **subset of Machine Learning** that uses **multi-layer artificial neural networks** to model complex patterns.
+
+> Deep Learning can be **Supervised, Unsupervised, or Reinforcement-based**.
+
+### Machine Learning vs Deep Learning
+
+| Aspect | Machine Learning | Deep Learning |
+|------|-----------------|--------------|
+| Definition | Algorithms that learn from data | Neural networks with many layers |
+| Feature Engineering | Manual | Automatic |
+| Data Requirement | Works with small to medium data | Requires large datasets |
+| Computational Power | Moderate | Very High (GPUs/TPUs) |
+| Accuracy | Good | Excellent for complex tasks |
+| Interpretability | Easier | Harder (Black-box) |
+
+### Examples of Deep Learning Applications
+- Image recognition
+- Speech recognition
+- Natural Language Processing (NLP)
+- Autonomous vehicles
+- Medical imaging
+
+### Relationship Summary
+- Machine Learning ⟶ Broad field
+- Deep Learning ⟶ Specialized approach using neural networks
+- Reinforcement Learning + Deep Learning ⟶ **Deep Reinforcement Learning**
+
+## 6. When to Use What?
+
+- ✅ **Supervised Learning**  
+  When labeled data is available and prediction accuracy is required.
+
+- ✅ **Unsupervised Learning**  
+  When discovering patterns or insights in raw data.
+
+- ✅ **Reinforcement Learning**  
+  When decisions impact future outcomes.
+
+- ✅ **Deep Learning**  
+  When dealing with large datasets, images, audio, or language.
+
+## 7. Final Takeaway
+> **Deep Learning is not a replacement for Machine Learning — it is a powerful extension of it.**  
+> Choose the approach based on **problem type, data availability, and resources**.
+
+
+---
 **Natural Language Processing (NLP)**
 
 * Drawing insights from natural human language in order to communicate with machines and grow businesses

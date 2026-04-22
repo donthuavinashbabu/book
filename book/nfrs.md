@@ -1,5 +1,10 @@
 # NFRs - Non Functional Requirements
-------
+---
+# Basic Lities
+* Availability
+* Scalability
+* Durability
+---
 # ✅ Comprehensive Non-Functional Requirements (NFRs) List
 
 ## 🔐 Security
