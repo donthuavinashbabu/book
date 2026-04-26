@@ -3,7 +3,9 @@
 ```
 pip --version
 python.exe -m pip install --upgrade pip
+pip install chromadb -q
 pip install sentence-transformers -q
+
 uv add chromadb
 uv add sentense-transformers
 uv sync

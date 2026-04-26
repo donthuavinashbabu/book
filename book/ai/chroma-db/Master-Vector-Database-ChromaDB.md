@@ -32,5 +32,5 @@
 
 ---
 # ChromaDB
-* AI native opem source embedding database
-* built in capability of embeddings
+* AI native open source embedding database
+* Built in capability of embeddings
