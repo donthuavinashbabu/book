@@ -1,4 +1,4 @@
-# Artificial Intelligence - AI
+# Artificial Intelligence Machine Learning
 ---
 # Notes
 * [Notes](notes.md)
@@ -8,6 +8,10 @@
 * [Udemy - Intro to AI Agents and Agentic AI](Intro-to-AI-Agents-and-Agentic-AI.md)
 * [Udemy - LangChain- Agentic AI Engineering with LangChain & LangGraph](LangChain-Agentic-AI-Engineering-with-LangChain-LangGraph.md)
 
+---
+# ChromaDB
+* [Udemy - Master Vector Database - ChromaDB](chroma-db/Master-Vector-Database-ChromaDB.md)
+* [Chroma db practice](chroma-db/chromadb-practice)
 ---
 # Examples and POCs
 * [Examples and POCs](examples-pocs.md)
