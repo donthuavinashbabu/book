@@ -8,11 +8,11 @@
 * [Udemy - Intro to AI Agents and Agentic AI](Intro-to-AI-Agents-and-Agentic-AI.md)
 * [Udemy - LangChain- Agentic AI Engineering with LangChain & LangGraph](LangChain-Agentic-AI-Engineering-with-LangChain-LangGraph.md)
 
+# AI ML Examples and POCs
+* [Examples and POCs](examples-pocs.md)
 ---
 # ChromaDB
 * [Udemy - Master Vector Database - ChromaDB](chroma-db/Master-Vector-Database-ChromaDB.md)
+
+# ChromaDB Practice
 * [Chroma db practice](chroma-db/chromadb-practice)
----
-# Examples and POCs
-* [Examples and POCs](examples-pocs.md)
-* [Chroma DB](chroma-db)
