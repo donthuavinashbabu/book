@@ -9,10 +9,15 @@ def main():
     heartbeat = client.heartbeat()
     print("heartbeat: ", heartbeat)
     
+    # create new collection
     print("Creating collections")
     collection1 = client.create_collection("collection1")
     collection2 = client.create_collection("collection2")
     print("Collections created")
+
+    # Get any one collection
+    collection11 = client.get_collection("collection1")
+    print("collection11: ", collection11)
 
     # get collection if exists or create new if doesn't exist
     collection3 = client.get_or_create_collection("collection3");
@@ -25,12 +30,10 @@ def main():
     print("Deleting collection")
     client.delete_collection("collection3")
     print("Deleted collection")
+
+    # collection list
     collectionList = client.list_collections()
     print("Collections list: ", collectionList)
-
-    # Get any one collection
-    collection11 = client.get_collection("collection1")
-    print("collection11: ", collection11)
 
     # Add embedding and documents
     print("Adding documents embeddings metadata data to collection ", collection1)
