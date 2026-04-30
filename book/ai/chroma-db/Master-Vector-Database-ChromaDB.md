@@ -34,3 +34,17 @@
 # ChromaDB
 * AI native open source embedding database
 * Built in capability of embeddings
+
+---
+## distance function
+* ChromaDB `distance` function determines `distance` or `difference` between two items in the collection
+* This is important in performing operations like querying similar items
+* Default distance function in chromadb is `L2 - Euclidean distance`. It is common measure of distance
+* Get or create collection and change the distance function
+```
+# changing distance calculation metric to cosine similarity
+collection4 = client.get_or_create_collection(
+	name="collection4", metadata={"hnsw:space": "cosine"}
+)
+```
+* Cosine measures similarity between two vectors by taking the `Cosine angles` between them. Useful in many domains like text analysis where high dimensionality and sparsity are common

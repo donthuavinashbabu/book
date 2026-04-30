@@ -1,0 +1,33 @@
+<server description="Baeldung Open Liberty server">
+    <featureManager>
+        <feature>mpHealth-2.0</feature>
+        <feature>servlet-4.0</feature> <!-- To use servlets in the app -->
+        <feature>jaxrs-2.1</feature> <!-- REST API -->
+
+        <!-- persistence -->
+        <feature>jpa-2.2</feature>
+
+        <!-- jsonp-1.1 feature provides the Java API for JSON Processing -->
+        <feature>jsonp-1.1</feature>
+
+        <!-- cdi-2.0 feature handles the scopes and dependency injection -->
+        <feature>cdi-2.0</feature>
+
+        <feature>jsonb-1.0</feature>
+    </featureManager>
+
+    <webApplication location="open-libery-1-1.war" contextRoot="/" />
+    <httpEndpoint host="*" httpPort="${default.http.port}"
+                  httpsPort="${default.https.port}" id="defaultHttpEndpoint" />
+
+    <library id="derbyJDBCLib">
+        <file name="${derby.jdbc.path}"/>
+    </library>
+
+    <!-- jndiName has the same reference to the jta-data-source tag in the persistence.xml -->
+    <dataSource id="jpadatasource" jndiName="jdbc/jpadatasource">
+        <jdbcDriver libraryRef="derbyJDBCLib" />
+        <properties.derby.embedded databaseName="libertyDB" createDatabase="create" />
+    </dataSource>
+
+</server>

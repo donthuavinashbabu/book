@@ -71,7 +71,7 @@ They prioritize:
 - LangGraph
 
 ### Databases
-- FAISS
+- FAISS - FAISS stands for Facebook AI Similarity Search. Developed by Meta (formerly Facebook) AI Research, it is an open-source library designed for efficient similarity search and clustering of dense vectors, commonly used in recommendation systems, image retrieval, and NLP tasks
 - Pinecone
 
 ### Cloud

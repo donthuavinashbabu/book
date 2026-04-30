@@ -54,7 +54,7 @@
 **Deep learning / Neural networks**
 
 * Process of implementing neural networks on high dimensional data to gain insights and form solutions
-* Logic behind **-** face recognition algorithms (in facebook), Self driving cars, Virtual assistance like Alexa, Siri etc
+* Logic behind - Alexa, Siri, Self driving cars, face recognition algorithms (in facebook) etc
 
 ---
 # Machine Learning Types: Supervised, Unsupervised & Reinforcement Learning

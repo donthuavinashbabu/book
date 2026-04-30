@@ -8,3 +8,7 @@ uv init example
 uv lock
 uv sync
 ```
+* To see any dependency version using uv:
+```
+uv pip show langchain
+```
