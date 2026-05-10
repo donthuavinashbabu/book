@@ -57,7 +57,6 @@
 * [Oracle](oracle/README.md)
 * [Postgresql](postgre-sql/README.md)
 * [Postman](postman/README.md)
-* [Python](python/README.md)
 * [Redis](redis/README.md)
 * [REST API](rest-api/README.md)
 * [Solr](solr/README.md)
