@@ -11,3 +11,6 @@ ollama run [model-name]
 ---------------------------------
 Ollama embeddings model
 ollama pull nomic-embed-text
+---------------------------------
+Remove models
+ollama rm nomic-embed-text model2 model3
