@@ -67,5 +67,6 @@
 * [SQL](sql/README.md)
 * [SQL Server](sql-server/README.md)
 * [System Design](system-design/README.md)
+* [Testing](testing/README.md)
 * [uv Python package and project manager](uv/README.md)
 * [Windows](windows/README.md)
