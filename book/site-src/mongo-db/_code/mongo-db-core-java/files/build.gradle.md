@@ -1,0 +1,17 @@
+---
+hide:
+  - navigation
+---
+
+# build.gradle
+
+Source: `mongo-db/mongo-db-core-java/build.gradle`
+
+```gradle
+dependencies{
+    compile "org.slf4j:slf4j-api:1.7.5"
+    compile "org.slf4j:slf4j-log4j12:1.7.5"
+
+    compile "org.mongodb:mongo-java-driver:3.4.2"
+}
+```

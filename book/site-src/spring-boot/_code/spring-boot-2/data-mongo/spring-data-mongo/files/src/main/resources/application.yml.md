@@ -1,0 +1,22 @@
+---
+hide:
+  - navigation
+---
+
+# application.yml
+
+Source: `spring-boot/spring-boot-2/data-mongo/spring-data-mongo/src/main/resources/application.yml`
+
+```yaml
+server.port: 9000
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: database1
+
+# log mongo queries
+logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+```

@@ -1,5 +1,15 @@
 # Welcome to Book
 ------
+# Searchable Docs Website
+* Install docs dependencies: `python -m pip install -r requirements-docs.txt`
+* Generate docs source tree: `py scripts/build_docs_index.py`
+* Run local site: `mkdocs serve`
+* Build static site: `mkdocs build`
+
+The generated content is written to `site-src/`, and the static website output is written to `site/`.
+
+Docs include only `.md` and `.txt` in the main navigation. Each topic module index includes links to code projects; each code project page lists all source files with an in-page search box.
+------
 # General Java Errors and Solutions
 * [Unable to make field private static final jdk.internal.misc.Unsafe java.util.Properties.UNSAFE accessible: module java.base does not opens java.util to unnamed module](module-does-not-open.md)
 ------

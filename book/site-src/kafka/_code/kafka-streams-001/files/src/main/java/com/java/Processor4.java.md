@@ -1,0 +1,32 @@
+---
+hide:
+  - navigation
+---
+
+# Processor4.java
+
+Source: `kafka/kafka-streams-001/src/main/java/com/java/Processor4.java`
+
+```java
+package com.java;
+
+import lombok.extern.slf4j.Slf4j;
+import org.apache.kafka.streams.processor.AbstractProcessor;
+import org.apache.kafka.streams.processor.To;
+
+@Slf4j
+public class Processor4 extends AbstractProcessor<String, String> {
+
+    private final String nextOnTopology;
+    public Processor4(String nextOnTopology) {
+        this.nextOnTopology = nextOnTopology;
+    }
+
+    @Override
+    public void process(String key, String value) {
+        log.info("key={}, value={}", key, value);
+        context.forward(key, value, To.child(nextOnTopology));
+    }
+}
+
+```

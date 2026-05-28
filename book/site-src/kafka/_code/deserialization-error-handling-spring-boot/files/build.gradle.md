@@ -1,0 +1,44 @@
+---
+hide:
+  - navigation
+---
+
+# build.gradle
+
+Source: `kafka/deserialization-error-handling-spring-boot/build.gradle`
+
+```gradle
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = 'http://repo.maven.apache.org/maven2'
+    }
+}
+
+group = 'com.date.api.practice'
+description = 'date-api-practice'
+version = '1.0'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+dependencies {
+    implementation 'junit:junit:4.12'
+    implementation 'org.slf4j:slf4j-api:1.7.5'
+    implementation 'org.slf4j:slf4j-log4j12:1.7.5'
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
+}
+```

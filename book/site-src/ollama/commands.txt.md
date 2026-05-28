@@ -1,0 +1,22 @@
+# commands.txt
+
+Source: `ollama/commands.txt`
+
+```text
+Commands
+---------------------------------
+shows list of commands to use:
+ollama help
+---------------------------------
+list downloaded models:
+ollama list
+---------------------------------
+run specific model:
+ollama run [model-name]
+---------------------------------
+Ollama embeddings model
+ollama pull nomic-embed-text
+---------------------------------
+Remove models
+ollama rm nomic-embed-text model2 model3
+```

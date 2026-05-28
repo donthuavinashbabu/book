@@ -1,0 +1,44 @@
+---
+hide:
+  - navigation
+---
+
+# LongStreams.java
+
+Source: `core-java/core-java/src/main/java/com/practice/streams/LongStreams.java`
+
+```java
+package com.practice.streams;
+
+import java.util.Arrays;
+import java.util.function.LongConsumer;
+import java.util.stream.LongStream;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
+
+@Slf4j
+public class LongStreams {
+
+	@Test
+	public void rangeEndExclusive() {
+		LongStream longStream = LongStream.range(0, 11);
+		LongConsumer longConsumer = (long l) -> log.info("l={}", l);
+		longStream.forEach(longConsumer);
+	}
+
+	@Test
+	public void rangeEndInclusive() {
+		LongStream longStream = LongStream.rangeClosed(0, 11);
+		LongConsumer longConsumer = (long l) -> log.info("l={}", l);
+		longStream.forEach(longConsumer);
+	}
+
+	@Test
+	public void longStreamToArray() {
+		LongStream longStream = LongStream.range(0, 11);
+		long[] intArray = longStream.toArray();
+		log.info("intArray={}", Arrays.toString(intArray));
+	}
+}
+
+```
