@@ -1,1 +1,0 @@
-# MongoDB with Core Java Example

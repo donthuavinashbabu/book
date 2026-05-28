@@ -1,2 +1,0 @@
-# Splunk
-* [Notes](notes.md)
