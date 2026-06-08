@@ -32,5 +32,5 @@ for put() and get() operations using hashing.
  ✅ Not thread-safe
 
 📌TL;DR
-In simple terms, HashMap converts keys into optimized memory locations (buckets) for fast and scalable data retrieval.
+In simple terms, HashMap converts keys into optimized memory locations (buckets) for fast and scalable data retrieval.\
 ![picture](images/hash-map-internals.jpeg)
