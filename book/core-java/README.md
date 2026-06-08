@@ -40,6 +40,7 @@
 * [Arrays](core-java/src/main/java/com/practice/java/util/ArraysTest.java)
 * [Collections](core-java/src/main/java/com/practice/java/util/CollectionsTest.java)
 * [HashMap](core-java/src/main/java/com/practice/java/util/HashMapTest.java)
+* [HashMap Internals](hash-map-internals.md)
 * [HashSet](core-java/src/main/java/com/practice/java/util/HashSetTest.java)
 * [LinkedHashMap](core-java/src/main/java/com/practice/java/util/LinkedHashMapTest.java)
 * [LinkedHashSetTest](core-java/src/main/java/com/practice/java/util/LinkedHashSetTest.java)
