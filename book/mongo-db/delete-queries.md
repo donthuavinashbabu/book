@@ -47,3 +47,7 @@ db.emp.update({}, {$unset: {"hno": 1}}, {"multi": true} )
 db.emp.updateMany({}, {$unset: {hno: 1}} )
 db.emp.update({}, {$unset: {hno: 1}}, false, true ) //The last true is for multiple documents update
 ```
+* Delete all collections from db
+```
+db.getCollectionNames().forEach(function(c){ db.getCollection(c).drop(); })
+```
