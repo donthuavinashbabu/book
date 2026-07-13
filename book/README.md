@@ -80,3 +80,4 @@ Docs include only `.md` and `.txt` in the main navigation. Each topic module ind
 * [Testing](testing/README.md)
 * [uv Python package and project manager](uv/README.md)
 * [Windows](windows/README.md)
+* [Yaml](yaml/README.md)
