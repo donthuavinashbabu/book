@@ -30,6 +30,7 @@ Docs include only `.md` and `.txt` in the main navigation. Each topic module ind
 * [SDE Road Map](https://drive.google.com/file/d/1F9k7t9pu9Toj48l3aXcmiKA7Q90qP7nl/view?usp=sharing)
 * [Java Developer Essential Skills](java-essentials.txt)
 * [Product Development Essentials](product-development-points.txt)
+* [Edge case vs Corner case](edge-vs-corner-case.md)
 ------
 # New Projects
 * Any New project development NFRs - [NFRs](nfrs.md)
