@@ -1,3 +1,3 @@
 # Welcome to Book
 * [Table of Contents](book/README.md)
-* [HTML documentation site](docs/index.html)
+* <a href="https://donthuavinashbabu.github.io/book/" target="_blank" rel="noopener">Open documentation</a>

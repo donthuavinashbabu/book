@@ -1,5 +1,8 @@
 # Welcome to Book
 ------
+# Documentation
+* <a href="https://donthuavinashbabu.github.io/book/" target="_blank" rel="noopener">Open documentation</a> — Book docs site (opens in a new browser tab)
+------
 # Searchable Docs Website
 * Install docs dependencies: `python -m pip install -r requirements-docs.txt`
 * Generate docs source tree: `py scripts/build_docs_index.py`

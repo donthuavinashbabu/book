@@ -1,7 +1,7 @@
 # Apache commons-lang3 Table of Contents
 ------
 ### Documentation site
-* [HTML docs (open in browser)](../../docs/apache-commons-lang3/index.html) — topic pages in the Book docs site
+* <a href="https://donthuavinashbabu.github.io/book/apache-commons-lang3/" target="_blank" rel="noopener">Open documentation</a> — Apache Commons Lang3 topic (opens in a new browser tab)
 ------
 ### POCs and Examples
 * [commons lang3 examples](commons-lang3#readme)
