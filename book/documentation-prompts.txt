@@ -1,0 +1,6 @@
+- Go through apache-commons-lang3 folder and create html based documentation for it
+- Give left menu and right side page to see the content
+- Give expand/collapse for sub menu in left menu
+- Go through code exampels also and generate java style documentation to naviage through code examples in the documentation
+- create this document in docs folder (repo root /docs)
+- I want to open this page from gihub in web browser
