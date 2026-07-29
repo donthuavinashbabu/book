@@ -97,6 +97,33 @@
       ],
     },
     {
+      id: "cucumber",
+      label: "Cucumber",
+      children: [
+        { href: "cucumber/index.html", label: "Introduction", id: "cuc-intro" },
+        { href: "cucumber/project-structure.html", label: "Project structure", id: "cuc-structure" },
+        { href: "cucumber/setup.html", label: "Maven setup", id: "cuc-setup" },
+        { href: "cucumber/feature.html", label: "Feature: calculator", id: "cuc-feature" },
+        {
+          href: "cucumber/step-defs.html",
+          label: "CalculatorStepDef",
+          id: "cuc-steps",
+          children: [
+            { href: "cucumber/step-defs.html#given", label: "given()", id: "cuc-given" },
+            { href: "cucumber/step-defs.html#when", label: "when()", id: "cuc-when" },
+            { href: "cucumber/step-defs.html#then", label: "then()", id: "cuc-then" },
+          ],
+        },
+        {
+          href: "cucumber/calculator.html",
+          label: "Calculator",
+          id: "cuc-calc",
+          children: [{ href: "cucumber/calculator.html#sum", label: "sum()", id: "cuc-sum" }],
+        },
+        { href: "cucumber/runner.html", label: "RunnerTest", id: "cuc-runner" },
+      ],
+    },
+    {
       id: "apache-commons-lang3",
       label: "Apache Commons Lang3",
       children: [

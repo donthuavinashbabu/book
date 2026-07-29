@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator — Cucumber</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> /
+          <a href="index.html">Cucumber</a> / Calculator
+        </div>
+
+        <h1>Class Calculator</h1>
+        <div class="meta">
+          <span class="badge">public class</span>
+          <span><code>com.service.Calculator</code></span>
+        </div>
+
+        <div class="signature-block">public class Calculator</div>
+        <p>Simple service under test used by the Cucumber scenario.</p>
+
+        <div class="member" id="sum">
+          <div class="member-title">
+            <span class="badge">public</span>
+            <span class="name">sum</span>
+          </div>
+          <div class="signature-block">public int sum(int a, int b)</div>
+          <p>Returns <code>a + b</code>.</p>
+        </div>
+
+        <h2>Full source</h2>
+        <div class="pre-wrap">
+<pre>package com.service;
+
+public class Calculator {
+
+    public int sum(int a, int b) {
+        return a + b;
+    }
+}</pre>
+        </div>
+
+        <div class="footer-nav">
+          <a href="step-defs.html">← Step definitions</a>
+          <a href="runner.html">Runner →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

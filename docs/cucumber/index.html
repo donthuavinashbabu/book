@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cucumber — Book docs</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> / Cucumber
+        </div>
+        <h1>Cucumber</h1>
+        <p class="lead">
+          Topic docs for the <code>cucumber</code> Maven example — Gherkin feature, step definitions,
+          JUnit Platform runner, and a simple <code>Calculator</code> service.
+        </p>
+
+        <div class="meta">
+          <span class="badge">Cucumber 7.17.0</span>
+          <span class="badge">Java 17</span>
+          <span class="badge">JUnit Platform</span>
+        </div>
+
+        <h2>What this topic covers</h2>
+        <p>
+          Hands-on BDD with
+          <a href="https://cucumber.io/" target="_blank" rel="noopener">Cucumber</a>:
+          a calculator feature scenario wired to Java step defs and run via <code>RunnerTest</code>.
+        </p>
+
+        <div class="card-grid">
+          <a class="card" href="project-structure.html">
+            <h3>Project structure</h3>
+            <p>Source layout, packages, and where features live.</p>
+          </a>
+          <a class="card" href="setup.html">
+            <h3>Maven setup</h3>
+            <p>Dependencies and how to run the Cucumber suite.</p>
+          </a>
+          <a class="card" href="feature.html">
+            <h3>Feature file</h3>
+            <p>Gherkin scenario for summing two numbers.</p>
+          </a>
+          <a class="card" href="runner.html">
+            <h3>Runner</h3>
+            <p>JUnit Platform suite configuration for Cucumber.</p>
+          </a>
+        </div>
+
+        <h2>Quick start</h2>
+        <div class="pre-wrap">
+<pre>cd book/cucumber/cucumber
+mvn test</pre>
+        </div>
+
+        <h2>Scenario at a glance</h2>
+        <div class="pre-wrap">
+<pre>@calculator
+Scenario: sum of 2 numbers
+  Given two number
+  When Add two numbers
+  Then Get another number</pre>
+        </div>
+        <p>
+          Steps are implemented in
+          <a href="step-defs.html"><code>CalculatorStepDef</code></a>
+          and call
+          <a href="calculator.html"><code>Calculator.sum(10, 20)</code></a>.
+        </p>
+
+        <div class="footer-nav">
+          <a href="../overview/topics.html">← Topics</a>
+          <a href="project-structure.html">Project structure →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

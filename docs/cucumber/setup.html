@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maven setup — Cucumber</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> /
+          <a href="index.html">Cucumber</a> / Maven setup
+        </div>
+        <h1>Maven setup</h1>
+        <p class="lead">Key dependencies and how to run the Cucumber calculator example.</p>
+
+        <h2>Project coordinates</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Property</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>groupId</td><td><code>com.book</code></td></tr>
+              <tr><td>artifactId</td><td><code>cucumber</code></td></tr>
+              <tr><td>version</td><td><code>1.0.0</code></td></tr>
+              <tr><td>Java release</td><td><code>17</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Key dependencies</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Library</th><th>Version</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>cucumber-java</td><td>7.17.0</td><td>Step definition annotations</td></tr>
+              <tr><td>cucumber-junit-platform-engine</td><td>7.17.0</td><td>Run features on JUnit Platform</td></tr>
+              <tr><td>junit-platform-suite-api</td><td>1.13.4</td><td><code>@Suite</code> runner</td></tr>
+              <tr><td>slf4j + log4j</td><td>2.0.13</td><td>Logging in steps / hooks</td></tr>
+              <tr><td>lombok</td><td>1.18.34</td><td><code>@Slf4j</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Run the example</h2>
+        <div class="pre-wrap">
+<pre>cd book/cucumber/cucumber
+mvn test</pre>
+        </div>
+        <p>
+          HTML report is written to <code>target/cucumber-report.html</code>
+          (configured on <a href="runner.html">RunnerTest</a>).
+        </p>
+
+        <div class="footer-nav">
+          <a href="project-structure.html">← Project structure</a>
+          <a href="feature.html">Feature file →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

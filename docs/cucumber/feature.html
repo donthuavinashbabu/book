@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feature file — Cucumber</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> /
+          <a href="index.html">Cucumber</a> / Feature file
+        </div>
+        <h1>calculator.feature</h1>
+        <p class="lead">
+          Gherkin feature under
+          <code>src/test/resources/features/calculator.feature</code>.
+        </p>
+
+        <div class="meta">
+          <span class="badge">Feature</span>
+          <span class="badge">@calculator</span>
+        </div>
+
+        <h2>Full source</h2>
+        <div class="pre-wrap">
+<pre>Feature: calculator functions
+  Test cases for all calculator functionalities
+
+  @calculator
+  Scenario: sum of 2 numbers
+    Given two number
+    When Add two numbers
+    Then Get another number</pre>
+        </div>
+
+        <h2>Steps mapped to Java</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Step</th><th>Step definition</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>Given two number</code></td>
+                <td><a href="step-defs.html#given"><code>CalculatorStepDef.given()</code></a></td>
+              </tr>
+              <tr>
+                <td><code>When Add two numbers</code></td>
+                <td><a href="step-defs.html#when"><code>CalculatorStepDef.when()</code></a></td>
+              </tr>
+              <tr>
+                <td><code>Then Get another number</code></td>
+                <td><a href="step-defs.html#then"><code>CalculatorStepDef.then()</code></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note">
+          The <code>@calculator</code> tag drives <code>@Before("@calculator")</code> /
+          <code>@After("@calculator")</code> hooks in the step definition class.
+        </div>
+
+        <div class="footer-nav">
+          <a href="setup.html">← Maven setup</a>
+          <a href="step-defs.html">Step definitions →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project structure — Cucumber</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> /
+          <a href="index.html">Cucumber</a> / Project structure
+        </div>
+        <h1>Project structure</h1>
+        <p class="lead">Layout of the <code>cucumber</code> module and Maven example project.</p>
+
+        <h2>Repository paths</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Path</th><th>Role</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>book/cucumber/</code></td>
+                <td>Topic root; table of contents</td>
+              </tr>
+              <tr>
+                <td><code>book/cucumber/cucumber/</code></td>
+                <td>Maven project (<code>groupId</code> <code>com.book</code>, artifact <code>cucumber</code>)</td>
+              </tr>
+              <tr>
+                <td><code>.../src/main/java/com/service/</code></td>
+                <td>Application code under test (<code>Calculator</code>)</td>
+              </tr>
+              <tr>
+                <td><code>.../src/test/resources/features/</code></td>
+                <td>Gherkin <code>.feature</code> files</td>
+              </tr>
+              <tr>
+                <td><code>.../src/test/java/com/step/defs/</code></td>
+                <td>Step definition classes (glue)</td>
+              </tr>
+              <tr>
+                <td><code>.../src/test/java/com/features/</code></td>
+                <td>JUnit Platform suite runner</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Source tree</h2>
+        <div class="pre-wrap">
+<pre>cucumber/
+├── README.md
+└── cucumber/
+    ├── pom.xml
+    └── src/
+        ├── main/java/com/service/
+        │   └── Calculator.java
+        └── test/
+            ├── java/com/
+            │   ├── features/RunnerTest.java
+            │   └── step/defs/CalculatorStepDef.java
+            └── resources/features/
+                └── calculator.feature</pre>
+        </div>
+
+        <div class="footer-nav">
+          <a href="index.html">← Topic intro</a>
+          <a href="setup.html">Maven setup →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CalculatorStepDef — Cucumber</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> /
+          <a href="index.html">Cucumber</a> / CalculatorStepDef
+        </div>
+
+        <h1>Class CalculatorStepDef</h1>
+        <div class="meta">
+          <span class="badge">public class</span>
+          <span><code>com.step.defs.CalculatorStepDef</code></span>
+        </div>
+
+        <div class="signature-block">
+          @Slf4j<br />
+          public class CalculatorStepDef
+        </div>
+
+        <p>
+          Cucumber glue code for the calculator feature. Hooks run for scenarios tagged
+          <code>@calculator</code>. Steps create a <a href="calculator.html">Calculator</a>,
+          call <code>sum(10, 20)</code>, and log the result.
+        </p>
+
+        <h2>Package</h2>
+        <p><code>com.step.defs</code> (configured as glue on <a href="runner.html">RunnerTest</a>)</p>
+
+        <div class="member" id="given">
+          <div class="member-title">
+            <span class="badge">@Given</span>
+            <span class="name">given</span>
+          </div>
+          <div class="signature-block">@Given("two number") void given()</div>
+          <p>Creates a new <code>Calculator</code> instance.</p>
+        </div>
+
+        <div class="member" id="when">
+          <div class="member-title">
+            <span class="badge">@When</span>
+            <span class="name">when</span>
+          </div>
+          <div class="signature-block">@When("Add two numbers") void when()</div>
+          <p>Sets <code>result = calculator.sum(10, 20)</code>.</p>
+        </div>
+
+        <div class="member" id="then">
+          <div class="member-title">
+            <span class="badge">@Then</span>
+            <span class="name">then</span>
+          </div>
+          <div class="signature-block">@Then("Get another number") void then()</div>
+          <p>Logs <code>result={}</code> (expected <code>30</code> for the hard-coded inputs).</p>
+        </div>
+
+        <h2>Full source</h2>
+        <div class="pre-wrap">
+<pre>@Slf4j
+public class CalculatorStepDef {
+
+    private Calculator calculator;
+    private int result;
+
+    @Before("@calculator")
+    public void calculatorSetup() {
+        log.info("Calculator setup");
+    }
+
+    @After("@calculator")
+    public void calculatorTeardown() {
+        log.info("Calculator teardown");
+    }
+
+    @Given("two number")
+    public void given() {
+        calculator = new Calculator();
+    }
+
+    @When("Add two numbers")
+    public void when() {
+        result = calculator.sum(10, 20);
+    }
+
+    @Then("Get another number")
+    public void then() {
+        log.info("result={}", result);
+    }
+}</pre>
+        </div>
+
+        <div class="footer-nav">
+          <a href="feature.html">← Feature file</a>
+          <a href="calculator.html">Calculator →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

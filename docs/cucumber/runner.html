@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RunnerTest — Cucumber</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> /
+          <a href="index.html">Cucumber</a> / RunnerTest
+        </div>
+
+        <h1>Class RunnerTest</h1>
+        <div class="meta">
+          <span class="badge">@Suite</span>
+          <span><code>com.features.RunnerTest</code></span>
+        </div>
+
+        <p>
+          Empty suite class that configures the Cucumber JUnit Platform engine:
+          feature classpath, glue package, and reporting plugins.
+        </p>
+
+        <h2>Configuration</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Annotation / parameter</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>@IncludeEngines</code></td><td><code>cucumber</code></td></tr>
+              <tr><td><code>@SelectClasspathResource</code></td><td><code>features</code></td></tr>
+              <tr><td><code>GLUE_PROPERTY_NAME</code></td><td><code>com.step.defs</code></td></tr>
+              <tr><td><code>PLUGIN_PROPERTY_NAME</code></td><td><code>pretty, html:target/cucumber-report.html</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Full source</h2>
+        <div class="pre-wrap">
+<pre>@Slf4j
+@Suite
+@IncludeEngines("cucumber")
+@SelectClasspathResource("features")
+@ConfigurationParameter(key = Constants.GLUE_PROPERTY_NAME, value = "com.step.defs")
+@ConfigurationParameter(
+    key = Constants.PLUGIN_PROPERTY_NAME,
+    value = "pretty, html:target/cucumber-report.html")
+public class RunnerTest {
+}</pre>
+        </div>
+
+        <div class="footer-nav">
+          <a href="calculator.html">← Calculator</a>
+          <a href="index.html">Back to topic →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>
