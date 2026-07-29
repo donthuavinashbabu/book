@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apache Commons Lang3 — Book docs</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> / Apache Commons Lang3
+        </div>
+        <h1>Apache Commons Lang3</h1>
+        <p class="lead">
+          Topic docs for the <code>apache-commons-lang3</code> module — project layout, Maven setup,
+          and JavaDoc-style navigation through code examples.
+        </p>
+
+        <div class="meta">
+          <span class="badge">commons-lang3 3.16.0</span>
+          <span class="badge">Java 17</span>
+          <span class="badge">JUnit 5</span>
+        </div>
+
+        <h2>What this topic covers</h2>
+        <p>
+          Hands-on POCs for
+          <a href="https://commons.apache.org/proper/commons-lang/" target="_blank" rel="noopener">Apache Commons Lang</a>.
+          The current example focuses on <code>RandomStringUtils</code> for generating random alphabetic
+          and alphanumeric strings.
+        </p>
+
+        <div class="card-grid">
+          <a class="card" href="project-structure.html">
+            <h3>Project structure</h3>
+            <p>Source layout, packages, and where examples live.</p>
+          </a>
+          <a class="card" href="setup.html">
+            <h3>Maven setup</h3>
+            <p>Dependencies and how to build/run the examples.</p>
+          </a>
+          <a class="card" href="api/RandomStringUtilsTest.html">
+            <h3>API docs</h3>
+            <p>JavaDoc-style class and method reference for the example.</p>
+          </a>
+          <a class="card" href="examples/random-string-utils.html">
+            <h3>Code examples</h3>
+            <p>Walk through each RandomStringUtils usage with sample output.</p>
+          </a>
+        </div>
+
+        <h2>Quick start</h2>
+        <div class="pre-wrap">
+<pre>cd book/apache-commons-lang3/commons-lang3
+mvn test -Dtest=RandomStringUtilsTest</pre>
+        </div>
+
+        <h2>Example at a glance</h2>
+        <div class="pre-wrap">
+<pre>boolean useLetters = true;
+boolean useNumbers = true;
+String randomString1 = RandomStringUtils.random(10, useLetters, useNumbers);
+String randomString2 = RandomStringUtils.randomAlphabetic(10);
+String randomString3 = RandomStringUtils.randomAlphanumeric(10);</pre>
+        </div>
+        <p>
+          See the full class documentation:
+          <a href="api/RandomStringUtilsTest.html"><code>com.java.RandomStringUtilsTest</code></a>.
+        </p>
+
+        <div class="footer-nav">
+          <a href="../overview/topics.html">← Topics</a>
+          <a href="project-structure.html">Project structure →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

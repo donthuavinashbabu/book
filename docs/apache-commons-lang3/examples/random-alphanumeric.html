@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>random() — commons-lang3 docs</title>
-  <link rel="stylesheet" href="../css/docs.css" />
+  <title>randomAlphanumeric() — commons-lang3 docs</title>
+  <link rel="stylesheet" href="../../css/docs.css" />
 </head>
-<body data-base="../">
+<body data-base="../../">
   <header class="topbar">
     <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
-    <a class="brand" href="../index.html">commons-lang3 <span>docs</span></a>
-    <div class="subtitle">Apache Commons Lang3 examples</div>
+    <a class="brand" href="../../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
   </header>
 
   <div class="layout">
@@ -24,25 +24,25 @@
     <main class="content">
       <div class="content-inner">
         <div class="breadcrumb">
-          <a href="../index.html">Home</a> /
-          <a href="random-string-utils.html">Examples</a> / random()
+          <a href="../../index.html">Home</a> /
+          <a href="../index.html">Apache Commons Lang3</a> /
+          <a href="random-string-utils.html">Examples</a> / randomAlphanumeric()
         </div>
 
-        <h1>RandomStringUtils.random</h1>
+        <h1>RandomStringUtils.randomAlphanumeric</h1>
         <div class="meta">
           <span class="badge">static</span>
           <span>from <a href="random-string-utils.html">RandomStringUtils</a> examples</span>
         </div>
 
         <div class="signature-block">
-          public static String random(int count, boolean letters, boolean numbers)
+          public static String randomAlphanumeric(int count)
         </div>
 
         <h2>Description</h2>
         <p>
-          Creates a random string of the given length. When <code>letters</code> is
-          <code>true</code>, alphabetic characters are included. When <code>numbers</code> is
-          <code>true</code>, digits are included.
+          Creates a random alphanumeric string (letters and digits) of the requested length.
+          Equivalent in spirit to <code>random(count, true, true)</code> with a dedicated API.
         </p>
 
         <h2>Parameters</h2>
@@ -53,39 +53,35 @@
             </thead>
             <tbody>
               <tr><td><code>count</code></td><td><code>int</code></td><td>Desired length of the string</td></tr>
-              <tr><td><code>letters</code></td><td><code>boolean</code></td><td>Include alphabetic characters</td></tr>
-              <tr><td><code>numbers</code></td><td><code>boolean</code></td><td>Include numeric characters</td></tr>
             </tbody>
           </table>
         </div>
 
         <h2>Returns</h2>
-        <p><code>String</code> — random value of length <code>count</code>.</p>
+        <p><code>String</code> — alphanumeric random value.</p>
 
         <h2>Code from this repository</h2>
         <div class="pre-wrap">
-<pre>boolean useLetters = true;
-boolean useNumbers = true;
-String randomString1 = RandomStringUtils.random(10, useLetters, useNumbers);
-log.info("randomString1={}", randomString1);
-// sample: randomString1=DWVxBY5jSi</pre>
+<pre>String randomString3 = RandomStringUtils.randomAlphanumeric(10);
+log.info("randomString3={}", randomString3);
+// sample: randomString3=wk1ILav9Eb</pre>
         </div>
 
         <h2>See also</h2>
         <ul>
+          <li><a href="random.html">random(int, boolean, boolean)</a></li>
           <li><a href="random-alphabetic.html">randomAlphabetic(int)</a></li>
-          <li><a href="random-alphanumeric.html">randomAlphanumeric(int)</a></li>
           <li><a href="../api/RandomStringUtilsTest.html#randomString">RandomStringUtilsTest.randomString()</a></li>
         </ul>
 
         <div class="footer-nav">
-          <a href="random-string-utils.html">← RandomStringUtils</a>
-          <a href="random-alphabetic.html">randomAlphabetic() →</a>
+          <a href="random-alphabetic.html">← randomAlphabetic()</a>
+          <a href="../index.html">Back to topic →</a>
         </div>
       </div>
     </main>
   </div>
 
-  <script src="../js/docs.js"></script>
+  <script src="../../js/docs.js"></script>
 </body>
 </html>

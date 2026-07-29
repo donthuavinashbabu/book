@@ -5,32 +5,37 @@
       label: "Overview",
       children: [
         { href: "index.html", label: "Introduction", id: "intro" },
-        { href: "overview/project-structure.html", label: "Project structure", id: "structure" },
-        { href: "overview/setup.html", label: "Maven setup", id: "setup" },
+        { href: "overview/using-this-site.html", label: "Using this site", id: "using" },
+        { href: "overview/topics.html", label: "Topics", id: "topics" },
       ],
     },
     {
-      id: "api",
-      label: "API (JavaDoc style)",
+      id: "apache-commons-lang3",
+      label: "Apache Commons Lang3",
       children: [
+        { href: "apache-commons-lang3/index.html", label: "Introduction", id: "acl-intro" },
+        { href: "apache-commons-lang3/project-structure.html", label: "Project structure", id: "acl-structure" },
+        { href: "apache-commons-lang3/setup.html", label: "Maven setup", id: "acl-setup" },
         {
-          href: "api/RandomStringUtilsTest.html",
-          label: "RandomStringUtilsTest",
-          id: "api-class",
+          href: "apache-commons-lang3/api/RandomStringUtilsTest.html",
+          label: "API: RandomStringUtilsTest",
+          id: "acl-api",
           children: [
-            { href: "api/RandomStringUtilsTest.html#randomString", label: "randomString()", id: "api-randomString" },
+            {
+              href: "apache-commons-lang3/api/RandomStringUtilsTest.html#randomString",
+              label: "randomString()",
+              id: "acl-api-randomString",
+            },
           ],
         },
-      ],
-    },
-    {
-      id: "examples",
-      label: "Code examples",
-      children: [
-        { href: "examples/random-string-utils.html", label: "RandomStringUtils", id: "ex-overview" },
-        { href: "examples/random.html", label: "random()", id: "ex-random" },
-        { href: "examples/random-alphabetic.html", label: "randomAlphabetic()", id: "ex-alpha" },
-        { href: "examples/random-alphanumeric.html", label: "randomAlphanumeric()", id: "ex-alnum" },
+        { href: "apache-commons-lang3/examples/random-string-utils.html", label: "Examples: RandomStringUtils", id: "acl-ex" },
+        { href: "apache-commons-lang3/examples/random.html", label: "random()", id: "acl-ex-random" },
+        { href: "apache-commons-lang3/examples/random-alphabetic.html", label: "randomAlphabetic()", id: "acl-ex-alpha" },
+        {
+          href: "apache-commons-lang3/examples/random-alphanumeric.html",
+          label: "randomAlphanumeric()",
+          id: "acl-ex-alnum",
+        },
       ],
     },
   ];
@@ -62,10 +67,33 @@
     return parts[parts.length - 1] || "index.html";
   }
 
+  const COLLAPSED_KEY = "docs-nav-collapsed";
+
   function isActive(href) {
     const page = currentPageKey();
     const cleanHref = href.split("#")[0];
     return page === cleanHref || page.endsWith("/" + cleanHref) || (page === "" && cleanHref === "index.html");
+  }
+
+  function isActiveSection(section, activePage) {
+    return (
+      section.children.some(
+        (item) => isActive(item.href) || (item.children || []).some((c) => isActive(c.href))
+      ) || activePage.startsWith(section.id + "/")
+    );
+  }
+
+  function getCollapsedIds() {
+    try {
+      const raw = sessionStorage.getItem(COLLAPSED_KEY);
+      return new Set(raw ? JSON.parse(raw) : []);
+    } catch (e) {
+      return new Set();
+    }
+  }
+
+  function setCollapsedIds(ids) {
+    sessionStorage.setItem(COLLAPSED_KEY, JSON.stringify([...ids]));
   }
 
   function renderNav() {
@@ -73,6 +101,7 @@
     if (!host) return;
 
     const activePage = currentPageKey();
+    const collapsedIds = getCollapsedIds();
     const html = NAV.map((section) => {
       const childHtml = section.children
         .map((item) => {
@@ -93,9 +122,12 @@
         })
         .join("");
 
-      const shouldExpand =
-        section.children.some((item) => isActive(item.href) || (item.children || []).some((c) => isActive(c.href))) ||
-        activePage.startsWith(section.id + "/");
+      // Expand/collapse only from the section header. Submenu navigation must not
+      // auto-collapse other sections. Active section stays open so the current page is visible.
+      if (isActiveSection(section, activePage)) {
+        collapsedIds.delete(section.id);
+      }
+      const shouldExpand = !collapsedIds.has(section.id);
 
       return `
         <div class="nav-section${shouldExpand ? "" : " collapsed"}" data-section="${section.id}">
@@ -107,13 +139,28 @@
         </div>`;
     }).join("");
 
+    setCollapsedIds(collapsedIds);
     host.innerHTML = html;
 
     host.querySelectorAll(".nav-toggle").forEach((btn) => {
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
         const section = btn.closest(".nav-section");
         const collapsed = section.classList.toggle("collapsed");
         btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
+        const ids = getCollapsedIds();
+        const id = section.dataset.section;
+        if (collapsed) ids.add(id);
+        else ids.delete(id);
+        setCollapsedIds(ids);
+      });
+    });
+
+    // Submenu links only navigate; never toggle section collapse.
+    host.querySelectorAll(".nav-children a").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.stopPropagation();
       });
     });
   }

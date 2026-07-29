@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apache Commons Lang3 — Documentation</title>
+  <title>Book — Documentation</title>
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body data-base="">
   <header class="topbar">
     <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
-    <a class="brand" href="index.html">commons-lang3 <span>docs</span></a>
-    <div class="subtitle">Apache Commons Lang3 examples</div>
+    <a class="brand" href="index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
   </header>
 
   <div class="layout">
@@ -24,72 +24,68 @@
     <main class="content">
       <div class="content-inner">
         <div class="breadcrumb">Home</div>
-        <h1>Apache Commons Lang3</h1>
+        <h1>Book documentation</h1>
         <p class="lead">
-          HTML documentation for the <code>apache-commons-lang3</code> module in this repository —
-          project layout, Maven setup, and JavaDoc-style navigation through code examples.
+          HTML docs for the <code>book</code> repository — a collection of learning notes, POCs, and
+          code examples across Java, cloud, data, and related topics.
         </p>
 
         <div class="meta">
-          <span class="badge">commons-lang3 3.16.0</span>
-          <span class="badge">Java 17</span>
-          <span class="badge">JUnit 5</span>
+          <span class="badge">Multi-topic</span>
+          <span class="badge">Notes + examples</span>
+          <span class="badge">GitHub Pages ready</span>
         </div>
 
-        <h2>What this module covers</h2>
+        <h2>What this site covers</h2>
         <p>
-          This folder holds hands-on POCs for
-          <a href="https://commons.apache.org/proper/commons-lang/" target="_blank" rel="noopener">Apache Commons Lang</a>.
-          The current example focuses on <code>RandomStringUtils</code> for generating random alphabetic and alphanumeric strings.
+          Each documented topic in the left menu maps to a folder under <code>book/</code> in the
+          repository. Pages here explain project layout, setup, and JavaDoc-style walkthroughs of
+          example code. Markdown notes in the repo remain the source of truth for detailed write-ups;
+          this site is the browsable companion for selected topics.
         </p>
 
         <div class="card-grid">
-          <a class="card" href="overview/project-structure.html">
-            <h3>Project structure</h3>
-            <p>Source layout, packages, and where examples live.</p>
+          <a class="card" href="overview/using-this-site.html">
+            <h3>Using this site</h3>
+            <p>Navigation, expand/collapse, and how topic pages are organized.</p>
           </a>
-          <a class="card" href="overview/setup.html">
-            <h3>Maven setup</h3>
-            <p>Dependencies and how to build/run the examples.</p>
+          <a class="card" href="overview/topics.html">
+            <h3>Topics</h3>
+            <p>Documented modules so far, and how new topics will appear.</p>
           </a>
-          <a class="card" href="api/RandomStringUtilsTest.html">
-            <h3>API docs</h3>
-            <p>JavaDoc-style class and method reference for the example.</p>
-          </a>
-          <a class="card" href="examples/random-string-utils.html">
-            <h3>Code examples</h3>
-            <p>Walk through each RandomStringUtils usage with sample output.</p>
+          <a class="card" href="apache-commons-lang3/index.html">
+            <h3>Apache Commons Lang3</h3>
+            <p>First topic: RandomStringUtils examples, setup, and API-style pages.</p>
           </a>
         </div>
 
-        <h2>Quick start</h2>
+        <h2>Repository layout</h2>
         <div class="pre-wrap">
-<pre>cd apache-commons-lang3/commons-lang3
-mvn test -Dtest=RandomStringUtilsTest</pre>
+<pre>book/                 # topic folders (notes, POCs, README indexes)
+docs/                 # this HTML documentation site
+  index.html          # book overview (this page)
+  overview/           # site-wide overview pages
+  apache-commons-lang3/  # topic docs (more topics will be added here)
+  css/  js/</pre>
         </div>
 
-        <h2>Example at a glance</h2>
-        <div class="pre-wrap">
-<pre>boolean useLetters = true;
-boolean useNumbers = true;
-String randomString1 = RandomStringUtils.random(10, useLetters, useNumbers);
-String randomString2 = RandomStringUtils.randomAlphabetic(10);
-String randomString3 = RandomStringUtils.randomAlphanumeric(10);</pre>
-        </div>
+        <h2>Markdown table of contents</h2>
         <p>
-          See the full class documentation:
-          <a href="api/RandomStringUtilsTest.html"><code>com.java.RandomStringUtilsTest</code></a>.
+          The full topic list lives in
+          <code>book/README.md</code>
+          (Core Java, Spring Boot, Kafka, AWS, Docker, and many more). HTML pages are added
+          topic-by-topic under <code>docs/</code> and linked from the left menu.
         </p>
 
         <div class="note">
-          <strong>Open from GitHub:</strong> enable GitHub Pages (or your host’s Pages feature) with
-          source <code>/docs</code> on the default branch. The site entry point is
-          <code>docs/index.html</code>. You can also open <code>index.html</code> locally in a browser.
+          <strong>Open from GitHub:</strong> enable GitHub Pages with source <code>/docs</code> on the
+          default branch. Entry point: <code>docs/index.html</code>. You can also open
+          <code>index.html</code> locally in a browser.
         </div>
 
         <div class="footer-nav">
           <span></span>
-          <a href="overview/project-structure.html">Project structure →</a>
+          <a href="overview/using-this-site.html">Using this site →</a>
         </div>
       </div>
     </main>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Topics — Book docs</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> / Overview / Topics
+        </div>
+        <h1>Topics</h1>
+        <p class="lead">
+          Documented topics in this HTML site. More modules from <code>book/</code> will be added over time.
+        </p>
+
+        <h2>Documented in HTML</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Topic</th>
+                <th>Repo path</th>
+                <th>Docs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Apache Commons Lang3</td>
+                <td><code>book/apache-commons-lang3/</code></td>
+                <td><a href="../apache-commons-lang3/index.html">Open topic docs</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Also in the repository</h2>
+        <p>
+          Many other topics exist as Markdown notes and code projects (Core Java, Spring Boot, Kafka,
+          AWS, Docker, Kubernetes, MongoDB, and more). See the full list in
+          <code>book/README.md</code>. They appear here as HTML sections are added.
+        </p>
+
+        <div class="footer-nav">
+          <a href="using-this-site.html">← Using this site</a>
+          <a href="../apache-commons-lang3/index.html">Apache Commons Lang3 →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

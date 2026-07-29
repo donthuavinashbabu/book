@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Using this site — Book docs</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> / Overview / Using this site
+        </div>
+        <h1>Using this site</h1>
+        <p class="lead">How the left navigation and topic pages work.</p>
+
+        <h2>Left menu</h2>
+        <ul>
+          <li>
+            <strong>Overview</strong> — site-wide pages about the Book repo and this documentation.
+          </li>
+          <li>
+            <strong>Topic sections</strong> (for example <em>Apache Commons Lang3</em>) — pages for one
+            <code>book/&lt;topic&gt;/</code> module: intro, setup, API-style docs, and examples.
+          </li>
+        </ul>
+
+        <h2>Expand and collapse</h2>
+        <p>
+          Click a main section title or its chevron to expand or collapse that section.
+          Clicking a submenu link only opens that page; it does not collapse the menu.
+        </p>
+
+        <h2>Filter</h2>
+        <p>
+          Use the search box at the top of the sidebar to filter menu labels. Matching sections
+          stay visible so you can jump quickly.
+        </p>
+
+        <h2>Adding a new topic</h2>
+        <p>When documenting another module:</p>
+        <ol>
+          <li>Create <code>docs/&lt;topic-id&gt;/</code> with an <code>index.html</code> and related pages.</li>
+          <li>Add a new section in <code>docs/js/docs.js</code> (<code>NAV</code>) pointing at those pages.</li>
+          <li>Link the topic from <a href="topics.html">Topics</a> and optionally from the home page.</li>
+        </ol>
+
+        <div class="footer-nav">
+          <a href="../index.html">← Home</a>
+          <a href="topics.html">Topics →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>
