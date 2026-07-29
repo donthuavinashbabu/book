@@ -1,4 +1,6 @@
 (function () {
+  const GH = "https://github.com/donthuavinashbabu/book/blob/main/book/";
+
   const NAV = [
     {
       id: "overview",
@@ -7,6 +9,58 @@
         { href: "index.html", label: "Introduction", id: "intro" },
         { href: "overview/using-this-site.html", label: "Using this site", id: "using" },
         { href: "overview/topics.html", label: "Topics", id: "topics" },
+      ],
+    },
+    {
+      id: "guides",
+      label: "Guides & notes",
+      children: [
+        { href: "guides/index.html", label: "Browse all guides", id: "guides-home" },
+        { href: "guides/java-errors.html", label: "Java errors & solutions", id: "guides-java" },
+        {
+          href: GH + "module-does-not-open.md",
+          label: "module does not open (Unsafe)",
+          id: "g-module",
+        },
+        { href: "guides/preparation.html", label: "Preparation", id: "guides-prep" },
+        { href: GH + "architect-preparation.md", label: "Architect preparation plan", id: "g-arch" },
+        {
+          href: "https://drive.google.com/file/d/10Uh-f_IAgnWNexeKjPFOfTZtwraXHBHj/view?usp=sharing",
+          label: "SDE road map",
+          id: "g-sde",
+        },
+        { href: "guides/misc.html", label: "Misc", id: "guides-misc" },
+        {
+          href: GH + "encoding-encryption-tokenization.md",
+          label: "Encoding vs encryption vs tokenization",
+          id: "g-enc",
+        },
+        {
+          href: GH + "env-variables-vm-variables-program-arguments.md",
+          label: "Env vars vs VM args vs program args",
+          id: "g-env",
+        },
+        { href: GH + "model-vs-entity.md", label: "Model vs entity", id: "g-model" },
+        { href: GH + "types-of-sql-queries.md", label: "Types of SQL queries", id: "g-sql" },
+        { href: GH + "softwares-list.md", label: "Software list for Java engineer", id: "g-sw" },
+        { href: GH + "java-architect-tech-list.md", label: "Java architect tech list", id: "g-arch-tech" },
+        { href: GH + "learning/README.md", label: "Learnings and certifications", id: "g-learn" },
+        { href: GH + "email-skills.jpeg", label: "Email skills", id: "g-email" },
+        { href: GH + "code-review.jpeg", label: "Code review", id: "g-review" },
+        {
+          href: "https://drive.google.com/file/d/1F9k7t9pu9Toj48l3aXcmiKA7Q90qP7nl/view?usp=sharing",
+          label: "SDE road map (alt)",
+          id: "g-sde2",
+        },
+        { href: GH + "java-essentials.txt", label: "Java developer essential skills", id: "g-ess" },
+        {
+          href: GH + "product-development-points.txt",
+          label: "Product development essentials",
+          id: "g-prod",
+        },
+        { href: GH + "edge-vs-corner-case.md", label: "Edge case vs corner case", id: "g-edge" },
+        { href: "guides/new-projects.html", label: "New projects", id: "guides-nfr" },
+        { href: GH + "nfrs.md", label: "NFRs for new projects", id: "g-nfr" },
       ],
     },
     {
@@ -52,6 +106,13 @@
     return basePath() + href;
   }
 
+  function linkAttrs(href) {
+    if (/^https?:\/\//i.test(href)) {
+      return ' target="_blank" rel="noopener"';
+    }
+    return "";
+  }
+
   function allNavPagePaths() {
     const paths = [];
     NAV.forEach((section) => {
@@ -60,7 +121,7 @@
         (item.children || []).forEach((child) => paths.push(child.href.split("#")[0]));
       });
     });
-    return [...new Set(paths.filter(Boolean))];
+    return [...new Set(paths.filter((p) => p && !/^https?:\/\//i.test(p)))];
   }
 
   function currentPageKey() {
@@ -140,12 +201,12 @@
               item.children
                 .map((child) => {
                   const childActive = isActive(child.href) ? " active" : "";
-                  return `<li><a class="${childActive.trim()}" href="${withBase(child.href)}" data-label="${child.label.toLowerCase()}">${child.label}</a></li>`;
+                  return `<li><a class="${childActive.trim()}" href="${withBase(child.href)}"${linkAttrs(child.href)} data-label="${child.label.toLowerCase()}">${child.label}</a></li>`;
                 })
                 .join("") +
               "</ul>";
           }
-          return `<li><a class="${active.trim()}" href="${withBase(item.href)}" data-label="${item.label.toLowerCase()}">${item.label}</a>${sub}</li>`;
+          return `<li><a class="${active.trim()}" href="${withBase(item.href)}"${linkAttrs(item.href)} data-label="${item.label.toLowerCase()}">${item.label}</a>${sub}</li>`;
         })
         .join("");
 

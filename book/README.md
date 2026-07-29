@@ -1,42 +1,5 @@
 # Welcome to Book
-------
-# Documentation
-* <a href="https://donthuavinashbabu.github.io/book/" target="_blank" rel="noopener">Open documentation</a> — Book docs site (opens in a new browser tab)
-------
-# Searchable Docs Website
-* Install docs dependencies: `python -m pip install -r requirements-docs.txt`
-* Generate docs source tree: `py scripts/build_docs_index.py`
-* Run local site: `mkdocs serve`
-* Build static site: `mkdocs build`
-
-The generated content is written to `site-src/`, and the static website output is written to `site/`.
-
-Docs include only `.md` and `.txt` in the main navigation. Each topic module index includes links to code projects; each code project page lists all source files with an in-page search box.
-------
-# General Java Errors and Solutions
-* [Unable to make field private static final jdk.internal.misc.Unsafe java.util.Properties.UNSAFE accessible: module java.base does not opens java.util to unnamed module](module-does-not-open.md)
-------
-# Preparation
-* [Architect Preparation Plan](architect-preparation.md)
-* [SDE Road Map](https://drive.google.com/file/d/10Uh-f_IAgnWNexeKjPFOfTZtwraXHBHj/view?usp=sharing)
-------
-# Misc
-* [Encoding vs Encryption vs Tokenization](encoding-encryption-tokenization.md)
-* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments)](env-variables-vm-variables-program-arguments.md)
-* [Difference between model object and entity object](model-vs-entity.md)
-* [Types of SQL Queries](types-of-sql-queries.md)
-* [Software List for Java Engineer](softwares-list.md)
-* [Java Architect Tech List](java-architect-tech-list.md)
-* [My Learnings and Certifications](learning/README.md)
-* [Email Skills](email-skills.jpeg)
-* [Code Review](code-review.jpeg)
-* [SDE Road Map](https://drive.google.com/file/d/1F9k7t9pu9Toj48l3aXcmiKA7Q90qP7nl/view?usp=sharing)
-* [Java Developer Essential Skills](java-essentials.txt)
-* [Product Development Essentials](product-development-points.txt)
-* [Edge case vs Corner case](edge-vs-corner-case.md)
-------
-# New Projects
-* Any New project development NFRs - [NFRs](nfrs.md)
+* <a href="https://donthuavinashbabu.github.io/book/" target="_blank" rel="noopener">Open documentation</a>
 ------
 # Table of contents
 * [AI](ai/README.md)
