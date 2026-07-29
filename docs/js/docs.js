@@ -52,18 +52,39 @@
     return basePath() + href;
   }
 
+  function allNavPagePaths() {
+    const paths = [];
+    NAV.forEach((section) => {
+      section.children.forEach((item) => {
+        paths.push(item.href.split("#")[0]);
+        (item.children || []).forEach((child) => paths.push(child.href.split("#")[0]));
+      });
+    });
+    return [...new Set(paths.filter(Boolean))];
+  }
+
   function currentPageKey() {
-    const path = window.location.pathname.replace(/\\/g, "/");
+    let path = window.location.pathname.replace(/\\/g, "/");
+    if (path.endsWith("/")) {
+      path += "index.html";
+    }
+
+    // Prefer longest known nav path so topic index.html does not match Overview index.html.
+    const known = allNavPagePaths().sort((a, b) => b.length - a.length);
+    for (const href of known) {
+      if (path === href || path.endsWith("/" + href)) {
+        return href;
+      }
+    }
+
     const marker = "/docs/";
     const idx = path.lastIndexOf(marker);
     if (idx >= 0) {
-      return path.slice(idx + marker.length);
+      const rest = path.slice(idx + marker.length);
+      return rest || "index.html";
     }
-    const parts = path.split("/");
-    const docsIdx = parts.lastIndexOf("docs");
-    if (docsIdx >= 0) {
-      return parts.slice(docsIdx + 1).join("/");
-    }
+
+    const parts = path.split("/").filter(Boolean);
     return parts[parts.length - 1] || "index.html";
   }
 
@@ -72,7 +93,13 @@
   function isActive(href) {
     const page = currentPageKey();
     const cleanHref = href.split("#")[0];
-    return page === cleanHref || page.endsWith("/" + cleanHref) || (page === "" && cleanHref === "index.html");
+    if (page !== cleanHref) {
+      return false;
+    }
+    if (href.includes("#")) {
+      return window.location.hash === href.slice(href.indexOf("#"));
+    }
+    return true;
   }
 
   function isActiveSection(section, activePage) {
