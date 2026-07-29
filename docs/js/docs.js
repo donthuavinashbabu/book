@@ -64,6 +64,39 @@
       ],
     },
     {
+      id: "git",
+      label: "Git",
+      children: [
+        { href: "git/index.html", label: "Introduction", id: "git-intro" },
+        { href: GH + "git/notes.md", label: "Notes (theory)", id: "git-notes" },
+        { href: GH + "git/commands.md", label: "Git commands", id: "git-commands" },
+        { href: GH + "git/branching.md", label: "Branching strategy", id: "git-branch" },
+        { href: GH + "git/squash-commints.md", label: "Rebase and squash commits", id: "git-squash" },
+        { href: GH + "git/cherry-pick.md", label: "Cherry pick", id: "git-cherry" },
+        { href: GH + "git/stash.md", label: "Stash", id: "git-stash" },
+        { href: GH + "git/ssh.md", label: "SSH key setup", id: "git-ssh" },
+        {
+          href: GH + "git/two-github-accounts-in-same-machine-with-2-dffirent-ssh-keys.md",
+          label: "Two GitHub accounts / SSH keys",
+          id: "git-two-ssh",
+        },
+        {
+          href: GH + "git/push-local-repo-to-new-remote-repo.md",
+          label: "Push local repo to new remote",
+          id: "git-remote",
+        },
+        { href: GH + "git/app-passwords.md", label: "Bitbucket app passwords", id: "git-app-pw" },
+        { href: GH + "git/unable-to-access-url-403.md", label: "Unable to access URL (403)", id: "git-403" },
+        { href: GH + "git/.gitignore", label: "Git ignore file", id: "git-ignore" },
+        {
+          href: "https://www.conventionalcommits.org/en/v1.0.0/",
+          label: "Conventional Commits",
+          id: "git-conventional",
+        },
+        { href: "git/index.html#references", label: "Materials & references", id: "git-refs" },
+      ],
+    },
+    {
       id: "apache-commons-lang3",
       label: "Apache Commons Lang3",
       children: [

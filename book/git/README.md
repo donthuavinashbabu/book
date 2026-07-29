@@ -1,5 +1,8 @@
 # Git Table of Contents
 ------
+### Documentation site
+* <a href="https://donthuavinashbabu.github.io/book/git/" target="_blank" rel="noopener">Open documentation</a> — Git topic (opens in a new browser tab)
+------
 # Theory
 * [Notes](notes.md)
 ------

@@ -1,5 +1,4 @@
 # Welcome to Book
-* <a href="https://donthuavinashbabu.github.io/book/" target="_blank" rel="noopener">Open documentation</a>
 ------
 # Table of contents
 * [AI](ai/README.md)

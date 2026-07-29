@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Git — Book docs</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">Book <span>docs</span></a>
+    <div class="subtitle">Learning notes &amp; code examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> / Git
+        </div>
+        <h1>Git</h1>
+        <p class="lead">
+          Notes, commands, and how-tos from <code>book/git/</code>.
+          Use the left menu filter to jump to a title. Note links open on GitHub (or external sites) in a new tab.
+        </p>
+
+        <div class="meta">
+          <span class="badge">Version control</span>
+          <span class="badge">GitHub / Bitbucket</span>
+          <span class="badge">SSH &amp; workflows</span>
+        </div>
+
+        <div class="card-grid">
+          <a class="card" href="#theory">
+            <h3>Theory</h3>
+            <p>Core Git concepts and notes.</p>
+          </a>
+          <a class="card" href="#pocs">
+            <h3>POCs &amp; examples</h3>
+            <p>Commands, branching, stash, SSH, and troubleshooting.</p>
+          </a>
+          <a class="card" href="#references">
+            <h3>Materials &amp; references</h3>
+            <p>Tutorials, branching models, and undo guides.</p>
+          </a>
+        </div>
+
+        <h2 id="theory">Theory</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/notes.md" target="_blank" rel="noopener">Notes</a>
+            — version control basics, revert, Git vs GitHub, and more
+          </li>
+        </ul>
+
+        <h2 id="pocs">POCs and examples</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Topic</th><th>Note</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rebase &amp; squash</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/squash-commints.md" target="_blank" rel="noopener">Git rebase and squash commits</a></td>
+              </tr>
+              <tr>
+                <td>Commands</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/commands.md" target="_blank" rel="noopener">Git commands</a></td>
+              </tr>
+              <tr>
+                <td>Bitbucket</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/app-passwords.md" target="_blank" rel="noopener">Create app passwords in Bitbucket</a></td>
+              </tr>
+              <tr>
+                <td>Branching</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/branching.md" target="_blank" rel="noopener">Branching strategy</a></td>
+              </tr>
+              <tr>
+                <td>Cherry-pick</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/cherry-pick.md" target="_blank" rel="noopener">Cherry pick</a></td>
+              </tr>
+              <tr>
+                <td>Remote</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/push-local-repo-to-new-remote-repo.md" target="_blank" rel="noopener">Push local repo to new remote</a></td>
+              </tr>
+              <tr>
+                <td>SSH</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/ssh.md" target="_blank" rel="noopener">Connect with SSH key</a></td>
+              </tr>
+              <tr>
+                <td>Stash</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/stash.md" target="_blank" rel="noopener">Stash</a></td>
+              </tr>
+              <tr>
+                <td>Errors</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/unable-to-access-url-403.md" target="_blank" rel="noopener">Unable to access URL (403)</a></td>
+              </tr>
+              <tr>
+                <td>Ignore</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/.gitignore" target="_blank" rel="noopener">Git ignore file</a></td>
+              </tr>
+              <tr>
+                <td>Commits</td>
+                <td><a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noopener">Conventional Commits</a></td>
+              </tr>
+              <tr>
+                <td>Multi-account</td>
+                <td><a href="https://github.com/donthuavinashbabu/book/blob/main/book/git/two-github-accounts-in-same-machine-with-2-dffirent-ssh-keys.md" target="_blank" rel="noopener">Two GitHub accounts / SSH keys</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="references">Materials and references</h2>
+        <h3>Videos</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=0kRuGWBuS_o" target="_blank" rel="noopener">Introduction to Git &amp; GitHub (edureka)</a></li>
+          <li><a href="https://www.youtube.com/watch?v=AQ9ksXoBAOg" target="_blank" rel="noopener">Git tutorial for beginners (Simplilearn)</a></li>
+          <li><a href="https://www.youtube.com/watch?v=WbwIoQYP6no" target="_blank" rel="noopener">Git tutorial for beginners (Telusko)</a></li>
+          <li><a href="https://www.youtube.com/watch?v=xuB1Id2Wxak" target="_blank" rel="noopener">Git / GitHub tutorial (edureka)</a></li>
+        </ul>
+
+        <h3>Courses &amp; branching</h3>
+        <ul>
+          <li>Udemy — Git Complete: The definitive, step-by-step guide to Git</li>
+          <li>Udemy — Git &amp; GitHub Masterclass</li>
+          <li><a href="https://jeffkreeftmeijer.com/git-flow/" target="_blank" rel="noopener">git-flow</a></li>
+          <li><a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noopener">A successful Git branching model</a></li>
+          <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank" rel="noopener">Gitflow workflow (Atlassian)</a></li>
+        </ul>
+
+        <h3>Tutorials &amp; tools</h3>
+        <ul>
+          <li><a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="noopener">Try Git</a></li>
+          <li><a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud" target="_blank" rel="noopener">Learn Git with Bitbucket Cloud</a></li>
+          <li><a href="https://confluence.atlassian.com/bitbucketserver0516/automatic-branch-merging-966061304.html" target="_blank" rel="noopener">Automatic branch merging</a></li>
+          <li><a href="https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/" target="_blank" rel="noopener">How to undo almost anything with Git</a></li>
+          <li><a href="https://reflectoring.io/github-fork-and-pull/" target="_blank" rel="noopener">GitHub fork and pull</a></li>
+          <li><a href="https://github.com/matiassingers/awesome-readme" target="_blank" rel="noopener">Awesome README</a></li>
+          <li><a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" target="_blank" rel="noopener">Merging vs rebasing</a></li>
+        </ul>
+
+        <div class="note">
+          Local PDFs referenced in the repo notes (Git Pocket Guide, Pro Git) live in Box — not linked here.
+        </div>
+
+        <div class="footer-nav">
+          <a href="../guides/index.html">← Guides &amp; notes</a>
+          <a href="../apache-commons-lang3/index.html">Apache Commons Lang3 →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>
