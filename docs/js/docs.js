@@ -149,7 +149,7 @@
     return parts[parts.length - 1] || "index.html";
   }
 
-  const COLLAPSED_KEY = "docs-nav-collapsed";
+  const EXPANDED_KEY = "docs-nav-expanded";
 
   function isActive(href) {
     const page = currentPageKey();
@@ -171,17 +171,18 @@
     );
   }
 
-  function getCollapsedIds() {
+  function getExpandedIds() {
     try {
-      const raw = sessionStorage.getItem(COLLAPSED_KEY);
+      const raw = sessionStorage.getItem(EXPANDED_KEY);
+      // Default: all sections collapsed (empty set).
       return new Set(raw ? JSON.parse(raw) : []);
     } catch (e) {
       return new Set();
     }
   }
 
-  function setCollapsedIds(ids) {
-    sessionStorage.setItem(COLLAPSED_KEY, JSON.stringify([...ids]));
+  function setExpandedIds(ids) {
+    sessionStorage.setItem(EXPANDED_KEY, JSON.stringify([...ids]));
   }
 
   function renderNav() {
@@ -189,7 +190,10 @@
     if (!host) return;
 
     const activePage = currentPageKey();
-    const collapsedIds = getCollapsedIds();
+    const expandedIds = getExpandedIds();
+    // Drop legacy collapsed-storage key if present.
+    sessionStorage.removeItem("docs-nav-collapsed");
+
     const html = NAV.map((section) => {
       const childHtml = section.children
         .map((item) => {
@@ -210,12 +214,11 @@
         })
         .join("");
 
-      // Expand/collapse only from the section header. Submenu navigation must not
-      // auto-collapse other sections. Active section stays open so the current page is visible.
+      // Default collapsed. Only the active section (and user-expanded ones) stay open.
       if (isActiveSection(section, activePage)) {
-        collapsedIds.delete(section.id);
+        expandedIds.add(section.id);
       }
-      const shouldExpand = !collapsedIds.has(section.id);
+      const shouldExpand = expandedIds.has(section.id);
 
       return `
         <div class="nav-section${shouldExpand ? "" : " collapsed"}" data-section="${section.id}">
@@ -227,7 +230,7 @@
         </div>`;
     }).join("");
 
-    setCollapsedIds(collapsedIds);
+    setExpandedIds(expandedIds);
     host.innerHTML = html;
 
     host.querySelectorAll(".nav-toggle").forEach((btn) => {
@@ -237,11 +240,11 @@
         const section = btn.closest(".nav-section");
         const collapsed = section.classList.toggle("collapsed");
         btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
-        const ids = getCollapsedIds();
+        const ids = getExpandedIds();
         const id = section.dataset.section;
-        if (collapsed) ids.add(id);
-        else ids.delete(id);
-        setCollapsedIds(ids);
+        if (collapsed) ids.delete(id);
+        else ids.add(id);
+        setExpandedIds(ids);
       });
     });
 
