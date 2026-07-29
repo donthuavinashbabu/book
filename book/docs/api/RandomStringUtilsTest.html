@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RandomStringUtilsTest — API</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">commons-lang3 <span>docs</span></a>
+    <div class="subtitle">Apache Commons Lang3 examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> / API / RandomStringUtilsTest
+        </div>
+
+        <h1>Class RandomStringUtilsTest</h1>
+        <div class="meta">
+          <span class="badge">public class</span>
+          <span><code>com.java.RandomStringUtilsTest</code></span>
+        </div>
+
+        <div class="signature-block">
+          @Slf4j<br />
+          public class RandomStringUtilsTest
+        </div>
+
+        <p>
+          JUnit 5 example that exercises
+          <code>org.apache.commons.lang3.RandomStringUtils</code>
+          to generate random letter/digit strings of fixed length.
+          Source:
+          <code>apache-commons-lang3/commons-lang3/src/main/java/com/java/RandomStringUtilsTest.java</code>.
+        </p>
+
+        <h2>Package</h2>
+        <p><code>com.java</code></p>
+
+        <h2>Imports</h2>
+        <ul>
+          <li><code>lombok.extern.slf4j.Slf4j</code></li>
+          <li><code>org.apache.commons.lang3.RandomStringUtils</code></li>
+          <li><code>org.junit.jupiter.api.Test</code></li>
+        </ul>
+
+        <h2>Method summary</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Modifier</th>
+                <th>Method</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>void</code></td>
+                <td><a href="#randomString"><code>randomString()</code></a></td>
+                <td>Demonstrates <code>random</code>, <code>randomAlphabetic</code>, and <code>randomAlphanumeric</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Nested navigation — examples</h2>
+        <ul class="toc-list">
+          <li><a href="../examples/random.html">random(count, letters, numbers)</a></li>
+          <li><a href="../examples/random-alphabetic.html">randomAlphabetic(count)</a></li>
+          <li><a href="../examples/random-alphanumeric.html">randomAlphanumeric(count)</a></li>
+        </ul>
+
+        <div class="member" id="randomString">
+          <div class="member-title">
+            <span class="badge">@Test</span>
+            <span class="name">randomString</span>
+          </div>
+          <div class="signature-block">void randomString()</div>
+          <p>
+            Builds three random strings of length 10 and logs them. Sample outputs captured in the
+            source Javadoc (illustrative only; values are random each run):
+          </p>
+          <ul>
+            <li><code>randomString1=DWVxBY5jSi</code> — letters and numbers</li>
+            <li><code>randomString2=HsOnseHKUN</code> — alphabetic only</li>
+            <li><code>randomString3=wk1ILav9Eb</code> — alphanumeric</li>
+          </ul>
+
+          <h3>Full source</h3>
+          <div class="pre-wrap">
+<pre>package com.java;
+
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.junit.jupiter.api.Test;
+
+@Slf4j
+public class RandomStringUtilsTest {
+
+    /**
+     * randomString1=DWVxBY5jSi
+     * randomString2=HsOnseHKUN
+     * randomString3=wk1ILav9Eb
+     */
+    @Test
+    void randomString() {
+        boolean useLetters = true;
+        boolean useNumbers = true;
+        String randomString1 = RandomStringUtils.random(10, useLetters, useNumbers);
+        log.info("randomString1={}", randomString1);
+
+        String randomString2 = RandomStringUtils.randomAlphabetic(10);
+        log.info("randomString2={}", randomString2);
+
+        String randomString3 = RandomStringUtils.randomAlphanumeric(10);
+        log.info("randomString3={}", randomString3);
+    }
+}</pre>
+          </div>
+
+          <h3>API calls used</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Call</th><th>Example page</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>RandomStringUtils.random(10, true, true)</code></td>
+                  <td><a href="../examples/random.html">random()</a></td>
+                </tr>
+                <tr>
+                  <td><code>RandomStringUtils.randomAlphabetic(10)</code></td>
+                  <td><a href="../examples/random-alphabetic.html">randomAlphabetic()</a></td>
+                </tr>
+                <tr>
+                  <td><code>RandomStringUtils.randomAlphanumeric(10)</code></td>
+                  <td><a href="../examples/random-alphanumeric.html">randomAlphanumeric()</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <a href="../overview/setup.html">← Maven setup</a>
+          <a href="../examples/random-string-utils.html">Code examples →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

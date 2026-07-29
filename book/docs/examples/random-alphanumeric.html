@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>randomAlphanumeric() — commons-lang3 docs</title>
+  <link rel="stylesheet" href="../css/docs.css" />
+</head>
+<body data-base="../">
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+    <a class="brand" href="../index.html">commons-lang3 <span>docs</span></a>
+    <div class="subtitle">Apache Commons Lang3 examples</div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-search">
+        <input id="nav-search" type="search" placeholder="Filter menu…" aria-label="Filter menu" />
+      </div>
+      <nav id="sidebar-nav" aria-label="Documentation"></nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> /
+          <a href="random-string-utils.html">Examples</a> / randomAlphanumeric()
+        </div>
+
+        <h1>RandomStringUtils.randomAlphanumeric</h1>
+        <div class="meta">
+          <span class="badge">static</span>
+          <span>from <a href="random-string-utils.html">RandomStringUtils</a> examples</span>
+        </div>
+
+        <div class="signature-block">
+          public static String randomAlphanumeric(int count)
+        </div>
+
+        <h2>Description</h2>
+        <p>
+          Creates a random alphanumeric string (letters and digits) of the requested length.
+          Equivalent in spirit to <code>random(count, true, true)</code> with a dedicated API.
+        </p>
+
+        <h2>Parameters</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Name</th><th>Type</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>count</code></td><td><code>int</code></td><td>Desired length of the string</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Returns</h2>
+        <p><code>String</code> — alphanumeric random value.</p>
+
+        <h2>Code from this repository</h2>
+        <div class="pre-wrap">
+<pre>String randomString3 = RandomStringUtils.randomAlphanumeric(10);
+log.info("randomString3={}", randomString3);
+// sample: randomString3=wk1ILav9Eb</pre>
+        </div>
+
+        <h2>See also</h2>
+        <ul>
+          <li><a href="random.html">random(int, boolean, boolean)</a></li>
+          <li><a href="random-alphabetic.html">randomAlphabetic(int)</a></li>
+          <li><a href="../api/RandomStringUtilsTest.html#randomString">RandomStringUtilsTest.randomString()</a></li>
+        </ul>
+
+        <div class="footer-nav">
+          <a href="random-alphabetic.html">← randomAlphabetic()</a>
+          <a href="../index.html">Back to home →</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/docs.js"></script>
+</body>
+</html>

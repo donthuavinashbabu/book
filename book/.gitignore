@@ -68,6 +68,11 @@ target
 /build/reports/tests/test/classes/*.html
 *.html
 *.css
+# Keep static documentation site under docs/
+!docs/
+!docs/**/
+!docs/**/*.html
+!docs/**/*.css
 /build/resources/main/*.txt
 folder1
 *.MF
