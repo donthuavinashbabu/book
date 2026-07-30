@@ -1,7 +1,6 @@
 # Welcome to Book
 ------
 # Table of contents
-* [AI](ai/README.md)
 * [Apache commons-lang3](apache-commons-lang3/README.md)
 * [AWS](aws/README.md)
 * [Core Java](core-java/README.md)

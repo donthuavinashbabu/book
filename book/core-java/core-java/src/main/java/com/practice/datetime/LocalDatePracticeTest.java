@@ -3,6 +3,8 @@ package com.practice.datetime;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import java.time.*;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
@@ -143,6 +145,14 @@ public class LocalDatePracticeTest {
 		DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("MMyyyydd");
 		String date2 = localDate.format(dateTimeFormatter2);
 		log.info("date2={}", date2); // date2=02202315
+	}
+
+	@Test
+	public void isWeekend() {
+		LocalDate date = LocalDate.of(2026, 7, 18); // Example date
+		DayOfWeek day = date.getDayOfWeek();
+		boolean isWeekend = (day == DayOfWeek.SATURDAY || day == DayOfWeek.SUNDAY);
+		System.out.println(date + " is weekend? " + isWeekend);
 	}
 
 }
