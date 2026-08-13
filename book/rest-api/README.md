@@ -2,6 +2,7 @@
 ------
 # Theory
 * [Notes](notes.md)
+* [Testing](testing.md)
 * [REST API 101](1%20of%206%20-%20REST%20API%20-%20A%20to%20Z%20-%20REST%20API%20101.pdf)
 * [Architectural Constraints](2%20of%206%20-%20REST%20API%20-%20A%20to%20Z%20-%20Architectural%20Constraints.pdf)
 * [Design Practices](3%20of%206%20-%20REST%20API%20-%20A%20to%20Z%20-%20Design%20Practices.pdf)
