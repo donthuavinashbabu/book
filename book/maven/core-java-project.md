@@ -247,3 +247,36 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
     <version>2.2</version>
 </dependency>
 ```
+* Add spotless plugin. Run 'mvn spotless:apply' to maintain java code format
+* Download [license-header.txt](license-header.txt) and put in project root direct. This file content will be added to each source file
+```
+<plugin>
+	<groupId>com.diffplug.spotless</groupId>
+	<artifactId>spotless-maven-plugin</artifactId>
+	<version>2.44.2</version>
+	<configuration>
+	<java>
+		<googleJavaFormat>
+		<!-- 1.28+ required: older GJF breaks on recent JDKs (DeferredDiagnosticHandler API) -->
+		<version>1.28.0</version>
+		</googleJavaFormat>
+		<licenseHeader>
+		<file>${maven.multiModuleProjectDirectory}/license-header.txt</file>
+		</licenseHeader>
+		<importOrder/>
+		<removeUnusedImports/>
+		<formatAnnotations/>
+	</java>
+	<formats>
+		<format>
+		<includes>
+			<include>*.md</include>
+			<include>.gitignore</include>
+		</includes>
+		<trimTrailingWhitespace/>
+		<endWithNewline/>
+		</format>
+	</formats>
+	</configuration>
+</plugin>
+```
