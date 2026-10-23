@@ -4,7 +4,7 @@
 - [Files](#files)
 ---
 # Folders
-* <a href="udemy-certificates/README.md" target="_blank" rel="noopener">Udemy Certificates</a>
+* [Udemy Certificates](udemy-certificates/README.md)
 ---
 ## Files
-* <a href="study.txt" target="_blank" rel="noopener">Study List</a>
+* [Study List](study.txt)

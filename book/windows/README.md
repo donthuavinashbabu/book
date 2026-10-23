@@ -7,5 +7,5 @@
 _No subfolders_
 ---
 ## Files
-* <a href="commands.md" target="_blank" rel="noopener">Commands</a>
-* <a href="execute-batch-file-on-startup.md" target="_blank" rel="noopener">Execute batch file on start of windows 11</a>
+* [Commands](commands.md)
+* [Execute batch file on start of windows 11](execute-batch-file-on-startup.md)

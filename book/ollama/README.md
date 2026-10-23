@@ -7,5 +7,5 @@
 _No subfolders_
 ---
 ## Files
-* <a href="commands.txt" target="_blank" rel="noopener">Commands</a>
-* <a href="download.md" target="_blank" rel="noopener">Download and install</a>
+* [Commands](commands.txt)
+* [Download and install](download.md)

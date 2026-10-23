@@ -7,4 +7,4 @@
 _No subfolders_
 ---
 ## Files
-* <a href="index-queries.sql" target="_blank" rel="noopener">Index Queries</a>
+* [Index Queries](index-queries.sql)

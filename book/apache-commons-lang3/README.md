@@ -4,7 +4,7 @@
 - [Files](#files)
 ---
 # Folders
-* <a href="commons-lang3/README.md" target="_blank" rel="noopener">commons lang3 examples</a>
+* [commons lang3 examples](commons-lang3/README.md)
 ---
 ## Files
 _No files_

@@ -7,4 +7,4 @@
 _No subfolders_
 ---
 ## Files
-* <a href="sample-yaml-file.yaml" target="_blank" rel="noopener">Sample yaml file</a>
+* [Sample yaml file](sample-yaml-file.yaml)

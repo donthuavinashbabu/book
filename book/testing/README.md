@@ -7,6 +7,6 @@
 _No subfolders_
 ---
 ## Files
-* <a href="materials.md" target="_blank" rel="noopener">Materials</a>
-* <a href="smoke-testing-vs-sanity-testing.md" target="_blank" rel="noopener">Smoke Testing Vs Sanity Testing</a>
-* <a href="testing-methodologies.md" target="_blank" rel="noopener">Testing Methodologies</a>
+* [Materials](materials.md)
+* [Smoke Testing Vs Sanity Testing](smoke-testing-vs-sanity-testing.md)
+* [Testing Methodologies](testing-methodologies.md)

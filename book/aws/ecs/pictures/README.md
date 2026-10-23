@@ -3,5 +3,5 @@
 - [Files](#files)
 ---
 ## Files
-* <a href="ecs-introduction.jpg" target="_blank" rel="noopener">ecs-introduction.jpg</a>
-* <a href="fargate.jpg" target="_blank" rel="noopener">fargate.jpg</a>
+* [ecs-introduction.jpg](ecs-introduction.jpg)
+* [fargate.jpg](fargate.jpg)

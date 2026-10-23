@@ -4,8 +4,8 @@
 - [Files](#files)
 ---
 # Folders
-* <a href="img/README.md" target="_blank" rel="noopener">img</a>
+* [img](img/README.md)
 ---
 ## Files
-* <a href="pre-request-script.md" target="_blank" rel="noopener">Pre request script</a>
-* <a href="validate-api-response.md" target="_blank" rel="noopener">Validate API Response</a>
+* [Pre request script](pre-request-script.md)
+* [Validate API Response](validate-api-response.md)

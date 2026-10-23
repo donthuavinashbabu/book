@@ -4,7 +4,7 @@
 - [Files](#files)
 ---
 # Folders
-* <a href="doc-intelligence/README.md" target="_blank" rel="noopener">Doc Intelligence</a>
+* [Doc Intelligence](doc-intelligence/README.md)
 ---
 ## Files
-* <a href="Document-Processing-Pipeline.png" target="_blank" rel="noopener">Document-Processing-Pipeline.png</a>
+* [Document-Processing-Pipeline.png](Document-Processing-Pipeline.png)

@@ -3,4 +3,4 @@
 - [Files](#files)
 ---
 ## Files
-* <a href="rest-api.postman_collection.json" target="_blank" rel="noopener">Rest Api.Postman Collection</a>
+* [Rest Api.Postman Collection](rest-api.postman_collection.json)

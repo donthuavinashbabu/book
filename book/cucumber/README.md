@@ -4,7 +4,7 @@
 - [Files](#files)
 ---
 # Folders
-* <a href="cucumber/README.md" target="_blank" rel="noopener">Cucumber</a>
+* [Cucumber](cucumber/README.md)
 ---
 ## Files
 _No files_

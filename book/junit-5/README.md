@@ -7,7 +7,7 @@
 _No subfolders_
 ---
 ## Files
-* <a href="after-annotation.md" target="_blank" rel="noopener">After annotations</a>
-* <a href="assertions.md" target="_blank" rel="noopener">Assertions</a>
-* <a href="before-annotations.md" target="_blank" rel="noopener">Before annotations</a>
-* <a href="dependencies.md" target="_blank" rel="noopener">Junit 5 dependencies</a>
+* [After annotations](after-annotation.md)
+* [Assertions](assertions.md)
+* [Before annotations](before-annotations.md)
+* [Junit 5 dependencies](dependencies.md)

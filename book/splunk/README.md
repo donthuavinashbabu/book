@@ -7,4 +7,4 @@
 _No subfolders_
 ---
 ## Files
-* <a href="notes.md" target="_blank" rel="noopener">Notes</a>
+* [Notes](notes.md)

@@ -8,7 +8,7 @@
 _No subfolders_
 ---
 ## Files
-* <a href="commands.md" target="_blank" rel="noopener">Commands</a>
+* [Commands](commands.md)
 ---
 ## References
-* <a href="https://www.tutorialspoint.com/apache_solr/index.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/apache_solr/index.htm</a>
+* [https://www.tutorialspoint.com/apache_solr/index.htm](https://www.tutorialspoint.com/apache_solr/index.htm)

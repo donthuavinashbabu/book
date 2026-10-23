@@ -7,4 +7,4 @@
 _No subfolders_
 ---
 ## Files
-* <a href="dependencies.md" target="_blank" rel="noopener">Dependencies</a>
+* [Dependencies](dependencies.md)

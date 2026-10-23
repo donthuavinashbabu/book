@@ -7,12 +7,12 @@
 _No subfolders_
 ---
 ## Files
-* <a href="log4j-change-log-level-by-package.xml" target="_blank" rel="noopener">log4j.xml file with console and file appender and change log level by package</a>
-* <a href="log4j-console-appender.properties" target="_blank" rel="noopener">log4j properties file with console appender</a>
-* <a href="log4j-console-file-appender.properties" target="_blank" rel="noopener">log4j properties file with console and file appender</a>
-* <a href="log4j-console-file-appender.xml" target="_blank" rel="noopener">log4j.xml file with console and file appender</a>
-* <a href="log4j-filename-with-date-suffix.properties" target="_blank" rel="noopener">log4j properties file with console and file appender - creates log file name with with date suffix</a>
-* <a href="log4j-local-practice.xml" target="_blank" rel="noopener">log4J.xml file for local practice</a>
-* <a href="log4j-slf4j-dependencies.md" target="_blank" rel="noopener">Log4J SLF4J Dependencies</a>
-* <a href="logging-formats.md" target="_blank" rel="noopener">Logging Formats</a>
-* <a href="logging-levels.md" target="_blank" rel="noopener">Logging Levels</a>
+* [log4j.xml file with console and file appender and change log level by package](log4j-change-log-level-by-package.xml)
+* [log4j properties file with console appender](log4j-console-appender.properties)
+* [log4j properties file with console and file appender](log4j-console-file-appender.properties)
+* [log4j.xml file with console and file appender](log4j-console-file-appender.xml)
+* [log4j properties file with console and file appender - creates log file name with with date suffix](log4j-filename-with-date-suffix.properties)
+* [log4J.xml file for local practice](log4j-local-practice.xml)
+* [Log4J SLF4J Dependencies](log4j-slf4j-dependencies.md)
+* [Logging Formats](logging-formats.md)
+* [Logging Levels](logging-levels.md)

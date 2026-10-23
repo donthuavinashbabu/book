@@ -8,8 +8,8 @@
 _No subfolders_
 ---
 ## Files
-* <a href="commands.md" target="_blank" rel="noopener">Commands</a>
+* [Commands](commands.md)
 ---
 ## References
-* <a href="https://docs.astral.sh/uv/" target="_blank" rel="noopener">Documentation</a>
-* <a href="https://docs.astral.sh/uv/getting-started/installation/" target="_blank" rel="noopener">Install UV</a>
+* [Documentation](https://docs.astral.sh/uv/)
+* [Install UV](https://docs.astral.sh/uv/getting-started/installation/)
