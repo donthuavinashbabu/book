@@ -1,10 +1,11 @@
-# Spring Boot Table of Contents
+# Spring Boot
 ------
-# Theory
-
-------
-# Spring Boot 3 Table of Contents
-* [POCs and Examples](spring-boot-3/README.md)
+- [Folders](#folders)
+- [Files](#files)
 ---
-# Spring Boot 2 Table of Contents
-* [Examples](spring-boot-2/README.md)
+# Folders
+* <a href="spring-boot-2/README.md" target="_blank" rel="noopener">Spring Boot 2</a>
+* <a href="spring-boot-3/README.md" target="_blank" rel="noopener">POCs and Examples</a>
+---
+## Files
+_No files_

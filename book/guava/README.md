@@ -1,8 +1,10 @@
-# Guava Table of Contents
+# Guava
 ------
-# Theory
-------
-# POCs and Examples
-* [Dependencies](dependencies.md)
-------
-# Materials and References
+- [Folders](#folders)
+- [Files](#files)
+---
+# Folders
+_No subfolders_
+---
+## Files
+* <a href="dependencies.md" target="_blank" rel="noopener">Dependencies</a>

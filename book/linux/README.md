@@ -1,8 +1,15 @@
 # Linux
+------
+- [Folders](#folders)
+- [Files](#files)
 ---
-* [Commands](commands.md)
-* [sudo command notes](sudo.md)
-* [yum command notes](yum.md)
-* [All Commands](all-commands.jpg)
-* [Grep](grep.md)
-* [Most used linux commands](most-used-linux-commands.jpg)
+# Folders
+_No subfolders_
+---
+## Files
+* <a href="all-commands.jpg" target="_blank" rel="noopener">all-commands.jpg</a>
+* <a href="commands.md" target="_blank" rel="noopener">Commands</a>
+* <a href="grep.md" target="_blank" rel="noopener">Grep</a>
+* <a href="most-used-linux-commands.jpg" target="_blank" rel="noopener">most-used-linux-commands.jpg</a>
+* <a href="sudo.md" target="_blank" rel="noopener">sudo command notes</a>
+* <a href="yum.md" target="_blank" rel="noopener">yum command notes</a>

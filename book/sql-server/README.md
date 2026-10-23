@@ -1,4 +1,10 @@
-# SQL Server Table of Contents
+# SQL Server
 ------
-# POCs and Examples
-* [Index Queries](index-queries.sql)
+- [Folders](#folders)
+- [Files](#files)
+---
+# Folders
+_No subfolders_
+---
+## Files
+* <a href="index-queries.sql" target="_blank" rel="noopener">Index Queries</a>

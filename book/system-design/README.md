@@ -1,3 +1,10 @@
 # System Design
+------
+- [Folders](#folders)
+- [Files](#files)
 ---
-* [System Design Cheat Sheet](system-design-cheat-sheet.jpeg)
+# Folders
+_No subfolders_
+---
+## Files
+* <a href="system-design-cheat-sheet.jpeg" target="_blank" rel="noopener">system-design-cheat-sheet.jpeg</a>
