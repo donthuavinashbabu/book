@@ -1,12 +1,18 @@
 # Welcome to Book
 ------
-# Table of contents
+- [Files](#files)
+- [Topic wise](#topic-wise)
+---
+# Topic wise
 * [Apache commons-lang3](apache-commons-lang3/README.md)
 * [AWS](aws/README.md)
+* [Azure](azure/README.md)
 * [Core Java](core-java/README.md)
 * [Cucumber](cucumber/README.md)
 * [Data Structures Algorithms](data-structures-algorithms/README.md)
 * [Docker](docker/README.md)
+* [Document Intelligence](document-intelligence/README.md)
+* [Flyway](flyway/README.md)
 * [Git](git/README.md)
 * [Gitops ArgoCD](gitops-argocd/README.md)
 * [Guava](guava/README.md)
@@ -46,3 +52,22 @@
 * [uv Python package and project manager](uv/README.md)
 * [Windows](windows/README.md)
 * [Yaml](yaml/README.md)
+---
+## Files
+* [Architect Preparation Plan](architect-preparation.md)
+* [Code Review](code-review.jpeg)
+* [Edge case vs Corner case](edge-vs-corner-case.md)
+* [Email Skills](email-skills.jpeg)
+* [Encoding vs Encryption vs Tokenization](encoding-encryption-tokenization.md)
+* [Environment Variables vs System properties vs Program arguments](env-variables-vm-variables-program-arguments.md)
+* [Java Architect Tech List](java-architect-tech-list.md)
+* [Java Developer Essential Skills](java-essentials.txt)
+* [MkDocs config](mkdocs.yml)
+* [Difference between model object and entity object](model-vs-entity.md)
+* [Module does not open (Java error)](module-does-not-open.md)
+* [NFRs](nfrs.md)
+* [Product Development Essentials](product-development-points.txt)
+* [Docs requirements](requirements-docs.txt)
+* [Sharding vs Replication](sharding-vs-replication.md)
+* [Software List for Java Engineer](softwares-list.md)
+* [Types of SQL Queries](types-of-sql-queries.md) 

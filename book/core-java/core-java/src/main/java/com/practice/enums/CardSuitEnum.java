@@ -36,4 +36,5 @@ public enum CardSuitEnum {
 	public String getCardName() {
 		return cardName;
 	}
+	
 }

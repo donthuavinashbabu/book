@@ -1,0 +1,20 @@
+# core
+python-dotenv
+pandas
+pydantic
+
+# pdf processing
+pymupdf # read pdf files and extract text
+pdfplumber # read pdf files and extract text. better than pymupdf
+
+# RAG and LLM pipeline
+langchain # framework for building RAG pipelines
+langchain-openai # openai integration for langchain
+chromadb # vector database. Store embeddings for storing and querying documents
+
+# api
+fastapi # web framework for building APIs
+uvicorn # ASGI server for fastapi
+
+# Notebooks
+jupyter # notebook environment for data analysis and visualization

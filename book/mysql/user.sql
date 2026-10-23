@@ -1,7 +1,7 @@
 -- Create
 ------
 -- Create User
-create user 'username'@'localhost' identified by 'password';
+create user 'user1'@'localhost' identified by 'Password1';
 create user 'username'@'localhost' identified WITH mysql_native_password by 'password';
 
 -- Drop

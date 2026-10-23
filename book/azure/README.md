@@ -1,0 +1,6 @@
+- [Materials](materials.md)
+- [Materials pdfs](materials/udemy-AZ-900-Microsoft-Azure-Fundamentals-in-a-Weekend)
+- [Azure certification road map](content/Azure_Certification_Roadmap_AZ900_AZ204_AI102_AZ305.md)
+- [Notes](notes.md)
+- [Fabric](content/fabric/README.md)
+- [Virtual Machine - VM](content/vms/README.md)

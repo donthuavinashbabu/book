@@ -226,6 +226,12 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
     <artifactId>commons-lang3</artifactId>
     <version>3.16.0</version>
 </dependency>
+
+<dependency>
+	<groupId>commons-io</groupId>
+	<artifactId>commons-io</artifactId>
+	<version>2.19.0</version>
+</dependency>
 ```
 * Add java faker dependencies
 ```
@@ -279,4 +285,50 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 	</formats>
 	</configuration>
 </plugin>
+```
+---
+* H2 dependency
+```
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <version>2.2.224</version>
+</dependency>
+```
+* In Memory H2 DB URL - jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;AUTO_SERVER=TRUE;MODE=PostgreSQL
+* File based H2 DB URL - Relative to the working directory - jdbc:h2:file:./data/testdb;DATABASE_TO_UPPER=false;AUTO_SERVER=TRUE;MODE=PostgreSQL
+* File based H2 DB URL - Absolute path Linux - jdbc:h2:file:/var/data/testdb;DATABASE_TO_UPPER=false;AUTO_SERVER=TRUE;MODE=PostgreSQL 
+* File based H2 DB URL - Absolute path Windows -  jdbc:h2:file:C:/data/testdb;DATABASE_TO_UPPER=false;AUTO_SERVER=TRUE;MODE=PostgreSQL
+* File based H2 DB URL - Home directory - jdbc:h2:file:~/testdb;DATABASE_TO_UPPER=false;AUTO_SERVER=TRUE;MODE=PostgreSQL
+* MODE=PostgreSQL (or MySQL, etc.) for compatibility mode.
+* Spring Boot configuration - application.yml. With ddl-auto: create or create-drop, Hibernate will wipe the schema on startup or shutdown, which defeats the purpose of a file-based DB
+```
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/testdb;AUTO_SERVER=TRUE;DATABASE_TO_UPPER=false
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update   # use 'update' (not 'create-drop') if you want data to persist
+```
+---
+* PostgreSql dependency
+```
+<dependency>
+	<groupId>org.postgresql</groupId>
+	<artifactId>postgresql</artifactId>
+	<version>42.7.8</version>
+</dependency>
+```
+---
+* Mysql dependency
+* connection url - jdbc:mysql://localhost:3306/your_database
+```
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>9.7.0</version>
+</dependency>
 ```
