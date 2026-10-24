@@ -4,6 +4,7 @@
 - [Folders](#folders)
 ---
 # Folders
+* [Apache Camel](apache-camel/README.md)
 * [Apache commons-lang3](apache-commons-lang3/README.md)
 * [AWS](aws/README.md)
 * [Azure](azure/README.md)
