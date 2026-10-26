@@ -45,6 +45,7 @@
 * [REST API](rest-api/README.md)
 * [Solr](solr/README.md)
 * [Splunk](splunk/README.md)
+* [Spring AOP](spring-aop/README.md)
 * [Spring Batch](spring-batch/README.md)
 * [Spring Boot](spring-boot/README.md)
 * [Spring Data JPA](spring-data-jpa/content/README.md)
