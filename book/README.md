@@ -48,7 +48,7 @@
 * [Spring AOP](spring-aop/README.md)
 * [Spring Batch](spring-batch/README.md)
 * [Spring Boot](spring-boot/README.md)
-* [Spring Data JPA](spring-data-jpa/content/README.md)
+* [Spring Data JPA](spring-data-jpa/README.md)
 * [Spring Integration](spring-integration/README.md)
 * [Spring Security](spring-security/README.md)
 * [SQL](sql/README.md)
