@@ -216,7 +216,6 @@
 - c:\MyPC\personal\github\book\book\aws\iam\notes.md
 - c:\MyPC\personal\github\book\book\aws\lambda\README.md
 - c:\MyPC\personal\github\book\book\aws\lambda\hello-world\README.md
-- c:\MyPC\personal\github\book\book\aws\materials.md
 - c:\MyPC\personal\github\book\book\aws\neptune\README.md
 - c:\MyPC\personal\github\book\book\aws\notes.md
 - c:\MyPC\personal\github\book\book\aws\rds\README.md

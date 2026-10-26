@@ -1,2 +1,4 @@
-- [Materials](materials.md)
 - [Notes](notes.md)
+
+## References
+* Udemy - Microsoft Fabric - The Complete Guide
