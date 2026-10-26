@@ -15,17 +15,22 @@ The repository contains a collection of Java classes that demonstrate the usage 
         │   └── com
         │       ├── practice
         │       │   ├── annotations
-        │       │   ├── dates
+        │       │   ├── datetime
         │       │   ├── enums
+        │       │   ├── exceptions
+        │       │   ├── io
         │       │   ├── java
         │       │   │   ├── lang
+        │       │   │   ├── math
+        │       │   │   ├── text
         │       │   │   └── util
         │       │   │       ├── concurrent
+        │       │   │       ├── regex
         │       │   │       └── stream
         │       │   ├── overriding
-        │       │   └── RecordClassTest.java
+        │       │   └── records
+        │       │       └── RecordClassTest.java
         │       └── serialization
-        |       └── exceptions
         └── resources
             └── log4j.xml
 ```
@@ -35,122 +40,115 @@ Key Files:
 - `src/main/java/com/practice/java/lang/StringTest.java`: Demonstrates string manipulation techniques
 - `src/main/java/com/practice/java/util/ArrayListTest.java`: Showcases ArrayList operations
 - `src/main/java/com/practice/java/util/stream/IntStreamTest.java`: Examples of IntStream usage
-- `src/main/java/com/practice/RecordClassTest.java`: Demonstrates Java record classes
+- `src/main/java/com/practice/records/RecordClassTest.java`: Demonstrates Java record classes
 
 ## Source File Documentation
 
-### com.date.apis
+### Date and time
 
-- [UtilDateTest.java](src/main/java/com/practice/records/records/datetime/apis/UtilDateTest.java): Demonstrates various operations and conversions related to the `java.util.Date` class.
-- [DurationPracticeTest.java](src/main/java/com/practice/records/records/datetime/apis/DurationPracticeTest.java): Shows different ways of working with durations between dates and times in Java.
-- [OffsetDateTimePracticeTest.java](src/main/java/com/practice/records/records/datetime/apis/OffsetDateTimePracticeTest.java): Demonstrates usage of the `OffsetDateTime` class for date-time operations with time zone offsets.
-- [ClockTest.java](src/main/java/com/practice/records/datetime/apis/ClockTest.java): Showcases the usage of the `java.time.Clock` class for obtaining current date and time.
-- [DateUtilsTest.java](src/main/java/com/practice/records/datetime/apis/DateUtilsTest.java): Tests utility methods for working with dates, including format conversions. Demonstrates conversions between different date and time representations in Java.
-- [InstantPracticeTest.java](src/main/java/com/practice/records/records/datetime/apis/InstantPracticeTest.java): Demonstrates the usage of the `Instant` class for working with timestamps.
-- [LocalDatePracticeTest.java](src/main/java/com/practice/records/records/datetime/apis/LocalDatePracticeTest.java): Shows operations and functionalities related to the `LocalDate` class.
-- [LocalTimePracticeTest.java](src/main/java/com/practice/records/records/datetime/apis/LocalTimePracticeTest.java): Demonstrates different ways to create and use `LocalTime` objects.
-- [LocalDateTimePracticeTest.java](src/main/java/com/practice/records/records/datetime/apis/LocalDateTimePracticeTest.java): Illustrates usage of `LocalDateTime` for working with date and time without time zones.
-- [ZonedDateTimePracticeTest.java](src/main/java/com/practice/records/records/datetime/apis/ZonedDateTimePracticeTest.java): Shows how to work with `ZonedDateTime` for date-time operations with time zones.
+- [UtilDateTest.java](src/main/java/com/practice/datetime/UtilDateTest.java): Demonstrates various operations and conversions related to the `java.util.Date` class.
+- [DurationPracticeTest.java](src/main/java/com/practice/datetime/DurationPracticeTest.java): Shows different ways of working with durations between dates and times in Java.
+- [OffsetDateTimePracticeTest.java](src/main/java/com/practice/datetime/OffsetDateTimePracticeTest.java): Demonstrates usage of the `OffsetDateTime` class for date-time operations with time zone offsets.
+- [DateTimePractice.java](src/main/java/com/practice/datetime/DateTimePractice.java): Shows `java.time.Clock` and date-format conversions between different date and time representations.
+- [InstantPracticeTest.java](src/main/java/com/practice/datetime/InstantPracticeTest.java): Demonstrates the usage of the `Instant` class for working with timestamps.
+- [LocalDatePracticeTest.java](src/main/java/com/practice/datetime/LocalDatePracticeTest.java): Shows operations and functionalities related to the `LocalDate` class.
+- [LocalTimePracticeTest.java](src/main/java/com/practice/datetime/LocalTimePracticeTest.java): Demonstrates different ways to create and use `LocalTime` objects.
+- [LocalDateTimePracticeTest.java](src/main/java/com/practice/datetime/LocalDateTimePracticeTest.java): Illustrates usage of `LocalDateTime` for working with date and time without time zones.
+- [ZonedDateTimePracticeTest.java](src/main/java/com/practice/datetime/ZonedDateTimePracticeTest.java): Shows how to work with `ZonedDateTime` for date-time operations with time zones.
+- [DisplayDayNameOfWeekTest.java](src/main/java/com/practice/datetime/DisplayDayNameOfWeekTest.java): Shows various ways to display the day name of the week using different Java date/time APIs.
 
-### com.java.util.regex
+### Regular expressions
 
-- [RegexExpressionsTest.java](src/main/java/com/practice/records/records/java/util/regex/RegexExpressionsTest.java): Demonstrates various regular expression operations and patterns in Java.
+- [RegexExpressionsTest.java](src/main/java/com/practice/java/util/regex/RegexExpressionsTest.java): Demonstrates various regular expression operations and patterns in Java.
 
-### com.java.text
+### Number formatting
 
-- [NumberFormatTest.java](src/main/java/com/practice/records/records/java/text/NumberFormatTest.java): Shows usage of `NumberFormat` class for formatting and parsing numeric data in a locale-specific manner.
-- [DecimalFormatPracticeTest.java](src/main/java/com/practice/records/records/java/text/DecimalFormatPracticeTest.java): Demonstrates usage of `DecimalFormat` class for custom number formatting.
+- [NumberFormatTest.java](src/main/java/com/practice/java/text/NumberFormatTest.java): Shows usage of `NumberFormat` class for formatting and parsing numeric data in a locale-specific manner.
+- [DecimalFormatPracticeTest.java](src/main/java/com/practice/java/text/DecimalFormatPracticeTest.java): Demonstrates usage of `DecimalFormat` class for custom number formatting.
 
-### com.java.math
+### Precise decimal arithmetic
 
-- [BigDecimalTest.java](src/main/java/com/practice/records/records/java/math/BigDecimalTest.java): Demonstrates the usage of the `BigDecimal` class for precise decimal arithmetic. This class includes methods for creating `BigDecimal` objects from string values, extracting integer and byte values, and finding minimum and maximum values between `BigDecimal` objects.
+- [BigDecimalTest.java](src/main/java/com/practice/java/math/BigDecimalTest.java): Demonstrates the usage of the `BigDecimal` class for precise decimal arithmetic. This class includes methods for creating `BigDecimal` objects from string values, extracting integer and byte values, and finding minimum and maximum values between `BigDecimal` objects.
 
-### com.practice.java.lang
+### Strings and the runtime
 
-- [StringTest.java](src/main/java/com/practice/records/records/java/lang/StringTest.java): Demonstrates various string manipulation techniques and utilities.
-- [SystemTest.java](src/main/java/com/practice/records/records/java/lang/SystemTest.java): Shows how to retrieve system properties such as Java version, current time, and temporary directory path.
-- [RuntimeTest.java](src/main/java/com/practice/records/records/java/lang/RuntimeTest.java): Illustrates the usage of the Runtime class to get information about the current Java runtime environment.
+- [StringTest.java](src/main/java/com/practice/java/lang/StringTest.java): Demonstrates various string manipulation techniques and utilities.
+- [SystemTest.java](src/main/java/com/practice/java/lang/SystemTest.java): Shows how to retrieve system properties such as Java version, current time, and temporary directory path.
+- [RuntimeTest.java](src/main/java/com/practice/java/lang/RuntimeTest.java): Illustrates the usage of the Runtime class to get information about the current Java runtime environment.
 
-### com.practice.java.util
+### Collections and utility classes
 
-- [ArrayListTest.java](src/main/java/com/practice/records/records/java/util/ArrayListTest.java): Comprehensive demonstration of ArrayList operations, including adding, removing, sorting, and iterating over elements.
-- [HashMapTest.java](src/main/java/com/practice/records/records/java/util/HashMapTest.java): Shows various operations on HashMap, including adding, retrieving, and removing key-value pairs.
-- [HashSetTest.java](src/main/java/com/practice/records/records/java/util/HashSetTest.java): Demonstrates the usage of HashSet, including adding elements and handling duplicates.
-- [LinkedListTest.java](src/main/java/com/practice/records/records/java/util/LinkedListTest.java): Illustrates LinkedList operations and comparisons with ArrayList.
-- [TreeSetTest.java](src/main/java/com/practice/records/records/java/util/TreeSetTest.java): Shows the usage of TreeSet and its ordering capabilities.
-- [ArraysTest.java](src/main/java/com/practice/records/records/java/util/ArraysTest.java): Demonstrates various operations and functionalities related to arrays in Java.
-- [ObjectsTest.java](src/main/java/com/practice/records/records/java/util/ObjectsTest.java): Shows usage of the `Objects` utility class for handling null values and preventing NullPointerExceptions.
-- [CollectionsTest.java](src/main/java/com/practice/records/records/java/util/CollectionsTest.java): Demonstrates the usage of `Collections.synchronizedList()` method for creating thread-safe lists.
-- [ArrayDeQueueTest.java](src/main/java/com/practice/records/records/java/util/ArrayDeQueueTest.java): Shows usage of ArrayDeque as a queue implementation.
-- [StringJoinerTest.java](src/main/java/com/practice/records/records/java/util/StringJoinerTest.java): Demonstrates the usage of StringJoiner for creating comma-separated strings.
-- [LinkedHashMapTest.java](src/main/java/com/practice/records/records/java/util/LinkedHashMapTest.java): Shows basic usage of LinkedHashMap, which maintains insertion order of elements.
-- [LinkedHashSetTest.java](src/main/java/com/practice/records/records/java/util/LinkedHashSetTest.java): Demonstrates operations on LinkedHashSet, a set implementation that maintains insertion order.
-- [LocalePracticeTest.java](src/main/java/com/practice/records/records/java/util/LocalePracticeTest.java): Shows usage of Locale class for internationalization purposes.
-- [ResourceBundleTest.java](src/main/java/com/practice/records/records/java/util/ResourceBundleTest.java): Demonstrates reading from property-based and list-based resource bundles.
-- [MyListResourceBundle.java](src/main/java/com/practice/records/records/java/util/MyListResourceBundle.java): Defines a custom ListResourceBundle for providing localized resources.
-- [MyListResourceBundle_telugu.java](src/main/java/com/practice/records/records/java/util/MyListResourceBundle_telugu.java): Provides Telugu translations for the custom ListResourceBundle.
-- [PropertiesTest.java](src/main/java/com/practice/records/records/java/util/PropertiesTest.java) - Examples to Properties class
+- [ArrayListTest.java](src/main/java/com/practice/java/util/ArrayListTest.java): Comprehensive demonstration of ArrayList operations, including adding, removing, sorting, and iterating over elements.
+- [HashMapTest.java](src/main/java/com/practice/java/util/HashMapTest.java): Shows various operations on HashMap, including adding, retrieving, and removing key-value pairs.
+- [HashSetTest.java](src/main/java/com/practice/java/util/HashSetTest.java): Demonstrates the usage of HashSet, including adding elements and handling duplicates.
+- [LinkedListTest.java](src/main/java/com/practice/java/util/LinkedListTest.java): Illustrates LinkedList operations and comparisons with ArrayList.
+- [TreeSetTest.java](src/main/java/com/practice/java/util/TreeSetTest.java): Shows the usage of TreeSet and its ordering capabilities.
+- [ArraysTest.java](src/main/java/com/practice/java/util/ArraysTest.java): Demonstrates various operations and functionalities related to arrays in Java.
+- [ObjectsTest.java](src/main/java/com/practice/java/util/ObjectsTest.java): Shows usage of the `Objects` utility class for handling null values and preventing NullPointerExceptions.
+- [CollectionsTest.java](src/main/java/com/practice/java/util/CollectionsTest.java): Demonstrates the usage of `Collections.synchronizedList()` method for creating thread-safe lists.
+- [ArrayDeQueueTest.java](src/main/java/com/practice/java/util/ArrayDeQueueTest.java): Shows usage of ArrayDeque as a queue implementation.
+- [StringJoinerTest.java](src/main/java/com/practice/java/util/StringJoinerTest.java): Demonstrates the usage of StringJoiner for creating comma-separated strings.
+- [LinkedHashMapTest.java](src/main/java/com/practice/java/util/LinkedHashMapTest.java): Shows basic usage of LinkedHashMap, which maintains insertion order of elements.
+- [LinkedHashSetTest.java](src/main/java/com/practice/java/util/LinkedHashSetTest.java): Demonstrates operations on LinkedHashSet, a set implementation that maintains insertion order.
+- [LocalePracticeTest.java](src/main/java/com/practice/java/util/LocalePracticeTest.java): Shows usage of Locale class for internationalization purposes.
+- [ResourceBundleTest.java](src/main/java/com/practice/java/util/ResourceBundleTest.java): Demonstrates reading from property-based and list-based resource bundles.
+- [MyListResourceBundle.java](src/main/java/com/practice/java/util/MyListResourceBundle.java): Defines a custom ListResourceBundle for providing localized resources.
+- [MyListResourceBundle_telugu.java](src/main/java/com/practice/java/util/MyListResourceBundle_telugu.java): Provides Telugu translations for the custom ListResourceBundle.
+- [PropertiesTest.java](src/main/java/com/practice/java/util/PropertiesTest.java) - Examples to Properties class
 
-#### com.practice.java.util.concurrent
+#### Concurrent collections
 
-- [CopyOnWriteArrayListTest.java](src/main/java/com/practice/records/records/java/util/concurrent/CopyOnWriteArrayListTest.java): Demonstrates the thread-safe CopyOnWriteArrayList and its iterator behavior.
+- [CopyOnWriteArrayListTest.java](src/main/java/com/practice/java/util/concurrent/CopyOnWriteArrayListTest.java): Demonstrates the thread-safe CopyOnWriteArrayList and its iterator behavior.
 
-#### com.practice.java.util.stream
+#### Streams
 
-- [IntStreamTest.java](src/main/java/com/practice/records/records/java/util/stream/IntStreamTest.java): Showcases various operations available in the IntStream class from the Java Streams API.
+- [IntStreamTest.java](src/main/java/com/practice/java/util/stream/IntStreamTest.java): Showcases various operations available in the IntStream class from the Java Streams API.
 
-### com.practice.annotations
+### Custom annotations
 
-- [Column.java](src/main/java/com/practice/records/records/annotations/Column.java): Defines a custom annotation for database column metadata.
-- [Table.java](src/main/java/com/practice/records/records/annotations/Table.java): Demonstrates the usage of the @Column annotation on class fields.
-- [TableTest.java](src/main/java/com/practice/records/records/annotations/TableTest.java): Tests the retrieval and inspection of custom annotations using reflection.
+- [Column.java](src/main/java/com/practice/annotations/Column.java): Defines a custom annotation for database column metadata.
+- [Table.java](src/main/java/com/practice/annotations/Table.java): Demonstrates the usage of the @Column annotation on class fields.
+- [TableTest.java](src/main/java/com/practice/annotations/TableTest.java): Tests the retrieval and inspection of custom annotations using reflection.
 
-#### com.practice.annotations.repeating
+#### Repeatable annotations
 
-- [Author.java](src/main/java/com/practice/records/records/annotations/repeating/Author.java): Defines a repeatable annotation for specifying multiple authors.
-- [Authors.java](src/main/java/com/practice/records/records/annotations/repeating/Authors.java): Container annotation for multiple Author annotations.
-- [Book.java](src/main/java/com/practice/records/records/annotations/repeating/Book.java): Demonstrates the usage of repeatable annotations.
-- [BookTest.java](src/main/java/com/practice/records/records/annotations/repeating/BookTest.java): Tests the retrieval and processing of repeatable annotations.
+- [Author.java](src/main/java/com/practice/annotations/repeating/Author.java): Defines a repeatable annotation for specifying multiple authors.
+- [Authors.java](src/main/java/com/practice/annotations/repeating/Authors.java): Container annotation for multiple Author annotations.
+- [Book.java](src/main/java/com/practice/annotations/repeating/Book.java): Demonstrates the usage of repeatable annotations.
+- [BookTest.java](src/main/java/com/practice/annotations/repeating/BookTest.java): Tests the retrieval and processing of repeatable annotations.
 
-### com.practice.dates
+### Enums
 
-- [DisplayDayNameOfWeekTest.java](src/main/java/com/practice/records/dates/DisplayDayNameOfWeekTest.java): Shows various ways to display the day name of the week using different Java date/time APIs.
+- [EnumIssue.java](src/main/java/com/practice/enums/EnumIssue.java): Demonstrates the usage of enums in Java, including initialization and mapping.
+- [EnumTest](src/main/java/com/practice/enums/EnumTest.java) - Different methods of using enums
+- [EnumLook](src/main/java/com/practice/enums/EnumLookUpTest.java) - Enum lookup
 
-### com.practice.enums
+### Method overriding
 
-- [EnumIssue.java](src/main/java/com/practice/records/records/enums/EnumIssue.java): Demonstrates the usage of enums in Java, including initialization and mapping.
+- [Main.java](src/main/java/com/practice/overriding/Main.java): Illustrates method overriding and dynamic method dispatch in Java.
+- [Child1.java](src/main/java/com/practice/overriding/Child1.java): Demonstrates a child class overriding methods from its parent.
+- [Parent1.java](src/main/java/com/practice/overriding/Parent1.java): Shows the parent class with methods that can be overridden.
 
-### com.practice.overriding
+### Records
 
-- [Main.java](src/main/java/com/practice/records/records/overriding/Main.java): Illustrates method overriding and dynamic method dispatch in Java.
-- [Child1.java](src/main/java/com/practice/records/records/overriding/Child1.java): Demonstrates a child class overriding methods from its parent.
-- [Parent1.java](src/main/java/com/practice/records/records/overriding/Parent1.java): Shows the parent class with methods that can be overridden.
+- [RecordClassTest.java](src/main/java/com/practice/records/RecordClassTest.java): Demonstrates the usage of Java record classes, including compact constructors and custom methods.
 
-### com.practice
-
-- [RecordClassTest.java](src/main/java/com/practice/records/records/RecordClassTest.java): Demonstrates the usage of Java record classes, including compact constructors and custom methods.
-
-### com.serialization
+### Serialization
 
 - [StudentModel.java](src/main/java/com/serialization/StudentModel.java): Defines a serializable class with custom serialization methods.
 - [SerializationTest.java](src/main/java/com/serialization/SerializationTest.java): Demonstrates the serialization and deserialization of objects.
 
-### com.exceptions
+### Exceptions and try-with-resources
 
-- [TryWithResourceTest](src/main/java/com/practice/records/records/exceptions/TryWithResourceTest.java) - Different scenarios of using try-with-resource block. With customized close method
-- [ExceptionUtilsTest](src/main/java/com/practice/records/records/exceptions/ExceptionUtilsTest.java) - Utils methods while working with exceptions
+- [TryWithResourceTest](src/main/java/com/practice/exceptions/TryWithResourceTest.java) - Different scenarios of using try-with-resource block. With customized close method
+- [ExceptionUtilsTest](src/main/java/com/practice/exceptions/ExceptionUtilsTest.java) - Utils methods while working with exceptions
 
-### com.exceptions
+### File I/O
 
-- [EnumTest](src/main/java/com/practice/records/records/enums/EnumTest.java) - Different methods of using enums
-- [EnumLook](src/main/java/com/practice/records/records/enums/EnumLookUpTest.java) - Enum lookup
-
-### com.io
-
-- [File IO Examples](src/main/java/com/practice/records/records/io/FileIOTest.java)
-- [Random Access File Example](src/main/java/com/practice/records/records/io/RandomAccessFileTest.java)
-- [Read Input from keyboard](src/main/java/com/practice/records/records/io/ReadInputFromKeyboardTest.java)
-- [Zip File Util methods](src/main/java/com/practice/records/records/io/ZipFileTest.java)
+- [File IO Examples](src/main/java/com/practice/io/FileIOTest.java)
+- [Random Access File Example](src/main/java/com/practice/io/RandomAccessFileTest.java)
+- [Read Input from keyboard](src/main/java/com/practice/io/ReadInputFromKeyboardTest.java)
+- [Zip File Util methods](src/main/java/com/practice/io/ZipFileTest.java)
 
 ## Usage Instructions
 
