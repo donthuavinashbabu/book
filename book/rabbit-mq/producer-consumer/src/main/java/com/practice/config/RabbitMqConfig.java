@@ -1,6 +1,5 @@
 package com.practice.config;
 
-import com.practice.util.Constants;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
