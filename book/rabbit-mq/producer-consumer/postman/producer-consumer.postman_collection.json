@@ -1,0 +1,41 @@
+{
+  "info": {
+    "_postman_id": "a45170cf-692e-48a7-88a6-3927c4bb5fbb",
+    "name": "producer-consumer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "9382235"
+  },
+  "item": [
+    {
+      "name": "send-employee",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"b\",\r\n    \"department\": \"d2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/send-employee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "send-employee"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
