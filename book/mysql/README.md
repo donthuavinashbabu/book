@@ -18,6 +18,7 @@ _No subfolders_
 * [Java Connection Details](java-connection-details.md)
 * [Notes](notes.md)
 * [Practice Tables and Data](practice-tables-data.sql)
+* [Practice Tables and Data Entity classes](../spring-data-jpa/content/springdatajpapractice/src/main/java/springboot/data/jpa/model)
 * [Read Data Queries](read-queries.sql)
 * [Run MySQL with Docker](run-with-docker.md)
 * [Spring Boot 3 Dependencies](spring-boot-3-dependencies.md)
