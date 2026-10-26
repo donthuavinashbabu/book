@@ -4,15 +4,15 @@
 * Spring Data Mongo: Getting Started
 ------
 # Project setup
-* Project - [spring-data-mongo](spring-data-mongo)
-* Add following dependency in [pom.xml](spring-data-mongo/pom.xml)
+* Project - [spring-data-mongo](pom.xml)
+* Add following dependency in [pom.xml](pom.xml)
 ```
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-data-mongodb</artifactId>
 </dependency>
 ```
-* Add below properties in [application.yml](spring-data-mongo/src/main/resources/application.yml)
+* Add below properties in [application.yml](src/main/resources/application.yml)
 ```
 spring:
   data:
@@ -21,11 +21,11 @@ spring:
       port: 27017
       database: database1
 ```
-* Write repository interface extends `org.springframework.data.mongodb.repository.MongoRepository`. Refer [StudentRepository](spring-data-mongo/src/main/java/com/app/repository/StudentRepository.java)
-* [StudentRepository](spring-data-mongo/src/main/java/com/app/repository/StudentRepository.java)
-* [StudentService](spring-data-mongo/src/main/java/com/app/service/StudentService.java)
-* [Postman collection](spring-data-mongo/files/spring-data-mongo.postman_collection.json)
-* APIs - refer [StudentController](spring-data-mongo/src/main/java/com/app/controller/StudentController.java)
+* Write repository interface extends `org.springframework.data.mongodb.repository.MongoRepository`. Refer [StudentRepository](src/main/java/com/app/repository/StudentRepository.java)
+* [StudentRepository](src/main/java/com/app/repository/StudentRepository.java)
+* [StudentService](src/main/java/com/app/service/StudentService.java)
+* [Postman collection](files/spring-data-mongo.postman_collection.json)
+* APIs - refer [StudentController](src/main/java/com/app/controller/StudentController.java)
 	* /save-student
 	* /student-by-id/{id}
 	* /all-students
@@ -41,7 +41,7 @@ spring:
 	* /students-by-name-native-query/{name}
 ------
 # Print mongo queries in logging
-* Add below property in application.properties/yaml in spring boot project. Refer - [application.yml](spring-data-mongo/src/main/resources/application.yml)
+* Add below property in application.properties/yaml in spring boot project. Refer - [application.yml](src/main/resources/application.yml)
 ```
 logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG
 ```
@@ -56,5 +56,5 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 # Relatioship between collections
 * use `org.springframework.data.mongodb.core.mapping.DBRef` annotation
 * Refer
-	* `address` property in [Student class](spring-data-mongo/src/main/java/com/app/entity/Student.java)
-	* [Address class](spring-data-mongo/src/main/java/com/app/entity/Address.java)
+	* `address` property in [Student class](src/main/java/com/app/entity/Student.java)
+	* [Address class](src/main/java/com/app/entity/Address.java)
