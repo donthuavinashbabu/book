@@ -47,6 +47,7 @@
 * [Splunk](splunk/README.md)
 * [Spring Batch](spring-batch/README.md)
 * [Spring Boot](spring-boot/README.md)
+* [Spring Data JPA](spring-data-jpa/content/README.md)
 * [Spring Security](spring-security/README.md)
 * [SQL](sql/README.md)
 * [SQL Server](sql-server/README.md)
