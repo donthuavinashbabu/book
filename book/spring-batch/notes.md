@@ -8,7 +8,8 @@
 * Item Reader
 * Item Processor
 * Item Writer
-* [High level architecture](img/high-level-architecture.jpg)
+* High level architecture
+  ![picture](img/high-level-architecture.jpg)
 ---
 ## Queries
 * Job related information is saved in table db tables. Following are queries to get job details
