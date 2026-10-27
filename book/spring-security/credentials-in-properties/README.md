@@ -1,45 +1,71 @@
 # Credentials In Properties
-* Implementing basic spring boot 3 spring security 6
-* Define credentials in application properties file
-------
-# How to run application?
-* Application starts on port 9000
 
-## Method 1
-* Import code to IDE (IntelliJ or Eclipse)
-* Run main class - [Main](src/main/java/com/java/Main.java)
-* Random password will be generated in application console
+Spring Boot application that sets the single Spring Security user in `application.properties`. Spring Security uses those values and does not print a generated password.
 
-## Method 2
-* Run below maven command
+`GET /status` returns the text `UP`. Every request requires authentication. A browser shows the default login form. HTTP clients can send Basic authentication.
+
+Spring Boot 3.3.1. Java 17.
+
+## Prerequisites
+
+- Java 17
+- Maven 3.6+
+
+## Run
+
+From this directory:
+
+```bash
+mvn spring-boot:run
 ```
-mvn clean compile spring-boot:run
+
+The main class is [`com.java.Main`](src/main/java/com/java/Main.java). The process listens on port `9000` unless `APP_PORT` is set.
+
+## Call the API
+
+Default username `user1`, default password `pwd1`.
+
+```bash
+curl -u user1:pwd1 http://localhost:9000/status
 ```
-* Random password will be generated in application console
-------
-# Explanation
-* Add spring security dependency in [pom.xml](pom.xml)
-```
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-security</artifactId>
-</dependency>
-```
-* Add below 2 files in [application.properties](src/main/resources/application.properties)
-```
+
+The response body is `UP`.
+
+Open [http://localhost:9000/status](http://localhost:9000/status) in a browser to see the login form.
+
+![Default login form](img/001.jpg)
+
+The same request is in [`postman/credentials-in-properties.postman_collection.json`](postman/credentials-in-properties.postman_collection.json).
+
+[`AppController`](src/main/java/com/java/controller/AppController.java) maps `GET /status` and produces `text/plain`.
+
+## Configuration
+
+Values in [`src/main/resources/application.properties`](src/main/resources/application.properties):
+
+```properties
+server.port=${APP_PORT:9000}
 spring.security.user.name=${SECURITY_USERNAME:user1}
 spring.security.user.password=${SECURITY_PASSWORD:pwd1}
 ```
-* Start the application
-* Hit this API in browser - http://localhost:9000/status
-* Following form will prompt for credentials\
-![picture](img/001.jpg)
-* Enter credentials defined in [application.properties](src/main/resources/application.properties)
-* We will get success response
-------
-# Files
-* [pom.xml](pom.xml)
-* Main class - [Main](src/main/java/com/java/Main.java)
-* Controller - [AppController](src/main/java/com/java/controller/AppController.java)
-* [application.properties](src/main/resources/application.properties)
-* [Postman collection](postman/credentials-in-properties.postman_collection.json)
+
+| Property | Default | Purpose |
+| --- | --- | --- |
+| `server.port` | `9000` (`APP_PORT`) | HTTP port |
+| `spring.application.name` | `credentials-in-properties` | Application name |
+| `spring.security.user.name` | `user1` (`SECURITY_USERNAME`) | Login name |
+| `spring.security.user.password` | `pwd1` (`SECURITY_PASSWORD`) | Login password |
+
+`pom.xml` depends on `spring-boot-starter-security` and `spring-boot-starter-web`.
+
+## Layout
+
+```text
+src/main/java/com/java
+├── Main.java                      Entry point
+└── controller/AppController.java  GET /status
+```
+
+## References
+
+* [Spring Boot 3.3: Security](https://docs.spring.io/spring-boot/3.3/reference/web/spring-security.html)
