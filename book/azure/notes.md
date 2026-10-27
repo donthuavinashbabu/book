@@ -73,3 +73,7 @@ When Azure launched, it was called Windows azure. Later renamed to Microsoft Azu
 - (South America) Brazil South - 3 AZs
 - (Europe) West Europe - 3 AZs
 - (Asia Pacific) South East Asia - 3 AZs
+
+---
+# Naming Conventions
+* ARM Template - Azure Resource Management Template

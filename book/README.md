@@ -11,6 +11,7 @@
 * [Core Java](core-java/README.md)
 * [Cucumber](cucumber/README.md)
 * [Data Structures Algorithms](data-structures-algorithms/README.md)
+* [DBeaver](dbeaver/README.md)
 * [Docker](docker/README.md)
 * [Document Intelligence](document-intelligence/README.md)
 * [Flyway](flyway/README.md)
