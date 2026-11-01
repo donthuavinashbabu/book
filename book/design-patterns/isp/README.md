@@ -1,5 +1,3 @@
-### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
-------
 # Interface Segregation Principle
 * Software modules (classes, methods) should not be forced to depend upon interfaces that they do not use
 * It is not good that interface has large number of methods
@@ -47,5 +45,3 @@ public interface ICEO extends IEmployee {
 	public void addStocks();
 }
 ```
-------
-### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
