@@ -22,3 +22,5 @@ _No subfolders_
 * [Master SQL](https://drive.google.com/file/d/1swAnhbuP5Yu3uvJ3mySbDfri-9qGQ2BG/view?usp=sharing)
 * [Joins Inner Left Right Full](https://drive.google.com/file/d/1aXyNaW56JWk1l0uhtoIh9J6dAibu_M2-/view?usp=sharing)
 * [Client Server Model](https://drive.google.com/file/d/1fOGsb9pDf3hcxc3IwP8uaCYLp5Q8sKUY/view?usp=sharing)
+* What Is Sharding? - https://hazelcast.com/glossary/sharding/#:~:text=Sharding%20and%20partitioning%20are%20both,within%20a%20single%20database%20instance.
+* Database Sharding vs. Partitioning: What is the Difference? - https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
