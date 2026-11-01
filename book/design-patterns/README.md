@@ -6,9 +6,15 @@
 ---
 # Folders
 * [Design Patterns](design-patterns/README.md)
+* [Single Responsibility Principle](srp/README.md)
+* [Open Closed Principle](ocp/README.md)
+* [Liskov Substitution Principle](lsp/README.md)
+* [Interface Segregation Principle](isp/README.md)
+* [Dependency Inversion](di/README.md)
+* [Service Locator Pattern](service-locator-pattern/README.md)
 ---
 ## Files
-_No files_
+* [Notes](notes.md)
 ---
 ## References
 * [Design Patterns in Java](https://www.tutorialspoint.com/design_pattern/index.htm)

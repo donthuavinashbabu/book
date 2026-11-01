@@ -12,3 +12,4 @@ _No files_
 ---
 ## References
 * [JWT Handbook](https://drive.google.com/file/d/1WavoTdmYgoKtfTHk2-hXm5C4J37rcP4w/view?usp=sharing)
+* Youtube - https://www.youtube.com/watch?v=soGRyl9ztjI&ab_channel=JavaBrains

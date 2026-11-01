@@ -23,7 +23,17 @@
 * [Build and push a Spring Boot 3 Java 17 image](Dockerfile-spring-boot-3-java-17.md)
 * [Using labs.play-with-docker.com](labs-play-with-docker.md)
 * [Notes](notes.md)
-* [Docker notes](notes-2.md)
+	* [Docker container life cycle](notes.md#docker-container-life-cycle)
+	* [15 useful docker commands](notes.md#15-usefeul-docker-commands)
+	* [Volume and networks](notes.md#volume-and-networks)
+	* [Images, containers, and registries](notes.md#docker-notes-1)
+	* [Dockerfile notes](notes.md#dockerfile-notes)
+	* [Push an image to Docker Hub](notes.md#push-docker-image-to-docker-hub)
+	* [Networking](notes.md#networking)
+	* [Fabric8 Docker Maven plugin](notes.md#fabric8-docker-maven-plugin)
+	* [Add a Windows user to docker-users](notes.md#how-do-i-add-myself-to-the-docker-users-group-on-windows)
+	* [Run BusyBox](notes.md#docker-commands)
+	* [Pull a Tomcat image](notes.md#docker-tomcat)
 * [Push a local image to Docker Hub](push-docker-image-dockerhub.md)
 * [Run Redis](redis.md)
 ---
@@ -39,3 +49,6 @@
 * https://stefanscherer.github.io/how-to-install-docker-the-chocolatey-way/
 * https://dev.to/kojikanao/15-docker-commands-for-beginners-4m4d
 * https://docs.docker.com/get-started/overview/
+* [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
+* [Let’s make your Docker Image better than 90% of existing ones](https://medium.com/@chamilad/lets-make-your-docker-image-better-than-90-of-existing-ones-8b1e5de950d)
+* [Docker Image Size Concerns Out of the Window — Squash with Confidence](https://medium.com/@chamilad/docker-image-size-concerns-out-of-the-window-squash-with-confidence-796f7c48f5c6)

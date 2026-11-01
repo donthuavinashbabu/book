@@ -1,0 +1,25 @@
+# imgs
+------
+- [Files](#files)
+---
+## Files
+* [API composer](api-composer.jpg)
+* [API composer diagram](api-composer.xml)
+* [API composer issue and solution](api-composer-issue-solution.jpg)
+* [API composer issue and solution diagram](api-composer-issue-solution.xml)
+* [Choreography-based sagas](choreography-based-sagas.jpg)
+* [Choreography-based sagas diagram](choreography-based-sagas.xml)
+* [Circuit breaker](circuit-breaker.jpg)
+* [Circuit breaker diagram](circuit-breaker.xml)
+* [Database per service](database-per-service.jpg)
+* [Database per service diagram](database-per-service.xml)
+* [Event source](event-source.jpg)
+* [Event source diagram](event-source.xml)
+* [Health check](health-check.jpg)
+* [Health check diagram](health-check.xml)
+* [Orchestrator-based sagas](orchestrator-based-sagas.jpg)
+* [Orchestrator-based sagas diagram](orchestrator-based-sagas.xml)
+* [Shared database](shared-database.jpg)
+* [Shared database diagram](shared-database.xml)
+* [Two-phase commit](two-phase-commit.jpg)
+* [Two-phase commit diagram](two-phase-commit.xml)
