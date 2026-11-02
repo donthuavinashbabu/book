@@ -7,6 +7,8 @@
 * [Apache Beam](apache-beam/README.md)
 * [Apache Camel](apache-camel/README.md)
 * [Apache POI](apache-poi/README.md)
+* [Apigee](apigee/README.md)
+* [Architect](architect/README.md)
 * [AWS](aws/README.md)
 * [Avro](avro/README.md)
 * [Azure](azure/README.md)
