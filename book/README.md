@@ -8,6 +8,7 @@
 * [Apache Camel](apache-camel/README.md)
 * [Apache POI](apache-poi/README.md)
 * [AWS](aws/README.md)
+* [Avro](avro/README.md)
 * [Azure](azure/README.md)
 * [Commons Lang3](commons-lang3/README.md)
 * [Core Java](core-java/README.md)
