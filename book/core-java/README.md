@@ -62,3 +62,4 @@
 * [https://www.geeksforgeeks.org/java-11-features-and-comparison/](https://www.geeksforgeeks.org/java-11-features-and-comparison/)
 * [https://www.baeldung.com/java-var-lambda-params](https://www.baeldung.com/java-var-lambda-params)
 * [https://mkyong.com/java/java-11-nest-based-access-control/](https://mkyong.com/java/java-11-nest-based-access-control/)
+* [Java Performance](https://jenkov.com/tutorials/java-performance/index.html)
