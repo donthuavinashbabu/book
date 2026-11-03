@@ -14,3 +14,5 @@
 * [Inside an interpreter](looking_inside_an_interpreter.jpg)
 * [Portability](portability.jpg)
 * [Sources of inefficiency in an interpreter](source_of_inefficiency_in_interpreter.jpg)
+* [High level view of GC generations](GC_generations.jpg)
+* [Detailed view of GC generations](GC_generations-2.jpg)

@@ -2,9 +2,10 @@
 ------
 - [Folders](#folders)
 - [Files](#files)
+- [References](#references)
 ---
 # Folders
-_No subfolders_
+* [Mockito](mockito/README.md)
 ---
 ## Files
 * [Throw checked exceptions](checked-exceptions.md)
@@ -16,5 +17,10 @@ _No subfolders_
 * [Mock static classes](mock-static.md)
 * [Mockito with Junit 4](mockito-junit-4.md)
 * [Mockito with Junit 5](mockito-junit-5.md)
+* [Notes](mockito.md)
 * [Passing Null Values](passing-null-values.md)
 * [Unnecessary Stubbing Junit 4 Junit 5](unneccessary-stubbing.md)
+---
+## References
+* Udemy - Maven Crash Course, JUnit and Mockito Crash Course
+* [Mockito annotations](https://www.baeldung.com/mockito-annotations#enable-annotations)

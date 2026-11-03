@@ -229,3 +229,16 @@ WHERE TABLE_SCHEMA = 'mytdp'
 -- AND TABLE_NAME LIKE '%user%'
 AND TABLE_NAME in ('emp', 'dept')
 ORDER BY TABLE_NAME, ORDINAL_POSITION;
+
+----------------------------------------------
+-------- Using variables ---------------------
+-- use employees database
+use employees;
+
+set @v_avg_salary = 0;
+
+-- find maximum number of connections allowed
+select @@global.max_connections;
+-------- Using variables ---------------------
+----------------------------------------------
+
