@@ -15,8 +15,8 @@ camel:
 app:
   rest.route: false
   route1: false
-  route2: false
+  route2: true
   route3: false
   route4: false
   kafka.route: false
-  kafka.route.list: true
+  kafka.route.list: false

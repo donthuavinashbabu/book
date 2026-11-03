@@ -13,6 +13,7 @@ public class AppController {
     public String getRandomString(@PathVariable("id") Integer id) {
         return "Got " + randomString(id);
     }
+    
     String randomString(int len) {
         String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         SecureRandom rnd = new SecureRandom();

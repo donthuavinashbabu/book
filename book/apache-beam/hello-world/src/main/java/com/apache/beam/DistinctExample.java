@@ -6,10 +6,15 @@ import org.apache.beam.sdk.transforms.Distinct;
 import org.apache.beam.sdk.values.PCollection;
 
 /**
- * Remove duplicate elements from PCollection
+ * Drops duplicate rows from {@code customers.csv}.
  */
 public class DistinctExample {
 
+    /**
+     * Writes the distinct rows of {@code customers.csv}.
+     *
+     * @param args unused command-line arguments
+     */
     public static void main(String[] args) {
         Pipeline pipeline = Pipeline.create();
 

@@ -6,8 +6,16 @@ import org.apache.beam.sdk.transforms.Flatten;
 import org.apache.beam.sdk.values.PCollection;
 import org.apache.beam.sdk.values.PCollectionList;
 
+/**
+ * Merges {@code input.csv}, {@code input2.csv}, and {@code input3.csv} into one {@code PCollection}.
+ */
 public class FlattenExample {
 
+	/**
+	 * Flattens the three input files and writes the combined lines.
+	 *
+	 * @param args unused command-line arguments
+	 */
 	public static void main(String[] args) {
 		Pipeline pipeline = Pipeline.create();
 

@@ -8,8 +8,17 @@ import org.apache.beam.sdk.transforms.windowing.Window;
 import org.apache.beam.sdk.values.PCollection;
 import org.joda.time.Duration;
 
+/**
+ * Assigns each row of {@code input4.csv} to a fixed window of one second.
+ * The windowed collection is not written anywhere.
+ */
 public class WindowingExample1 {
 
+    /**
+     * Reads {@code input4.csv} and assigns each element to a one-second fixed window.
+     *
+     * @param args unused command-line arguments
+     */
     public static void main(String[] args) {
         Pipeline pipeline = Pipeline.create();
 

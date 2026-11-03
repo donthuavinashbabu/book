@@ -8,11 +8,15 @@ import org.apache.beam.sdk.values.KV;
 import org.apache.beam.sdk.values.PCollection;
 
 /**
- * Group customers by id
- * sum the amount paid by that customer
+ * Groups orders by customer id and writes the sum of {@code amount} for each customer.
  */
 public class GroupByKeyExample {
 
+    /**
+     * Reads {@code customer-orders.csv}, groups amounts by id, and writes {@code id,sum} rows.
+     *
+     * @param args unused command-line arguments
+     */
     public static void main(String[] args) {
         Pipeline pipeline = Pipeline.create();
 
@@ -21,6 +25,11 @@ public class GroupByKeyExample {
 
         // Step 2 - transform to key, value where key == id, value == amount
         PCollection<KV<String, Long>> pCollectionCustomerIdToAmount = pCollectionCustomerOrders.apply(ParDo.of(new DoFn<String, KV<String, Long>>() {
+            /**
+             * Parses a non-header order row into a customer id and an amount.
+             *
+             * @param processContext element context for one order row
+             */
             @ProcessElement
             public void process(ProcessContext processContext) {
                 String[] row = processContext.element().split(",");
@@ -40,6 +49,11 @@ public class GroupByKeyExample {
         // step 4 - sum the elements of each key
         PCollection<String> pCollectionSums = pCollectionGroupById.apply(ParDo.of(new DoFn<KV<String, Iterable<Long>>, String>() {
 
+            /**
+             * Sums the amounts for one customer and emits {@code id,sum}.
+             *
+             * @param processContext element context for one grouped customer
+             */
             @ProcessElement
             public void process(ProcessContext processContext) {
                 String key = processContext.element().getKey();

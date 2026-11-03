@@ -4,8 +4,16 @@ import org.apache.beam.sdk.Pipeline;
 import org.apache.beam.sdk.io.TextIO;
 import org.apache.beam.sdk.values.PCollection;
 
+/**
+ * Reads {@code returns.csv} with {@link TextIO} and writes the lines back out.
+ */
 public class LocalFile {
 
+    /**
+     * Reads a local CSV and writes it to a single shard with a {@code .csv} suffix.
+     *
+     * @param args unused command-line arguments
+     */
     public static void main(String[] args) {
         Pipeline pipeline = Pipeline.create();
 

@@ -1,11 +1,8 @@
 package com.java.processor;
 
-import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Map;
-import java.util.Random;
 import java.util.UUID;
 
 @Component

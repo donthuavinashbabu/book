@@ -13,8 +13,16 @@ import java.util.List;
 
 import static org.apache.beam.sdk.io.TextIO.*;
 
+/**
+ * Builds an in-memory {@code PCollection} of {@link Customer} values and writes their names in upper case.
+ */
 public class InMemory {
 
+    /**
+     * Returns the three customers used as the in-memory source.
+     *
+     * @return customers named jack, jill, and john
+     */
     private static List<Customer> createCustomerList(){
         Customer customer1 = Customer.builder().id("1").name("jack").build();
         Customer customer2 = Customer.builder().id("1").name("jill").build();
@@ -28,6 +36,11 @@ public class InMemory {
         return customerList;
     }
 
+    /**
+     * Maps each customer name to upper case and writes the names.
+     *
+     * @param args unused command-line arguments
+     */
     public static void main(String[] args) {
         Pipeline pipeline = Pipeline.create();
 

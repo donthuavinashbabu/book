@@ -1,6 +1,6 @@
 # Apache Beam Hello World
 
-Maven project of small DirectRunner pipelines. Beam `2.19.0`, Java 11. Each example class has its own `main` method.
+Maven project of small DirectRunner pipelines. Beam `2.77.0`, Java 21. Each example class has its own `main` method.
 
 Input CSVs live in [`files`](files). Most classes read and write through a hardcoded Windows path (`C:\practice-projects\apache-beam\hello-world\files\`). [`Constants`](src/main/java/com/apache/beam/Constants.java) holds that path for the later examples. Point those paths at this `files` folder before running.
 
@@ -36,4 +36,4 @@ Input CSVs live in [`files`](files). Most classes read and write through a hardc
 
 ## Run
 
-Run the `main` method of an example class from the IDE. [`pom.xml`](pom.xml) compiles with Java 11 and does not declare an exec plugin. Update the hardcoded file paths first.
+Run the `main` method of an example class from the IDE. [`pom.xml`](pom.xml) compiles with Java 21 and does not declare an exec plugin. Update the hardcoded file paths first.

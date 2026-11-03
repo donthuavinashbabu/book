@@ -20,6 +20,9 @@
     <properties>
         <create.date>5/July/2023</create.date>
         <java.version>17</java.version>
+        <!-- Spring Boot 3.1.1 manages Lombok 1.18.28, which breaks on JDK 21.0.6
+             because javac changed JCImport.qualid from JCTree to JCFieldAccess. -->
+        <lombok.version>1.18.48</lombok.version>
         <spring.boot-version>3.1.1</spring.boot-version>
         <camel-version>4.0.0-RC1</camel-version>
     </properties>

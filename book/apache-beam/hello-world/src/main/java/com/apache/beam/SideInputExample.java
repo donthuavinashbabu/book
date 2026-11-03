@@ -11,8 +11,16 @@ import org.apache.beam.sdk.values.PCollectionView;
 
 import java.util.Map;
 
+/**
+ * Prints customers whose id is absent from {@code returns.csv}.
+ */
 public class SideInputExample {
 
+    /**
+     * Loads returns as a side input and prints customer rows that are not in that map.
+     *
+     * @param args unused command-line arguments
+     */
     public static void main(String[] args) {
 
         Pipeline pipeline = Pipeline.create();
@@ -21,6 +29,11 @@ public class SideInputExample {
                 .apply(ParDo.of(
                         new DoFn<String, KV<String, String>>() {
 
+                            /**
+                             * Parses a returns row into an id-to-name pair.
+                             *
+                             * @param processContext element context for one returns row
+                             */
                             @ProcessElement
                             public void process(ProcessContext processContext) {
                                 String[] arr = processContext.element().split(",");
@@ -34,6 +47,11 @@ public class SideInputExample {
 
         pCollectionCustomers.apply(ParDo.of(new DoFn<String, Void>() {
 
+            /**
+             * Prints the customer row when its id is not in the returns side input.
+             *
+             * @param processContext element context for one customer row
+             */
             @ProcessElement
             public void process(ProcessContext processContext) {
                 java.util.Map<String, String> returnsMap = processContext.sideInput(pCollectionView);
