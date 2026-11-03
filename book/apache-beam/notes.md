@@ -8,7 +8,7 @@
 * Pipeline
 	* Encapsulates entire data processing task from start to end
 	* Included reading input data, transforming data, writing output data
-	* When we create pipeline we create execute options that tell pipeline where and how to run. This included pipeline runner that determines where this pipeline will run whether it will be `Spark`, `Flink`, 'GCP cloud dataflow` or `local`
+	* When we create pipeline we create execute options that tell pipeline where and how to run. This included pipeline runner that determines where this pipeline will run like `Spark`, `Flink`, `GCP cloud dataflow` or `local`
 * PCollection
 	* Equivalent to RDD of Spark
 	* Represents distributed data set that our beam pipeline operates on
