@@ -32,6 +32,7 @@
 * [Gitops ArgoCD](gitops-argocd/README.md)
 * [Gradle](gradle/README.md)
 * [GraphQL](graphql/README.md)
+* [Groovy](groovy/README.md)
 * [Gremlin](gremlin/README.md)
 * [Guava](guava/README.md)
 * [H2](h2/README.md)
