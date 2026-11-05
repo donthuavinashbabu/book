@@ -93,6 +93,8 @@
 * [SQL](sql/README.md)
 * [SQL Server](sql-server/README.md)
 * [System Design](system-design/README.md)
+* [Teradata](teradata/README.md)
+* [Terraform](terraform/README.md)
 * [Testing](testing/README.md)
 * [UML](uml/README.md)
 * [uv Python package and project manager](uv/README.md)
