@@ -113,6 +113,7 @@
 * [HTTP/1.1 vs HTTP/2](http-protocol.md)
 * [Java Architect Tech List](java-architect-tech-list.md)
 * [Java Developer Essential Skills](java-essentials.txt)
+* [Java Training Topics](java-training-topics.md)
 * [Difference between model object and entity object](model-vs-entity.md)
 * [Module does not open (Java error)](module-does-not-open.md)
 * [NFRs](nfrs.md)

@@ -9,6 +9,9 @@ public class Thread6 extends Thread {
 		super(name);
 	}
 
+	public Thread6() {
+	}
+
 	@Override
 	public void run() {
 		Thread currentThread = currentThread();

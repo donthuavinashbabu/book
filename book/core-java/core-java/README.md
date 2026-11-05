@@ -30,7 +30,11 @@ The repository contains a collection of Java classes that demonstrate the usage 
         │       │   ├── overriding
         │       │   └── records
         │       │       └── RecordClassTest.java
-        │       └── serialization
+        │       ├── serialization
+        │       └── utils
+        │           ├── Base64EncodeDecodePracticeTest.java
+        │           ├── RequestUUIDGenerator.java
+        │           └── UtilsTest.java
         └── resources
             └── log4j.xml
 ```
@@ -149,6 +153,12 @@ Key Files:
 - [Random Access File Example](src/main/java/com/practice/io/RandomAccessFileTest.java)
 - [Read Input from keyboard](src/main/java/com/practice/io/ReadInputFromKeyboardTest.java)
 - [Zip File Util methods](src/main/java/com/practice/io/ZipFileTest.java)
+
+### Utilities (`com.utils`)
+
+- [Base64EncodeDecodePracticeTest.java](src/main/java/com/utils/Base64EncodeDecodePracticeTest.java): Demonstrates `java.util.Base64` encoding and decoding, including UTF-8 charset handling and splitting a decoded `username:password` string.
+- [RequestUUIDGenerator.java](src/main/java/com/utils/RequestUUIDGenerator.java): Pre-generates a pool of time-based UUIDs in an `ArrayBlockingQueue` and refills the pool when it drops below a minimum size.
+- [UtilsTest.java](src/main/java/com/utils/UtilsTest.java): Examples for generating fixed-length and ranged random numbers (`Math.random`, `Random`, Apache Commons `RandomUtils`) and building a Basic Authorization header with `DatatypeConverter.printBase64Binary`.
 
 ## Usage Instructions
 
