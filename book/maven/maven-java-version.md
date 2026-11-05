@@ -1,5 +1,3 @@
-### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
-------
 # Setting the Java Version in Maven
 ------
 # Use the Compiler Plugin
@@ -84,5 +82,3 @@
 * Using <java.version> is possible only with the Spring Boot application
 * For simple cases, `maven.compiler.source` and `maven.compiler.target` properties should be the best fit
 * Finally, to have more control over the compilation process, use the `maven-compiler-plugin` configuration settings
-------
-### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

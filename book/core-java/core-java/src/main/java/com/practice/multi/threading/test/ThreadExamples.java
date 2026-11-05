@@ -2,6 +2,8 @@ package com.practice.multi.threading.test;
 
 import com.practice.multi.threading.BlockingThread;
 import com.practice.multi.threading.FactorialThread;
+import com.practice.multi.threading.Thread24;
+import com.practice.multi.threading.Thread25;
 import com.practice.multi.threading.Thread3;
 import com.practice.multi.threading.Thread6;
 
@@ -656,4 +658,85 @@ public class ThreadExamples {
             }
         }
     }
+
+	/**
+	 * Execute multiple callables at a time
+	 * @throws InterruptedException
+	 * @throws ExecutionException
+	 */
+	@Test
+	public void executeMultipleCallables() throws InterruptedException, ExecutionException {
+		ExecutorService executorService = Executors.newFixedThreadPool(5);
+		Set<Callable<List<Integer>>> callables = new HashSet<>();
+		List<Integer> finalResult = new ArrayList<>();
+
+		Callable<List<Integer>> callable1 = new Thread24(10, 20);
+		Callable<List<Integer>> callable2 = new Thread24(30, 40);
+		Callable<List<Integer>> callable3 = new Thread24(50, 60);
+
+		callables.add(callable1);
+		callables.add(callable2);
+		callables.add(callable3);
+
+		List<Future<List<Integer>>> resultFutures = executorService.invokeAll(callables);
+
+		for (Future<List<Integer>> resultFuture : resultFutures) {
+			finalResult.addAll(resultFuture.get());
+		}
+
+		System.out.println(finalResult);
+	}
+
+	/**
+	 * @see Callable practice
+	 * @see Future practice
+	 * @throws InterruptedException
+	 * @throws ExecutionException
+	 */
+	@Test
+	public void callableFuturesWithException() throws InterruptedException {
+		ExecutorService executorService = Executors.newCachedThreadPool();
+
+		Callable<List<Integer>> callable = new Callable<List<Integer>>() {
+			@Override
+			public List<Integer> call() throws Exception {
+				throw new NullPointerException("callable Exception practice");
+			}
+		};
+
+		Future<List<Integer>> resultFutures = executorService.submit(callable);
+		executorService.shutdown();
+		executorService.awaitTermination(1, TimeUnit.DAYS);
+
+		try {
+			List<Integer> resultList = resultFutures.get();
+			System.out.println(resultList);
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+
+			NullPointerException ex = (NullPointerException) e.getCause();
+			System.out.println(ex.getMessage());
+		}
+
+	}
+
+	@Test
+	public void multipleCallablesWithException() {
+		ExecutorService executorService = Executors.newFixedThreadPool(3);
+
+		Callable<Integer> callable1 = new Thread25();
+		Callable<Integer> callable2 = new Thread25();
+		Callable<Integer> callable3 = new Thread25();
+
+		List<Callable<Integer>> callableList = new ArrayList<>();
+		callableList.add(callable1);
+		callableList.add(callable2);
+		callableList.add(callable3);
+		try {
+			List<Future<Integer>> futureList = executorService.invokeAll(callableList);
+			futureList.get(0).get();
+		} catch (InterruptedException | ExecutionException e) {
+			e.printStackTrace();
+		}
+	}
 }

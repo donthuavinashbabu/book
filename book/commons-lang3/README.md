@@ -8,7 +8,7 @@
 * [Commons Lang3](commons-lang3/README.md)
 ---
 ## Files
-_No files_
+- [Dependencies](dependencies.md)
 ---
 ## References
 * [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)

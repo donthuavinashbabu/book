@@ -322,9 +322,9 @@ git diff <commit id 01> <commit id 02>
 * --no-ff: Create a merge commit even if the merge resolves as a fast-forward
 * --squash: Squash all commits from the specified branch into a single commit
 * Fast forward merge\
-![picture](images/fast-forward-merge.jpg)
+![picture](img/fast-forward-merge.jpg)
 * Non fast forward merge\
-![picture](images/non-fast-forward-merge.jpg)
+![picture](img/non-fast-forward-merge.jpg)
 * It is suggested to not use the `--squash` flag as it will squash all commits into a single commit, leading to a messy commit history
 ------
 * Git version

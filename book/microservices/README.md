@@ -24,6 +24,10 @@
 ## Files
 * [Event-Driven Microservices by Confluent](Event-Driven-Microservices-by-confluent.pdf)
 * [Notes](notes.md)
+* [Reverse Proxy API Gateway Load Balancer](reverse-proxy-api-gateway-load-balancer.md)
+* [Essential Component](essential-components.md)
+* [Standard Ports](standard-ports.md)
+* [Best Practices](imgs/best-practices.jpg)
 ---
 ## References
 ### Pluralsight

@@ -35,6 +35,8 @@ mvn -Dtest=BooleanUtilsPractice test
 mvn -Dtest=ObjectUtilsPractice test
 mvn -Dtest=RandomStringUtilsPractice test
 mvn -Dtest=ToStringBuilderPractice test
+mvn -Dtest=ReflectionToStringBuilderTest test
+mvn -Dtest=SystemUtilsTest test
 ```
 
 ## Create
@@ -121,6 +123,34 @@ com.lang3.Person@<hash>[name=jack,address=round street]
 
 [`ExceptionUtils`](src/test/java/com/lang3/ExceptionUtils.java) is an empty class.
 
+### ReflectionToStringBuilder
+
+[`ReflectionToStringBuilderTest`](src/test/java/com/lang3/ReflectionToStringBuilderTest.java)
+
+This class uses JUnit Jupiter. [`Student`](src/test/java/com/lang3/model/Student.java) is a Lombok class with `id`, `name`, and `course`. The test builds `id` `1`, `name` `a`, and `course` `c1`, then prints `ReflectionToStringBuilder.toString` in two styles:
+
+| Style | Result |
+| --- | --- |
+| `ToStringStyle.JSON_STYLE` | `{"course":"c1","id":1,"name":"a"}` |
+| `ToStringStyle.SIMPLE_STYLE` | `c1,1,a` |
+
+The nested `Student2` record (`id` `2`, `name` `b`, `course` `c2`) with `ToStringStyle.JSON_STYLE` prints `{"course":"c2","id":2,"name":"b"}`. A `record` needs Java 16 or newer.
+
+### SystemUtils
+
+[`SystemUtilsTest`](src/test/java/com/lang3/SystemUtilsTest.java)
+
+This class uses JUnit Jupiter. Each test logs a value from the machine running the test:
+
+| Method | Value |
+| --- | --- |
+| `getHostName()` | host name |
+| `getJavaHome()` | Java installation directory |
+| `getEnvironmentVariable("PATH", "UNKNOWN")` | `PATH`, or `UNKNOWN` when that variable is unset |
+| `getJavaIoTmpDir()` | temporary directory |
+| `getUserDir()` | current working directory |
+| `getUserHome()` | user home directory, such as `C:\Users\[username]` |
+
 ## Layout
 
 ```text
@@ -132,6 +162,9 @@ src/test/java/com/lang3/BooleanUtilsPractice.java
 src/test/java/com/lang3/ExceptionUtils.java
 src/test/java/com/lang3/ObjectUtilsPractice.java
 src/test/java/com/lang3/RandomStringUtilsPractice.java
+src/test/java/com/lang3/ReflectionToStringBuilderTest.java
 src/test/java/com/lang3/StringUtilsPractice.java
+src/test/java/com/lang3/SystemUtilsTest.java
 src/test/java/com/lang3/ToStringBuilderPractice.java
+src/test/java/com/lang3/model/Student.java
 ```
