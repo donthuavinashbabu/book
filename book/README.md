@@ -9,6 +9,7 @@
 * [Apache POI](apache-poi/README.md)
 * [Apigee](apigee/README.md)
 * [Architect](architect/README.md)
+* [Autosys](autosys/README.md)
 * [AWS](aws/README.md)
 * [Avro](avro/README.md)
 * [Azure](azure/README.md)

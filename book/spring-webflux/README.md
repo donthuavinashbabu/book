@@ -5,7 +5,7 @@
 - [References](#references)
 ---
 # Folders
-_No subfolders_
+* [REST API Global Exception Handling](rest-api-global-exception-handling/README.md)
 ---
 ## Files
 _No files_

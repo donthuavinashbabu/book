@@ -16,3 +16,4 @@
 * [Project Architecture Development Guidelines](project-architecture-development-guide-lines.md)
 * [Sample Architecture Document](sample-architecture-document-1.docx)
 * [Software Architect Complete Guide](software-architect-complete-guide.md)
+* [Software Architecture Patterns](images/software-architecture-patterns.png)
