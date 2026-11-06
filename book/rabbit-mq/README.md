@@ -5,7 +5,7 @@
 ---
 # Folders
 * [images](images/README.md)
-* [Producer Consumer](producer-consumer/README.md)
+* [Spring Boot Producer Consumer](producer-consumer/README.md)
 ---
 ## Files
 * [Installation](installation.md)
