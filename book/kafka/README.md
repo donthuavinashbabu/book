@@ -43,6 +43,7 @@
 * [Setup with Docker](setup-with-docker.md)
 * [Topic Naming Conventions](topic-naming-conventions.md)
 * [Unclean Leader Elections](unclean-leader-elections.md)
+- [Usecases](use-cases.md)
 ---
 ## References
 ### Kafka roles
