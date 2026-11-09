@@ -21,7 +21,7 @@
 * [SQL Server Connection Properties](sql-server-connection-properties.md)
 ---
 ## Other Examples
-- [Spring Boot Producer Consumer](../rabbit-mq/producer-consumer/README.md)
+- [Spring Boot 4 RabbitMQ Producer Consumer](../rabbit-mq/producer-consumer/README.md)
 ---
 ## References
 * [Documentation](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
