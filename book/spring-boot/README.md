@@ -3,6 +3,7 @@
 - [Folders](#folders)
 - [Files](#files)
 - [References](#references)
+- [Other Examples](@otherexamples)
 ---
 # Folders
 * [Spring Boot 1](spring-boot-1/README.md)
@@ -18,6 +19,9 @@
 * [MongoDB Connection Properties](mongodb-connection-properties.md)
 * [Oracle Connection Properties](oracle-connection-properties.md)
 * [SQL Server Connection Properties](sql-server-connection-properties.md)
+---
+## Other Examples
+- [Spring Boot Producer Consumer](../rabbit-mq/producer-consumer/README.md)
 ---
 ## References
 * [Documentation](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
