@@ -12,6 +12,7 @@ _No subfolders_
 * [Create Indexes Queries](create-indexes.sql)
 * [Create Tables](create-tables.sql)
 * [Create Users](create-user.sql)
+* [Date Queries](date-queries.md)
 * [DBA Queries](dba.sql)
 * [Drop Indexes Queries](drop-indexes.sql)
 * [Drop Tables](drop-tables.sql)
