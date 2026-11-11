@@ -1,5 +1,5 @@
 # EC2 Elastic Compute Cloud
-![picture](imgs/instance-life-cycle.jpg)
+![picture](img/instance-life-cycle.jpg)
 ------
 # Commands
 * To know how long instance is up and running. Run below command in EC2 instance console
@@ -12,10 +12,10 @@ uptime
 * Compare EC2 instances - https://ec2instances.info
 ------
 # Important port numbers to know to work with EC2 instances
-![picture](imgs/ports.jpg)
+![picture](img/ports.jpg)
 ------
 # EC2 Instances Purchasing Options
-![picture](imgs/ec2-instances-purchasing-options.jpg)
+![picture](img/ec2-instances-purchasing-options.jpg)
 ------
 # Instance Types
 * General purpose (t2, m4, m3)
@@ -206,11 +206,11 @@ ssh -i my-file.pem ec2-user@ip-address
 ------
 # Security Groups
 * Little firewals installed per instance basis
-![picture](imgs/0001-sg.jpg)\
-![picture](imgs/0002-sg.jpg)\
-![picture](imgs/0003-sg.jpg)\
-![picture](imgs/0004-sg.jpg)\
-![picture](imgs/0005-sg.jpg)
+![picture](img/0001-sg.jpg)\
+![picture](img/0002-sg.jpg)\
+![picture](img/0003-sg.jpg)\
+![picture](img/0004-sg.jpg)\
+![picture](img/0005-sg.jpg)
 ------
 # EC2 dashboard 
 * Resources: Details of instances/resources we have created
@@ -233,9 +233,9 @@ ssh -i my-file.pem ec2-user@ip-address
 	* Automatically register new instances to load balancer
 	* Recreate EC2 instance in case previous one is terminated
 * ASG is free (you pay only for underlying EC2 instances)\
-![picture](imgs/001-asg-high-level-flow.jpg)
+![picture](img/001-asg-high-level-flow.jpg)
 * Auto scaling group with load balancer
-![picture](imgs/001-asg-with-load-balancer.jpg)
+![picture](img/001-asg-with-load-balancer.jpg)
 
 ## Auto scaling group attributes
 * A launch template (older launch configurations are deprecated)
@@ -247,7 +247,7 @@ ssh -i my-file.pem ec2-user@ip-address
 	* IAM roles for EC2 instances
 	* Network + Subnet informaion
 	* Load balancer information\
-![picture](imgs/asg-attributes.jpg)
+![picture](img/asg-attributes.jpg)
 * ASG has min size, max size, initial capacity
 * Scaling Policies
 
@@ -259,7 +259,7 @@ ssh -i my-file.pem ec2-user@ip-address
 * Based on the alarm
 	* We can create scale-out policies (increase number of instances)
 	* We can create scale-in policies (decrease number of instances)\
-![picture](imgs/002-asg-cloud-watch-alarm.jpg)
+![picture](img/002-asg-cloud-watch-alarm.jpg)
 * Dynamic scaling
 	* Target tracking scaling
 		* simple to setup
@@ -271,7 +271,7 @@ ssh -i my-file.pem ec2-user@ip-address
 	* Anticipate scaling based on known usage patterns
 	* Example: Increate the minimum capacity to 10 at 5 PM on Friday
 * Predictive Scaling
-![picture](imgs/asg-predictive-scaling.jpg)
+![picture](img/asg-predictive-scaling.jpg)
 
 ## Good metric to scale on
 * CPU Utilization: Average CPU utilization across your Instances
@@ -280,7 +280,7 @@ ssh -i my-file.pem ec2-user@ip-address
 * Any custom metrics (that you push using CloudWatch)
 
 ## Auto scaling groups - Scaling cooldowns
-![picture](imgs/asg-scaling-cooldown.jpg)
+![picture](img/asg-scaling-cooldown.jpg)
 ------
 # Creating an AMI from Ec2 Instance
 * AWS console
@@ -321,10 +321,10 @@ ssh -i my-file.pem ec2-user@ip-address
 * this will take some time
 ------
 # placement groups
-![picture](imgs/placement-groups-1.jpg)
-![picture](imgs/placement-groups-2.jpg)
-![picture](imgs/placement-groups-03.jpg)
-![picture](imgs/placement-groups-4.jpg)
+![picture](img/placement-groups-1.jpg)
+![picture](img/placement-groups-2.jpg)
+![picture](img/placement-groups-03.jpg)
+![picture](img/placement-groups-4.jpg)
 ------
 # EC2 Instance Store
 * EBS volumes are network drives with good but `limited` performance
@@ -349,5 +349,5 @@ sudo yum install stress -y
 	* Google search - install stress amazon linux 2
 ------
 # Elastic Network Interface
-![picture](imgs/eni.jpg)
+![picture](img/eni.jpg)
 * Read - https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/

@@ -1,6 +1,14 @@
-# Cloud Formation
-* IaC - Infrastructure As Code Provisioning Tool
-
+# CloudFormation
+------
+- [Folders](#folders)
+- [Files](#files)
+- [References](#references)
 ---
-# Materials and References
+# Folders
+_No subfolders_
+---
+## Files
+* [Notes](notes.md)
+---
+## References
 * Udemy - AWS CloudFormation Master Class v2 [2024]
