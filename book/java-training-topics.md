@@ -13,6 +13,7 @@
 - MongoDB
 - Postman
 - Outlook
+- Jenkins
 ---
 # Git
 * Github/BitBucket/Gitlab accounts creation
