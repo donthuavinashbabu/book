@@ -12,7 +12,7 @@
 - Docker
 - MongoDB
 - Postman
-
+- Outlook
 ---
 # Git
 * Github/BitBucket/Gitlab accounts creation
