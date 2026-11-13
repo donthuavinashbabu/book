@@ -1,5 +1,19 @@
 # Trainings
 ---
+# Installations
+- JDK 21
+- Maven
+- Notepad++
+- VS Code
+- Git
+- TortoiseGit
+- IntelliJ
+- MySQL
+- Docker
+- MongoDB
+- Postman
+
+---
 # Git
 * Github/BitBucket/Gitlab accounts creation
 * TortoiseGit Installation
