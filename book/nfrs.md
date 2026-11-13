@@ -11,7 +11,13 @@
   - Secure coding practices, regular vulnerability scans, and penetration testing.
 
 ## Development
-
+- Local development environment
+  - Provide Docker-based or script-based setup for consistent local environments.
+- Centralized configuration management
+  - Manage environment-specific configs using Spring Cloud Config, Consul, or AWS Parameter Store.
+- Data validation and consistency
+  - Ensure data integrity across services and databases.
+  - Use validation rules, constraints, and reconciliation jobs.
 - Git flow
   - Use Git Flow, GitHub Flow, or trunk-based development.
   - Define PR rules, code reviews, and protected branches.
@@ -21,13 +27,6 @@
 - Deployment strategy
   - Define blue-green, canary, or rolling deployments.
   - Ensure zero-downtime releases and rollback plans.
-- Centralized configuration management
-  - Manage environment-specific configs using Spring Cloud Config, Consul, or AWS Parameter Store.
-- Local development environment
-  - Provide Docker-based or script-based setup for consistent local environments.
-- Data validation and consistency
-  - Ensure data integrity across services and databases.
-  - Use validation rules, constraints, and reconciliation jobs.
 
 ## Performance and monitoring
 
@@ -37,12 +36,12 @@
 - APM - Application performance monitoring
   - Monitor CPU, memory, response times, error rates, and throughput.
   - Tools: New Relic, Datadog, AppDynamics.
-- DB performance monitoring
-  - Track slow queries, locks, deadlocks, and connection pool usage.
-  - Tools: Percona, pgBadger, AWS RDS Insights.
 - API performance monitoring
   - Track latency, error rates, and usage per endpoint.
   - Tools: Postman Monitoring, Prometheus + Grafana.
+- DB performance monitoring
+  - Track slow queries, locks, deadlocks, and connection pool usage.
+  - Tools: Percona, pgBadger, AWS RDS Insights.
 - DB queries performance monitoring
   - Identify slow queries and optimize indexes or joins.
 - Long running queries monitoring
