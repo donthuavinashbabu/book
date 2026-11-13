@@ -1,5 +1,5 @@
 # Trainings
-------
+---
 # Git
 * Github/BitBucket/Gitlab accounts creation
 * TortoiseGit Installation
@@ -12,10 +12,12 @@
 * Connect to github repository using SSH key
 * Create app passwords in bitbucket
 * Git Conflicts
-------
+---
 # Maven
-
-------
+* Installation
+* Theory
+* Basic commands
+---
 # Core Java
 * Basics
 * Oops concepts
@@ -76,7 +78,7 @@
 ------
 # Logging
 * Log4J
-* Util Logging
+* SLF4J
 ------
 # Design Patterns
 * SOLID Principle
@@ -85,23 +87,20 @@
 * Structural
 ------
 # Jackson JSON
+* Theory
+* Basic examples
 ------
 # Unit Testing
 * Junit 4
 * Junit 5
 * Mockito
-* Powermock
-* Easy Mock
-* Spock
 ------
 # Database
 * SQL
 * Oracle
 * MySQL
-* Postgre
-* SQL Server
-* Neo4J
-* Gremlin
+* PostgreSQL
+* MongoDB
 ------
 # ORM
 * JPA
@@ -169,6 +168,7 @@
 * CURL
 * RestTemplate
 * WebClient
+* RestClient
 * java.net.http.HttpClient - from Java 11
 ------
 # Others
