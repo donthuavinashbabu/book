@@ -49,8 +49,10 @@ When Azure launched, it was called Windows azure. Later renamed to Microsoft Azu
 - one or more servers is Data Center
 - one or more Data centers is Availability zones (AZ)
 - one or more AZs is region
-- Region - geo graphic location
+- Region - geo graphic location\
+![picture](img/data-center-az-regions.jpeg)
 
+One or more servers make a data center. One or more data centers make an availability zone. One or more availability zones make a region. A region is a geographic location. The diagram shows one Azure region with availability zones 1, 2, and 3. Each zone is labeled as one or more data centers. Diverse fiber paths connect the zones.
 ---
 
 ## How to choose region:
