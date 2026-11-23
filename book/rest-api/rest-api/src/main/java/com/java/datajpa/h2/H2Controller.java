@@ -1,7 +1,6 @@
 package com.java.datajpa.h2;
 
 import com.java.entity.EmployeeEntity;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

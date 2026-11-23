@@ -1,6 +1,7 @@
 package com.java.rest.client.resttemplate;
 
 import com.java.model.Student;
+import com.java.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.ParameterizedTypeReference;
@@ -99,6 +100,14 @@ public class GetControllerTest {
         ResponseEntity<List<Student>> result2 = restTemplate.exchange("http://localhost:9000/get/api/v7/students?page=0&size=2&sort=asc",
                 HttpMethod.GET, null, new ParameterizedTypeReference<List<Student>>(){});
         log.info("result2={}", result2.getBody());
+    }
+
+    @Test
+    void users1() {
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<List<User>> response = restTemplate.exchange("http://localhost:9000/get/api/v1/users",
+                HttpMethod.GET, null, new ParameterizedTypeReference<List<User>>() {});
+        log.info("users={}", response.getBody());
     }
 
 }

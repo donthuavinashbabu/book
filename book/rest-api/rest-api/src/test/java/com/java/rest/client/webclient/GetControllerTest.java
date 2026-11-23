@@ -1,6 +1,7 @@
 package com.java.rest.client.webclient;
 
 import com.java.model.Student;
+import com.java.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.ResponseEntity;
@@ -37,7 +38,7 @@ public class GetControllerTest {
     @Test
     void helloWorld() {
         WebClient webClient = WebClient.create("http://localhost:9000");
-        Flux<String> response = webClient.get().uri("/api/v1/hello-world")
+        Flux<String> response = webClient.get().uri("/get/api/v1/hello-world")
                 .retrieve().bodyToFlux(String.class);
         // response=MonoFlatMapMany
         log.info("response={}", response);
@@ -48,7 +49,7 @@ public class GetControllerTest {
     @Test
     void studentsV1() {
         WebClient webClient = WebClient.create("http://localhost:9000");
-        Mono<Student> response = webClient.get().uri("/api/v1/students")
+        Mono<Student> response = webClient.get().uri("/get/api/v1/students")
                 .retrieve().bodyToMono(Student.class);
         Student student = response.block();
         log.info("student={}", student);
@@ -57,7 +58,7 @@ public class GetControllerTest {
     @Test
     void studentsV2() {
         WebClient webClient = WebClient.create("http://localhost:9000");
-        Mono<ResponseEntity<Student>> response = webClient.get().uri("/api/v2/students")
+        Mono<ResponseEntity<Student>> response = webClient.get().uri("/get/api/v2/students")
                 .retrieve().toEntity(Student.class);
         ResponseEntity<Student> responseEntity = response.block();
         Objects.requireNonNull(responseEntity);
@@ -68,9 +69,51 @@ public class GetControllerTest {
     @Test
     void studentsV3() {
         WebClient webClient = WebClient.create("http://localhost:9000");
-        List<Student> response = webClient.get().uri("/api/v3/students")
+        List<Student> response = webClient.get().uri("/get/api/v3/students")
                 .retrieve().bodyToFlux(Student.class).collectList().block();
         log.info("response={}", response);
+    }
+
+    @Test
+    void studentsV4() {
+        WebClient webClient = WebClient.create("http://localhost:9000");
+        Student student = webClient.get().uri("/get/api/v4/students")
+                .header("name", "a")
+                .header("book", "b1")
+                .retrieve().bodyToMono(Student.class).block();
+        log.info("student={}", student);
+    }
+
+    @Test
+    void studentsV5() {
+        WebClient webClient = WebClient.create("http://localhost:9000");
+        Student student = webClient.get().uri("/get/api/v5/students?name=a&book=b1")
+                .retrieve().bodyToMono(Student.class).block();
+        log.info("student={}", student);
+    }
+
+    @Test
+    void studentsV6() {
+        WebClient webClient = WebClient.create("http://localhost:9000");
+        Student student = webClient.get().uri("/get/api/v6/students/{name}/{book}", "a", "b1")
+                .retrieve().bodyToMono(Student.class).block();
+        log.info("student={}", student);
+    }
+
+    @Test
+    void studentsV7() {
+        WebClient webClient = WebClient.create("http://localhost:9000");
+        List<Student> students = webClient.get().uri("/get/api/v7/students?page=0&size=2&sort=asc")
+                .retrieve().bodyToFlux(Student.class).collectList().block();
+        log.info("students={}", students);
+    }
+
+    @Test
+    void users1() {
+        WebClient webClient = WebClient.create("http://localhost:9000");
+        List<User> users = webClient.get().uri("/get/api/v1/users")
+                .retrieve().bodyToFlux(User.class).collectList().block();
+        log.info("users={}", users);
     }
 
 }
