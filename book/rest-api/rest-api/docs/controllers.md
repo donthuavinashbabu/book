@@ -10,7 +10,7 @@
 ## Method 1
 * Set Java 17 and Maven to path
 * Import application to IntelliJ
-* Run main class [Main](src/main/java/com/java/Main.java)
+* Run main class [Main](../src/main/java/com/java/Main.java)
 
 ## Method 2
 * Run below maven command
@@ -20,7 +20,7 @@ mvn clean compile spring-boot:run
 * This command clean compile and run application
 ------
 # Build docker image and push to docker hub
-* Write [Dockerfile](Dockerfile)
+* Write [Dockerfile](../Dockerfile)
 * We are using `openjdk java 17` base image
 * Build image using below command
 ```
@@ -42,61 +42,61 @@ docker image push donthuavinashbabu/rest-api
 ```
 ------
 # Files
-* [pom.xml](pom.xml)
-* [application.properties](src/main/resources/application.properties)
-* Main class [Main](src/main/java/com/java/Main.java)
-* Student Model class [Student](src/main/java/com/java/model/Student.java)
-* StudentService interface [StudentService](src/main/java/com/java/service/StudentService.java)
-* StudentServiceImpl class [StudentServiceImpl](src/main/java/com/java/service/impl/StudentServiceImpl.java)
-* GetController interface [GetController](src/main/java/com/java/controller/GetController.java)
-* GetControllerImpl class [GetControllerImpl](src/main/java/com/java/controller/impl/GetControllerImpl.java)
-* PostController interface [PostController](src/main/java/com/java/controller/PostController.java)
-* PostControllerImpl class [PostControllerImpl](src/main/java/com/java/controller/impl/PostControllerImpl.java)
-* PutController interface [PutController](src/main/java/com/java/controller/PutController.java)
-* PutControllerImpl class [PutControllerImpl](src/main/java/com/java/controller/impl/PutControllerImpl.java)
-* DeleteController interface [DeleteController](src/main/java/com/java/controller/DeleteController.java)
-* DeleteControllerImpl class [DeleteControllerImpl](src/main/java/com/java/controller/impl/DeleteControllerImpl.java)
-* HateoasController interface [HateoasController](src/main/java/com/java/controller/HateoasController.java)
-* HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
-* GlobalExceptionHandler class [GlobalExceptionHandler](src/main/java/com/java/config/GlobalExceptionHandler.java)
-* I18NController interface [I18NController](src/main/java/com/java/controller/I18NController.java)
-* I18NControllerImpl class [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
-* VersioningController interface [VersioningController](src/main/java/com/java/controller/VersioningController.java)
-* VersioningControllerImpl class [VersioningControllerImpl](src/main/java/com/java/controller/impl/VersioningControllerImpl.java)
+* [pom.xml](../pom.xml)
+* [application.properties](../src/main/resources/application.properties)
+* Main class [Main](../src/main/java/com/java/Main.java)
+* Student Model class [Student](../src/main/java/com/java/model/Student.java)
+* StudentService interface [StudentService](../src/main/java/com/java/service/StudentService.java)
+* StudentServiceImpl class [StudentServiceImpl](../src/main/java/com/java/service/impl/StudentServiceImpl.java)
+* GetController interface [GetController](../src/main/java/com/java/controller/GetController.java)
+* GetControllerImpl class [GetControllerImpl](../src/main/java/com/java/controller/impl/GetControllerImpl.java)
+* PostController interface [PostController](../src/main/java/com/java/controller/PostController.java)
+* PostControllerImpl class [PostControllerImpl](../src/main/java/com/java/controller/impl/PostControllerImpl.java)
+* PutController interface [PutController](../src/main/java/com/java/controller/PutController.java)
+* PutControllerImpl class [PutControllerImpl](../src/main/java/com/java/controller/impl/PutControllerImpl.java)
+* DeleteController interface [DeleteController](../src/main/java/com/java/controller/DeleteController.java)
+* DeleteControllerImpl class [DeleteControllerImpl](../src/main/java/com/java/controller/impl/DeleteControllerImpl.java)
+* HateoasController interface [HateoasController](../src/main/java/com/java/controller/HateoasController.java)
+* HateoasControllerImpl class [HateoasControllerImpl](../src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
+* GlobalExceptionHandler class [GlobalExceptionHandler](../src/main/java/com/java/config/GlobalExceptionHandler.java)
+* I18NController interface [I18NController](../src/main/java/com/java/controller/I18NController.java)
+* I18NControllerImpl class [I18NControllerImpl](../src/main/java/com/java/controller/impl/I18NControllerImpl.java)
+* VersioningController interface [VersioningController](../src/main/java/com/java/controller/VersioningController.java)
+* VersioningControllerImpl class [VersioningControllerImpl](../src/main/java/com/java/controller/impl/VersioningControllerImpl.java)
 ------
 # REST APIs
-* Download and import [Postman collection](postman/rest-api.postman_collection.json) for below APIs
-* [GetController](src/main/java/com/java/controller/GetController.java)
+* Download and import [Postman collection](../postman/rest-api.postman_collection.json) for below APIs
+* [GetController](../src/main/java/com/java/controller/GetController.java)
   * Interface has GET API declarations
   * Has different ways of writing GET APIs
-* [GetControllerImpl](src/main/java/com/java/controller/impl/GetControllerImpl.java) class has API implementation
+* [GetControllerImpl](../src/main/java/com/java/controller/impl/GetControllerImpl.java) class has API implementation
 * Why interface and class for APIs
   * Implementation has only business logic
   * Interface will have API annotations, method comments, swagger documentation etc
-* [PostController](src/main/java/com/java/controller/PostController.java)
+* [PostController](../src/main/java/com/java/controller/PostController.java)
   * Interface has POST API declarations
   * Has different ways of writing POST APIs
-* [PostControllerImpl](src/main/java/com/java/controller/impl/PostControllerImpl.java) class has API implementation
-* [PutController](src/main/java/com/java/controller/PutController.java)
+* [PostControllerImpl](../src/main/java/com/java/controller/impl/PostControllerImpl.java) class has API implementation
+* [PutController](../src/main/java/com/java/controller/PutController.java)
   * Interface has PUT API declarations
   * Has different ways of writing PUT APIs
-* [PutControllerImpl](src/main/java/com/java/controller/impl/PutControllerImpl.java) class has API implementation
-* [DeleteController](src/main/java/com/java/controller/DeleteController.java)
+* [PutControllerImpl](../src/main/java/com/java/controller/impl/PutControllerImpl.java) class has API implementation
+* [DeleteController](../src/main/java/com/java/controller/DeleteController.java)
   * Interface has DELETE API declarations
   * Has different ways of writing DELETE APIs
-* [DeleteControllerImpl](src/main/java/com/java/controller/impl/DeleteControllerImpl.java) class has API implementation
-* HateoasController interface [HateoasController](src/main/java/com/java/controller/HateoasController.java)
+* [DeleteControllerImpl](../src/main/java/com/java/controller/impl/DeleteControllerImpl.java) class has API implementation
+* HateoasController interface [HateoasController](../src/main/java/com/java/controller/HateoasController.java)
   * Return hateoas link in api response
-* [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java) class has API implementation
-* GlobalExceptionHandler class [GlobalExceptionHandler](src/main/java/com/java/config/GlobalExceptionHandler.java)
+* [HateoasControllerImpl](../src/main/java/com/java/controller/impl/HateoasControllerImpl.java) class has API implementation
+* GlobalExceptionHandler class [GlobalExceptionHandler](../src/main/java/com/java/config/GlobalExceptionHandler.java)
   * Global exception handler class
   * Handles jakarta validations also. Refer method `handleMethodArgumentNotValid`
-* I18NController interface [I18NController](src/main/java/com/java/controller/I18NController.java)
+* I18NController interface [I18NController](../src/main/java/com/java/controller/I18NController.java)
   * Internationalization in rest api
-* [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java) class has API implementation
-* VersioningController interface [VersioningController](src/main/java/com/java/controller/VersioningController.java)
+* [I18NControllerImpl](../src/main/java/com/java/controller/impl/I18NControllerImpl.java) class has API implementation
+* VersioningController interface [VersioningController](../src/main/java/com/java/controller/VersioningController.java)
   * Different ways to implement rest api versioning
-* [VersioningControllerImpl](src/main/java/com/java/controller/impl/VersioningControllerImpl.java) class has API implementation
+* [VersioningControllerImpl](../src/main/java/com/java/controller/impl/VersioningControllerImpl.java) class has API implementation
 ------
 # Hateoas APIs
 * Hateoas - Hypermedia as the engine of application state
@@ -109,7 +109,7 @@ docker image push donthuavinashbabu/rest-api
 ```
 
 ## Adding link to access newly created student in header
-* HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
+* HateoasControllerImpl class [HateoasControllerImpl](../src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
 * Refer `saveStudent` method. This returns link to access newly created student in response header `location`
 ```
 import java.net.URI;
@@ -121,7 +121,7 @@ ResponseEntity.created(location).build();
 ```
 
 ## Add `_link` property
-* HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
+* HateoasControllerImpl class [HateoasControllerImpl](../src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
 * Refer `saveStudents2` method
 * Returns response as below
 ```
@@ -141,17 +141,17 @@ ResponseEntity.created(location).build();
 ```
 ------
 # API with pagination
-* Refer `studentsV7` method in [GetController](src/main/java/com/java/controller/GetController.java)
+* Refer `studentsV7` method in [GetController](../src/main/java/com/java/controller/GetController.java)
 * We can directly use `Pageable`
 * `ParameterObject` is used for swagger documentation
 * Swagger without `ParameterObject`\
-![picture](img/004.jpg)
+![picture](../img/004.jpg)
 * Swagger with `ParameterObject`\
-![picture](img/005.jpg)
+![picture](../img/005.jpg)
 ------
 # Swagger Spring Doc Open API Documentation
-* Pre-requisite for this is to understand how to write APIs. Refer [here](#REST-APIs)
-* Add below dependency. Refer [pom.xml](pom.xml)
+* Pre-requisite for this is to understand how to write APIs. Refer [here](#rest-apis)
+* Add below dependency. Refer [pom.xml](../pom.xml)
 ```
 <dependency>
     <groupId>org.springdoc</groupId>
@@ -159,7 +159,7 @@ ResponseEntity.created(location).build();
     <version>2.0.3</version>
 </dependency>
 ```
-* Add below annotations to API method. Refer [GetController](src/main/java/com/java/controller/GetController.java) & [PostController](src/main/java/com/java/controller/PostController.java)
+* Add below annotations to API method. Refer [GetController](../src/main/java/com/java/controller/GetController.java) & [PostController](../src/main/java/com/java/controller/PostController.java)
 ```
 @Operation(summary = "Hello World GET API")
     @ApiResponses(value = {
@@ -174,14 +174,14 @@ ResponseEntity.created(location).build();
 ```
 * Start application
 * Open URL - http://localhost:9000/swagger-ui/index.html
-![picture](img/001.jpg)
+![picture](../img/001.jpg)
 * We can find OpenAPI descriptions at `/v3/api-docs` - http://localhost:9000/v3/api-docs
-* We can customize path using below property. Refer property in [application.properties](src/main/resources/application.properties). Now we can access docs using http://localhost:9000/rest-api-docs
+* We can customize path using below property. Refer property in [application.properties](../src/main/resources/application.properties). Now we can access docs using http://localhost:9000/rest-api-docs
 ```
 springdoc.api-docs.path=/rest-api-docs
 ```
 * Above OpenAPI definitions are in JSON format by default. For yaml format, use this link http://localhost:9000/rest-api-docs.yaml
-* We can change default swagger ui path using below property. Refer [application.properties](src/main/resources/application.properties)
+* We can change default swagger ui path using below property. Refer [application.properties](../src/main/resources/application.properties)
 ```
 springdoc.swagger-ui.path=/rest-api-swagger.html
 ```
@@ -194,90 +194,90 @@ springdoc.swagger-ui.operationsSorter=alpha
 * Reference - https://www.baeldung.com/spring-rest-openapi-documentation
 
 ## To change OpenAPI definition heading
-* Add below annotation. Refer [Main](src/main/java/com/java/Main.java)
+* Add below annotation. Refer [Main](../src/main/java/com/java/Main.java)
 ```
 @OpenAPIDefinition(info = @Info(title = "Rest API Documentation"))
 ```
 * Before
-![picture](img/002.jpg)
+![picture](../img/002.jpg)
 * After
-![picture](img/003.jpg)
+![picture](../img/003.jpg)
  
 ## Annotations explanation
 * io.swagger.v3.oas.annotations.OpenAPIDefinition
   * Used to define main title of swagger documentation UI
-  * Refer [Main.java](src/main/java/com/java/Main.java)
+  * Refer [Main.java](../src/main/java/com/java/Main.java)
 * io.swagger.v3.oas.annotations.Operation
   * Used to define API
-  * Refer controller classes in [com.java.controller](src/main/java/com/java/controller)
+  * Refer controller classes in [com.java.controller](../src/main/java/com/java/controller)
 * io.swagger.v3.oas.annotations.responses.ApiResponses
   * container for different responses returned by API
-  * Refer controller classes in [com.java.controller](src/main/java/com/java/controller)
+  * Refer controller classes in [com.java.controller](../src/main/java/com/java/controller)
 * io.swagger.v3.oas.annotations.responses.ApiResponse
   * Define details of response for different scenarios
-  * Refer controller classes in [com.java.controller](src/main/java/com/java/controller)
+  * Refer controller classes in [com.java.controller](../src/main/java/com/java/controller)
 * io.swagger.v3.oas.annotations.tags.Tag
   * Used define API class description
   * Declare at controller class level
-  * Refer controller classes in [com.java.controller](src/main/java/com/java/controller)
+  * Refer controller classes in [com.java.controller](../src/main/java/com/java/controller)
 * io.swagger.v3.oas.annotations.media.Schema
-  * Used for properties of model. Refer [Student.java](src/main/java/com/java/model/Student.java)
+  * Used for properties of model. Refer [Student.java](../src/main/java/com/java/model/Student.java)
 * io.swagger.v3.oas.annotations.Parameter
   * Used for parameters of API resource request
-  * Refer [DeleteController.java](src/main/java/com/java/controller/DeleteController.java)
+  * Refer [DeleteController.java](../src/main/java/com/java/controller/DeleteController.java)
 ------
 # Validation
-* Add below validation dependency. Refer [pom.xml](pom.xml)
+* Add below validation dependency. Refer [pom.xml](../pom.xml)
 ```
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
 ```
-* Add `org.springframework.validation.annotation.Validated` annotation to API request body. Refer `studentV2` method in [PostController](src/main/java/com/java/controller/PostController.java)
-* Add validation annotations in Student Model class [Student](src/main/java/com/java/model/Student.java)
+* Add `org.springframework.validation.annotation.Validated` annotation to API request body. Refer `studentV2` method in [PostController](../src/main/java/com/java/controller/PostController.java)
+* Add validation annotations in Student Model class [Student](../src/main/java/com/java/model/Student.java)
   * import jakarta.validation.constraints.Min 
   * import jakarta.validation.constraints.NotBlank 
   * import jakarta.validation.constraints.NotNull
 * Like this we have more annotation. Refer jar file\
-![picture](img/006.jpg)
+![picture](../img/006.jpg)
 * API response without passing `name` and `book`\
-![picture](img/007.jpg)
+![picture](../img/007.jpg)
 * API response without passing `book`\
-![picture](img/008.jpg)
+![picture](../img/008.jpg)
 ------
 # Support json and xml responses
-* Add below dependency in [pom.xml](pom.xml)
+* Add below dependency in [pom.xml](../pom.xml)
 ```
 <dependency>
     <groupId>com.fasterxml.jackson.dataformat</groupId>
     <artifactId>jackson-dataformat-xml</artifactId>
 </dependency>
 ```
-* Add `org.springframework.http.MediaType.APPLICATION_XML_VALUE` to `produces` in API declaration. Refer `studentsV3` method in [GetController](src/main/java/com/java/controller/GetController.java)
+* Add `org.springframework.http.MediaType.APPLICATION_XML_VALUE` to `produces` in API declaration. Refer `studentsV3` method in [GetController](../src/main/java/com/java/controller/GetController.java)
 * Hit API - http://localhost:9000/get/api/v3/students with header - `Accept:application/xml`\
-![picture](img/009.jpg)
+![picture](../img/009.jpg)
 ------
 # Internationalization - I18N
 * Add language specific properties files
-  * [messages.properties](src/main/resources/messages.properties)
-  * [messages_fr.properties](src/main/resources/messages_fr.properties)
+  * [messages.properties](../src/main/resources/messages.properties)
+  * [messages_fr.properties](../src/main/resources/messages_fr.properties)
 * Inject `org.springframework.context.MessageSource` into our class
-* Get locale specific messages using `org.springframework.context.MessageSource`. Refer `helloWorld` method [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
-* Get locale specific messages using `org.springframework.context.MessageSource` with parameters. Refer `helloWorldWithName` method [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
+* Get locale specific messages using `org.springframework.context.MessageSource`. Refer `helloWorld` method [I18NControllerImpl](../src/main/java/com/java/controller/impl/I18NControllerImpl.java)
+* Get locale specific messages using `org.springframework.context.MessageSource` with parameters. Refer `helloWorldWithName` method [I18NControllerImpl](../src/main/java/com/java/controller/impl/I18NControllerImpl.java)
 ------
 # Filtering
 ## Static Filtering
 * Static filtering will be done using annotations in model class
   * `com.fasterxml.jackson.annotation.JsonIgnoreProperties` at class level
   * `com.fasterxml.jackson.annotation.JsonIgnore` at property level
-* Refer [Student](src/main/java/com/java/model/Student.java)
+* Refer [Student](../src/main/java/com/java/model/Student.java)
 * Both are not needed. We can use any one them. Preferred is `com.fasterxml.jackson.annotation.JsonIgnore` because if property name updated then we need to update property name in `com.fasterxml.jackson.annotation.JsonIgnoreProperties` also
 
 ## Dynamic Filtering
 * Using `org.springframework.http.converter.json.MappingJacksonValue`
-* Define `com.fasterxml.jackson.annotation.JsonFilter` annotation at class level. Refer [User](src/main/java/com/java/model/User.java) class
-* Write below logic to filter properties. We can have custom logic specific to API. Refer `users1` method in [GetControllerImpl](src/main/java/com/java/controller/impl/GetControllerImpl.java) class
+* Define `com.fasterxml.jackson.annotation.JsonFilter` annotation at class level. Refer [User](../src/main/java/com/java/model/User.java) class
+* Write below logic to filter properties. We can have custom logic specific to API. Refer `users1` method in [GetControllerImpl](../src/main/java/com/java/controller/impl/GetControllerImpl.java) class
 ```
 final String jsonFilterName = "StudentPropertyFilter";
 
@@ -297,7 +297,7 @@ mappingJacksonValue.setFilters(filterProvider);
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ```
-* Add this property in [application properties/yaml](src/main/resources/application.properties) to enable all actuator end points
+* Add this property in [application properties/yaml](../src/main/resources/application.properties) to enable all actuator end points
 ```
 management.endpoints.web.exposure.include: '*'
 ```
@@ -315,8 +315,8 @@ management.endpoints.web.exposure.include: '*'
 </dependency>
 ```
 * Access this url - http://localhost:9000
-![picture](img/010.jpg)
-![picture](img/011.jpg)
+![picture](../img/010.jpg)
+![picture](../img/011.jpg)
 ------
 # Connect to H2 Database
 * Add below dependencies
@@ -332,7 +332,7 @@ management.endpoints.web.exposure.include: '*'
     <scope>runtime</scope>
 </dependency>
 ```
-* Add below properties in [application properties/yaml](src/main/resources/application.properties)
+* Add below properties in [application properties/yaml](../src/main/resources/application.properties)
 ```
 # database properties
 spring.jpa.defer-datasource-initialization=true
@@ -345,33 +345,33 @@ spring.datasource.username=user1
 spring.datasource.password=07102024
 ```
 * Create entities. For example below
-  * [EmployeeEntity](src/main/java/com/java/entity/EmployeeEntity.java)
-* To insert data to tables create [data.sql](src/main/resources/data.sql) in `src/main/resources` and write insert queries
+  * [EmployeeEntity](../src/main/java/com/java/entity/EmployeeEntity.java)
+* To insert data to tables create [data.sql](../src/main/resources/data.sql) in `src/main/resources` and write insert queries
 * Start the application and access h2 console - http://localhost:9000/h2-console
-* Login using url, username and password given in [application properties/yaml](src/main/resources/application.properties)
+* Login using url, username and password given in [application properties/yaml](../src/main/resources/application.properties)
 ------
 # Spring Boot 3 Data JPA with H2 Database
 * Add dependencies and properties for H2 database connect. Refer [Connect to H2 Database](#connect-to-h2-database)
-* Employee Repository interface [EmployeeRepository](src/main/java/com/java/datajpa/h2/EmployeeRepository.java)
+* Employee Repository interface [EmployeeRepository](../src/main/java/com/java/datajpa/h2/EmployeeRepository.java)
   * Spring data jpa repository used to query h2 database
-* [H2Service](src/main/java/com/java/datajpa/h2/H2Service.java) interface
-* [H2ServiceImpl](src/main/java/com/java/datajpa/h2/H2ServiceImpl.java) implementation of above interface
-* [H2Controller](src/main/java/com/java/datajpa/h2/H2Controller.java) interface
+* [H2Service](../src/main/java/com/java/datajpa/h2/H2Service.java) interface
+* [H2ServiceImpl](../src/main/java/com/java/datajpa/h2/H2ServiceImpl.java) implementation of above interface
+* [H2Controller](../src/main/java/com/java/datajpa/h2/H2Controller.java) interface
   * API to perform operations on h2 database
-* [H2ControllerImpl](src/main/java/com/java/datajpa/h2/H2ControllerImpl.java) implementation of above interface
-* Refer `h2` folder in [postman collection](postman/rest-api.postman_collection.json)
-* We are saving [EmployeeEntity](src/main/java/com/java/entity/EmployeeEntity.java)
+* [H2ControllerImpl](../src/main/java/com/java/datajpa/h2/H2ControllerImpl.java) implementation of above interface
+* Refer `h2` folder in [postman collection](../postman/rest-api.postman_collection.json)
+* We are saving [EmployeeEntity](../src/main/java/com/java/entity/EmployeeEntity.java)
   * We are using custom primary key generator
-  * Write class to generate id value [PrimaryKeyGenerator](src/main/java/com/java/entity/PrimaryKeyGenerator.java)
-  * Write new interface [MyPrimaryKeyGenerator](src/main/java/com/java/entity/MyPrimaryKeyGenerator.java) that use [PrimaryKeyGenerator](src/main/java/com/java/entity/PrimaryKeyGenerator.java)
-  * Use [MyPrimaryKeyGenerator](src/main/java/com/java/entity/MyPrimaryKeyGenerator.java) that use [PrimaryKeyGenerator](src/main/java/com/java/entity/PrimaryKeyGenerator.java) on [EmployeeEntity](src/main/java/com/java/entity/EmployeeEntity.java)
+  * Write class to generate id value [PrimaryKeyGenerator](../src/main/java/com/java/entity/PrimaryKeyGenerator.java)
+  * Write new interface [MyPrimaryKeyGenerator](../src/main/java/com/java/entity/MyPrimaryKeyGenerator.java) that use [PrimaryKeyGenerator](../src/main/java/com/java/entity/PrimaryKeyGenerator.java)
+  * Use [MyPrimaryKeyGenerator](../src/main/java/com/java/entity/MyPrimaryKeyGenerator.java) that use [PrimaryKeyGenerator](../src/main/java/com/java/entity/PrimaryKeyGenerator.java) on [EmployeeEntity](../src/main/java/com/java/entity/EmployeeEntity.java)
 ------
 # Spring Boot 3 Data JPA with MySQL Database
 
 ------
 # Rest Clients
 ## RestTemplate Examples
-* [Get APIs](src/test/java/com/java/rest/client/resttemplate/GetControllerTest.java)
+* [Get APIs](../src/test/java/com/java/rest/client/resttemplate/GetControllerTest.java)
 
 ## WebClient Examples
-* [Get APIs](src/test/java/com/java/rest/client/webclient/GetControllerTest.java)
+* [Get APIs](../src/test/java/com/java/rest/client/webclient/GetControllerTest.java)
