@@ -20,3 +20,15 @@ app:
   route4: false
   kafka.route: false
   kafka.route.list: false
+  # rest-api server.port. This app also binds 9000, so change one port before running both.
+  rest-api:
+    base-url: http://localhost:9000
+    timer.period: 10000
+    get.route: false
+    post.route: false
+    put.route: false
+    delete.route: false
+    hateoas.route: false
+    i18n.route: false
+    versioning.route: false
+    h2.route: false

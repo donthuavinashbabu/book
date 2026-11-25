@@ -10,8 +10,6 @@ import com.java.model.Student;
 import com.java.model.User;
 import com.java.service.StudentService;
 import com.java.service.UserService;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springdoc.core.converters.models.Pageable;
 import org.springframework.http.ResponseEntity;

@@ -91,3 +91,48 @@ camel:
 * [KafkaRouteComponent.java](src/main/java/com/java/processor/KafkaRouteComponent.java) - `kafkaMessageList` - used in route to build messages
 * Write route - `kafkaRouteList` - [KafkaRoute.java](src/main/java/com/java/route/KafkaRoute.java)
 * Property to enable/disable this route `app.kafka.route.list` - [application.yml](src/main/resources/application.yml)
+------
+# REST clients for the rest-api project
+Clients in `com.java.restapi` call the controllers in the [rest-api](../../rest-api/rest-api) project. One client class per controller. HTTP calls go through Camel (`camel-http-starter`) in [CamelHttpClient.java](src/main/java/com/java/restapi/CamelHttpClient.java).
+
+* [GetControllerClient.java](src/main/java/com/java/restapi/GetControllerClient.java) — `/get/api`
+* [PostControllerClient.java](src/main/java/com/java/restapi/PostControllerClient.java) — `/post/api`
+* [PutControllerClient.java](src/main/java/com/java/restapi/PutControllerClient.java) — `/put/api`
+* [DeleteControllerClient.java](src/main/java/com/java/restapi/DeleteControllerClient.java) — `/delete/api`
+* [HateoasControllerClient.java](src/main/java/com/java/restapi/HateoasControllerClient.java) — `/hateoas/api`
+* [I18NControllerClient.java](src/main/java/com/java/restapi/I18NControllerClient.java) — `/i18n/api` (`Accept-Language`, for example `fr`)
+* [VersioningControllerClient.java](src/main/java/com/java/restapi/VersioningControllerClient.java) — `/versioning/api` (URL, query param `VERSION`, header `X-API-VERSION`, media type)
+* [H2ControllerClient.java](src/main/java/com/java/restapi/H2ControllerClient.java) — `/h2/apis` (`joiningDate` format `ddMMyyyy`)
+
+Request and response types are in [src/main/java/com/java/restapi/model](src/main/java/com/java/restapi/model). `HateoasControllerClient.saveStudent` returns [CreatedResponse.java](src/main/java/com/java/restapi/model/CreatedResponse.java) (201 status and `Location` header).
+
+Base URL property `app.rest-api.base-url` in [application.yml](src/main/resources/application.yml). This app and rest-api both listen on port `9000`, so change one port before running both. Otherwise these clients call this app.
+------
+# Camel routes calling those REST clients
+Each route is a timer that calls the matching client with `.bean(...)` and logs the body. Period is `app.rest-api.timer.period` (milliseconds). Routes are off until the matching flag is `true`.
+
+* [GetControllerRoute.java](src/main/java/com/java/route/GetControllerRoute.java) — `app.rest-api.get.route`
+* [PostControllerRoute.java](src/main/java/com/java/route/PostControllerRoute.java) — `app.rest-api.post.route`
+* [PutControllerRoute.java](src/main/java/com/java/route/PutControllerRoute.java) — `app.rest-api.put.route`
+* [DeleteControllerRoute.java](src/main/java/com/java/route/DeleteControllerRoute.java) — `app.rest-api.delete.route`
+* [HateoasControllerRoute.java](src/main/java/com/java/route/HateoasControllerRoute.java) — `app.rest-api.hateoas.route`
+* [I18NControllerRoute.java](src/main/java/com/java/route/I18NControllerRoute.java) — `app.rest-api.i18n.route`
+* [VersioningControllerRoute.java](src/main/java/com/java/route/VersioningControllerRoute.java) — `app.rest-api.versioning.route`
+* [H2ControllerRoute.java](src/main/java/com/java/route/H2ControllerRoute.java) — `app.rest-api.h2.route`
+
+Enable one route in [application.yml](src/main/resources/application.yml). Point `base-url` at rest-api, not at this app:
+```
+app:
+  rest-api:
+    base-url: http://localhost:8080
+    timer.period: 10000
+    get.route: true
+```
+Sample route step from [GetControllerRoute.java](src/main/java/com/java/route/GetControllerRoute.java):
+```
+.bean(getControllerClient, "helloWorld()")
+.log("helloWorld=${body}")
+.bean(getControllerClient, "studentsV5('Ann','Java')")
+.log("studentsV5=${body}")
+```
+This is separate from [RestRoute.java](src/main/java/com/java/route/RestRoute.java), which calls this app's `/example/{id}` endpoint.
